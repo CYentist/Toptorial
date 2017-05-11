@@ -1,0 +1,39 @@
+<div class="container">
+
+  <div class="row">
+    <div class="pull-right" style="padding-bottom: 20px;">
+      <%= link_to("发布教程", new_tutorial_path, class: "btn btn-primary") %>
+    </div>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Title</th>
+          <th>Content</th>
+          <th width="100"> Options</th>
+        </tr>
+      </thead>
+      <tbody>
+    <% @tutorials.each do |tutorial| %>
+        <tr>
+            <td>
+              <%= tutorial.id %>
+            </td>
+            <td>
+              <%= link_to(tutorial.title, tutorial_path(tutorial)) %>
+            </td>
+            <td>
+              <%= tutorial.content %>
+            <td>
+              <% if current_user == tutorial.user %>
+                <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm btn-success")%>
+                <%= link_to("编辑", edit_tutorial_path(tutorial), class:"btn btn-sm btn-primary")%>
+                <%= link_to("删除", tutorial_path(tutorial), class:"btn btn-sm btn-danger", :method => :delete, :data => { :confirm => "确认删除?" })%>
+              <% else %>
+                <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm  btn-success")%>
+              <% end %>
+            </td>
+        </tr>
+        <% end %>
+    </tbody>
+  </table>
