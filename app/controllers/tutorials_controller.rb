@@ -44,7 +44,7 @@ class TutorialsController < ApplicationController
     @tutorial = Tutorial.find(params[:id])
     @tutorial.destroy
     flash[:alert] = "成功删除"
-    redirect_to tutorial_path(@tutorial)
+    redirect_to tutorials_path
   end
 
 
