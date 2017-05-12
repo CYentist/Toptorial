@@ -2,7 +2,7 @@
 	<div class="row-fluid">
     <h1> <%= @tutorial.title %> </h1>
     <div class="col-md-10" style="float: center;">
-      <p><%= @tutorial.content %></p>
+      <p><%= markdown(@tutorial.content) %></p>
     </div>
   </div>
 </div>
