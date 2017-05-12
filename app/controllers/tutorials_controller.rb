@@ -2,7 +2,7 @@ class TutorialsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
 
   def index
-    @tutorials = Tutorial.all
+    @tutorials = Tutorial.where(:checked => true)
   end
 
   def new
@@ -11,6 +11,10 @@ class TutorialsController < ApplicationController
 
   def show
     @tutorial = Tutorial.find(params[:id])
+    if !@tutorial.checked
+      flash[:warning] = "此教程正在审核中"
+      redirect_to root_path
+    end
   end
 
   def create
@@ -26,12 +30,17 @@ class TutorialsController < ApplicationController
 
   def edit
     @tutorial = Tutorial.find(params[:id])
+    if !@tutorial.checked
+      flash[:warning] = "此教程正在审核中"
+      redirect_to root_path
+    end
   end
 
   def update
     @tutorial = Tutorial.find(params[:id])
+    @tutorial.checked = false
 
-    if @tutorial = Tutorial.update(tutorial_params)
+    if @tutorial.update(tutorial_params)
       redirect_to tutorial_path(@tutorial)
       flash[:notice] = "修改成功"
     else
@@ -51,6 +60,6 @@ class TutorialsController < ApplicationController
   private
 
   def tutorial_params
-    params.require(:tutorial).permit(:title, :content, :user_id)
+    params.require(:tutorial).permit(:title, :content, :user_id, :checked)
   end
 end

@@ -3,9 +3,16 @@ class Admin::TutorialsController < ApplicationController
   before_action :require_is_admin
 
   layout "admin"
-  
+
   def index
-    @tutorials = Tutorial.all
+    @tutorials = case params[:order]
+    when 'checked'
+      Tutorial.checked
+    when 'unchecked'
+      Tutorial.unchecked
+    else
+      Tutorial.all
+    end
   end
 
   def new
@@ -21,7 +28,7 @@ class Admin::TutorialsController < ApplicationController
     @tutorial.user = current_user
     if @tutorial.save
       flash[:notice] = "成功发布教程"
-      redirect_to  tutorial_path(@tutorial)
+      redirect_to admin_tutorial_path(@tutorial)
     else
       render :new
     end
@@ -33,9 +40,8 @@ class Admin::TutorialsController < ApplicationController
 
   def update
     @tutorial = Tutorial.find(params[:id])
-
-    if @tutorial = Tutorial.update(tutorial_params)
-      redirect_to tutorial_path(@tutorial)
+    if @tutorial.update(tutorial_params)
+      redirect_to admin_tutorial_path(@tutorial)
       flash[:notice] = "修改成功"
     else
       render :edit
@@ -43,17 +49,30 @@ class Admin::TutorialsController < ApplicationController
   end
 
   def destroy
-
     @tutorial = Tutorial.find(params[:id])
     @tutorial.destroy
     flash[:alert] = "成功删除"
-    redirect_to tutorials_path
+    redirect_to admin_tutorials_path
+  end
+
+  def check
+    @tutorial = Tutorial.find(params[:id])
+    @tutorial.check!
+    flash[:notice] = "该课程已通过审核，公开上架。"
+    redirect_to :back
+  end
+
+  def recheck
+    @tutorial = Tutorial.find(params[:id])
+    @tutorial.recheck!
+    flash[:alert] = "该课程已下架，等待重新审核。"
+    redirect_to :back
   end
 
 
   private
 
   def tutorial_params
-    params.require(:tutorial).permit(:title, :content, :user_id)
+    params.require(:tutorial).permit(:title, :content, :user_id, :checked)
   end
 end

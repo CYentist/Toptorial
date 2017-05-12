@@ -6,7 +6,12 @@ Rails.application.routes.draw do
   resources :tutorials
 
   namespace :admin do
-    resources :tutorials
+    resources :tutorials do
+      member do
+        post :check
+        post :recheck
+      end
+    end
   end
 
   root 'tutorials#index'
