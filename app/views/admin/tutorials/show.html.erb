@@ -2,14 +2,7 @@
 	<div class="row-fluid">
     <h1> <%= @tutorial.title %> </h1>
     <div class="col-md-10" style="float: center;">
-
       <p><%= markdown(@tutorial.content) %></p>
-			<% if @tutorial.checked %>
-				<%= link_to("重新审核", recheck_admin_tutorial_path(@tutorial), :method => :post, :class => "btn btn-danger") %>
-			<% else %>
-				<%= link_to("通过审核", check_admin_tutorial_path(@tutorial), :method => :post, :class => "btn btn-success") %>
-			<% end %>
-
     </div>
   </div>
 </div>

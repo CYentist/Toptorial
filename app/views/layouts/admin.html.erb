@@ -18,8 +18,6 @@
         <div class="col-md-2">
           <ul class="nav nav-pills nav-stacked" style="max-width: 300px; padding-top:20px;">
             <li class="active"><%= link_to("全部教程", admin_tutorials_path ) %> </li>
-            <li><%= link_to("待审核教程", admin_tutorials_path(:order => "unchecked")) %> </li>
-            <li><%= link_to("已上架教程", admin_tutorials_path(:order => "checked")) %> </li>
           </ul>
         </div>
         <div class="col-md-10">

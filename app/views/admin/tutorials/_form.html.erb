@@ -1,8 +1,7 @@
-<%= simple_form_for [:admin, @tutorial] do |f| %>
+<%= simple_form_for @tutorial do |f| %>
 
 <%= f.input :title %>
 <%= f.input :content %>
-<%= f.input :checked %>
 <%= f.submit "Submit" %>
 <% end %>
 <%= render "tutorials/simplemde" %>
