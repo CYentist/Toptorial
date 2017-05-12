@@ -21,6 +21,8 @@
                       <% if current_user.admin? %>
                         <li> <%= link_to("管理员后台", admin_tutorials_path) %> </li>
                       <% end %>
+                      <li> <%= link_to("我发布的教程", account_tutorials_path) %></li>
+                      <li class="divider"> </li>
                       <li> <%= link_to(content_tag(:i, '登出', class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete) %> </li>
                     </ul>
                   </li>
