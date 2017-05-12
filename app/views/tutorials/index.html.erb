@@ -24,6 +24,7 @@
             </td>
             <td>
               <%= tutorial.content %>
+            </td>
             <td>
               <% if current_user == tutorial.user %>
                 <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm btn-success")%>
@@ -37,3 +38,5 @@
         <% end %>
     </tbody>
   </table>
+</div>
+</div>
