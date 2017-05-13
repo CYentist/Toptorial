@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170513132248) do
+ActiveRecord::Schema.define(version: 20170513144341) do
 
   create_table "tutorial_relationships", force: :cascade do |t|
     t.integer  "tutorial_id"
