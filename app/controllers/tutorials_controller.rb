@@ -21,28 +21,27 @@ class TutorialsController < ApplicationController
     @tutorial = Tutorial.new(tutorial_params)
     @tutorial.user = current_user
     if @tutorial.save
-      flash[:notice] = "成功发布教程"
-      redirect_to  tutorial_path(@tutorial)
+      flash[:notice] = "新建成功，请等待审核。"
+      redirect_to  account_tutorial_path(@tutorial)
     else
       render :new
     end
   end
 
   def edit
-    @tutorial = Tutorial.find(params[:id])
+    find_tutorial_and_check_permission
     if !@tutorial.checked
       flash[:warning] = "此教程正在审核中"
-      redirect_to root_path
     end
   end
 
   def update
-    @tutorial = Tutorial.find(params[:id])
+    find_tutorial_and_check_permission
     @tutorial.checked = false
 
     if @tutorial.update(tutorial_params)
-      redirect_to tutorial_path(@tutorial)
-      flash[:notice] = "修改成功"
+      flash[:notice] = "修改成功，请等待审核。"
+      redirect_to account_tutorial_path(@tutorial)
     else
       render :edit
     end
@@ -50,7 +49,7 @@ class TutorialsController < ApplicationController
 
   def destroy
 
-    @tutorial = Tutorial.find(params[:id])
+    find_tutorial_and_check_permission
     @tutorial.destroy
     flash[:alert] = "成功删除"
     redirect_to tutorials_path
@@ -58,6 +57,14 @@ class TutorialsController < ApplicationController
 
 
   private
+
+  def find_tutorial_and_check_permission
+    @tutorial = Tutorial.find(params[:id])
+
+    if current_user != @tutorial.user
+      redirect_to root_path, alert: "你没有权限！"
+    end
+  end
 
   def tutorial_params
     params.require(:tutorial).permit(:title, :content, :user_id, :checked)
