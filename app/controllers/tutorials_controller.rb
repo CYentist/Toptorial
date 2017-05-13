@@ -40,8 +40,8 @@ class TutorialsController < ApplicationController
     @tutorial.checked = false
 
     if @tutorial.update(tutorial_params)
-      redirect_to tutorial_path(@tutorial)
       flash[:notice] = "修改成功，请等待审核。"
+      redirect_to account_tutorial_path(@tutorial)
     else
       render :edit
     end
