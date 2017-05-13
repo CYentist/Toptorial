@@ -21,10 +21,10 @@
             </td>
             <td>
               <%= render_account_tutorial_status(tutorial) %>
-              <%= link_to(tutorial.title, tutorial_path(tutorial)) %>
+              <%= link_to(tutorial.title, account_tutorial_path(tutorial)) %>
             </td>
             <td>
-              <%= tutorial.content %>
+              <%= tutorial.description %>
             <td>
               <% if current_user == tutorial.user %>
                 <%= link_to("查看", account_tutorial_path(tutorial), class:"btn btn-sm btn-success")%>

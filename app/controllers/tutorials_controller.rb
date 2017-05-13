@@ -12,7 +12,7 @@ class TutorialsController < ApplicationController
   def show
     @tutorial = Tutorial.find(params[:id])
     if !@tutorial.checked
-      flash[:warning] = "此教程正在审核中"
+      flash[:warning] = "此教程正在审核中，暂时无法查看。"
       redirect_to root_path
     end
   end
@@ -30,9 +30,6 @@ class TutorialsController < ApplicationController
 
   def edit
     find_tutorial_and_check_permission
-    if !@tutorial.checked
-      flash[:warning] = "此教程正在审核中"
-    end
   end
 
   def update
