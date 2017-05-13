@@ -10,4 +10,14 @@ class User < ApplicationRecord
   def admin?
     is_admin
   end
+
+  def is_buyer?(tutorial)
+    paid_tutorials.include?(tutorial)
+  end
+
+  def buy!(tutorial)
+    paid_tutorials << tutorial
+  end
+
+
 end
