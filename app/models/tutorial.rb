@@ -1,5 +1,7 @@
 class Tutorial < ApplicationRecord
   belongs_to :user
+  has_many :tutorial_relationships
+  has_many :buyers, :through => :tutorial_relationships, source: :user
 
   def check!
     self.checked = true
