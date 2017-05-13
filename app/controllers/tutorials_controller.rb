@@ -1,5 +1,5 @@
 class TutorialsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy, :buy]
 
   def index
     @tutorials = Tutorial.where(:checked => true)
@@ -12,7 +12,7 @@ class TutorialsController < ApplicationController
   def show
     @tutorial = Tutorial.find(params[:id])
     if !@tutorial.checked
-      flash[:warning] = "此教程正在审核中"
+      flash[:warning] = "此教程正在审核中，暂时无法查看。"
       redirect_to root_path
     end
   end
@@ -30,9 +30,6 @@ class TutorialsController < ApplicationController
 
   def edit
     find_tutorial_and_check_permission
-    if !@tutorial.checked
-      flash[:warning] = "此教程正在审核中"
-    end
   end
 
   def update
@@ -55,6 +52,19 @@ class TutorialsController < ApplicationController
     redirect_to tutorials_path
   end
 
+  def buy
+    @tutorial = Tutorial.find(params[:id])
+
+    if !current_user.is_buyer?(@tutorial)
+      current_user.buy!(@tutorial)
+      flash[:notice] = "购买成功！"
+    else
+      flash[:warning] = "你已经购买了这个教程！"
+    end
+
+    redirect_to tutorial_path(@tutorial)
+  end
+
 
   private
 
@@ -67,6 +77,6 @@ class TutorialsController < ApplicationController
   end
 
   def tutorial_params
-    params.require(:tutorial).permit(:title, :content, :user_id, :checked)
+    params.require(:tutorial).permit(:title, :content, :user_id, :checked, :description)
   end
 end

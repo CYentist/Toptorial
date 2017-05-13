@@ -10,15 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170512022745) do
+ActiveRecord::Schema.define(version: 20170513144341) do
+
+  create_table "tutorial_relationships", force: :cascade do |t|
+    t.integer  "tutorial_id"
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "tutorials", force: :cascade do |t|
     t.string   "title"
     t.text     "content"
     t.integer  "user_id"
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
-    t.boolean  "checked",    default: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.boolean  "checked",     default: false
+    t.text     "description"
   end
 
   create_table "users", force: :cascade do |t|

@@ -2,7 +2,14 @@
 	<div class="row-fluid">
     <h1> <%= @tutorial.title %> </h1>
     <div class="col-md-10" style="float: center;">
-      <p><%= markdown(@tutorial.content) %></p>
+			<% if current_user && current_user.is_buyer?(@tutorial) %>
+    		<p><%= markdown(@tutorial.content) %></p>
+  		<% else %>
+			<div class="preview">
+				<p><%= @tutorial.description %></p>
+			</div>
+				<%= link_to("查看教程", buy_tutorial_path(@tutorial), method: :post, class: "btn btn-default",  :data => { :confirm => "确认购买?"} ) %>
+	 		 <% end %>
     </div>
   </div>
 </div>
