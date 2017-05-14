@@ -3,6 +3,7 @@ class Tutorial < ApplicationRecord
   belongs_to :user
   has_many :tutorial_relationships
   has_many :buyers, :through => :tutorial_relationships, source: :user
+  has_many :comments
 
   def check!
     self.checked = true

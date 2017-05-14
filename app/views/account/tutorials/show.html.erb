@@ -8,8 +8,29 @@
 			<% else %>
 				<%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
 			<% end %>
-			<p><%= @tutorial.description %></p>
-      <p><%= markdown(@tutorial.content) %></p>
+			<!-- 显示图片 -->
+
+    		<p><%= markdown(@tutorial.content) %></p>
+			 <!-- 显示全文 -->
+
+			 <div class="comment">
+				<%= render :partial => "comments/comments", :collection => @comments, :as => :comment %>
+				<!-- 显示评论 -->
+
+				<div class="newcomment">
+					<%= simple_form_for [@tutorial, @comment] do |f| %>
+					<fieldset class="form-group">
+						<%= f.input :post, :label => "回复", placeholder: "输入内容"%>
+					</fieldset>
+					<%= f.submit "发送", class: "button btn btn-sm btn-danger",  data: { disable_with:"发送中..."} %>
+					<% end %>
+				<!-- 可以发表评论 -->
+				</div>
+			 </div>
+			 <!-- comment -->
+
     </div>
   </div>
+	<!-- row -->
 </div>
+<!-- container -->

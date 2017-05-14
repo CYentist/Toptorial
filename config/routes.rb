@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     collection do
       get :paid
     end
+    resources :comments
   end
 
   namespace :admin do
@@ -22,7 +23,7 @@ Rails.application.routes.draw do
   end
 
   namespace :account do
-    resources :tutorials
+    resources :tutorials 
   end
 
   root 'tutorials#index'

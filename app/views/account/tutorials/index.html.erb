@@ -26,12 +26,10 @@
             <td>
               <%= tutorial.description %>
             <td>
-              <% if current_user == tutorial.user %>
-                <%= link_to("查看", account_tutorial_path(tutorial), class:"btn btn-sm btn-success")%>
-                <%= link_to("编辑", edit_tutorial_path(tutorial), class:"btn btn-sm btn-primary")%>
-                <%= link_to("删除", tutorial_path(tutorial), class:"btn btn-sm btn-danger", :method => :delete, :data => { :confirm => "确认删除?" })%>
-              <% else %>
-                <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm  btn-success")%>
+              <%= link_to("查看", account_tutorial_path(tutorial), class:"btn btn-sm btn-success")%>
+              <%= link_to("编辑", edit_tutorial_path(tutorial), class:"btn btn-sm btn-primary")%>
+              <% if !tutorial.checked %>
+                <%= link_to("删除", tutorial_path(tutorial), method: :delete, class:"btn btn-sm btn-danger")%>
               <% end %>
             </td>
         </tr>

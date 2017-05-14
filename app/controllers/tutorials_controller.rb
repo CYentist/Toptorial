@@ -15,6 +15,8 @@ class TutorialsController < ApplicationController
       flash[:warning] = "此教程正在审核中，暂时无法查看。"
       redirect_to root_path
     end
+    @comments = @tutorial.comments.order('created_at DESC')
+    @comment = Comment.new
   end
 
   def create
@@ -34,7 +36,6 @@ class TutorialsController < ApplicationController
 
   def update
     find_tutorial_and_check_permission
-
     if @tutorial.update(tutorial_params)
       flash[:notice] = "修改成功，已重新上架。"
       redirect_to account_tutorial_path(@tutorial)
@@ -44,11 +45,14 @@ class TutorialsController < ApplicationController
   end
 
   def destroy
-
     find_tutorial_and_check_permission
-    @tutorial.destroy
-    flash[:alert] = "成功删除"
-    redirect_to tutorials_path
+    if @tutorial.checked
+      flash[:alert] = "教程已上架，不得删除"
+    else
+      @tutorial.destroy
+      flash[:alert] = "成功删除"
+    end
+      redirect_to account_tutorials_path
   end
 
   def buy

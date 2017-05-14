@@ -1,0 +1,13 @@
+<ul class="list-group">
+  <li class="list-group-item ">
+    <span class="title">
+  	  <a href="#"><%= comment.user.email %></a> <time> <%= comment.created_at %></time>
+  		<p><%= simple_format(comment.post) %></p>
+    </span>
+    <ul class="actions" href="#">
+      <% if current_user == comment.user %>
+      <li><a class="reply"><%= link_to("删除", tutorial_comment_path(@tutorial, comment), :method => :delete, :data => { :confirm => "确认删除?" })%></a></li>
+      <% end %>
+    </ul>
+  </li>
+</ul>
