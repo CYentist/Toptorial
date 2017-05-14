@@ -24,6 +24,7 @@ class TutorialsController < ApplicationController
     @tutorial.user = current_user
     if @tutorial.save
       flash[:notice] = "新建成功，请等待审核。"
+      current_user.buy!(@tutorial)
       redirect_to  account_tutorial_path(@tutorial)
     else
       render :new

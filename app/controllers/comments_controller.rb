@@ -1,6 +1,7 @@
 class CommentsController < ApplicationController
   before_action :authenticate_user!
-  
+  before_action :check_permission, only: [:new, :create, :update, :edit, :destroy]
+
   def index
     @tutorial = Tutorial.find(params[:tutorial_id])
     @comments = @tutorial.comments.order('created_at DESC')
@@ -43,6 +44,13 @@ class CommentsController < ApplicationController
 
 
     private
+
+    def check_permission
+      @tutorial = Tutorial.find(params[:tutorial_id])
+      if !current_user.is_buyer?(@tutorial)
+        redirect_to root_path, alert: "你没有权限！"
+      end
+    end
 
     def comment_params
       params.require(:comment).permit(:post, :user_id, :tutorial_id)
