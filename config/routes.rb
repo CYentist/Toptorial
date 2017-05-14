@@ -7,7 +7,10 @@ Rails.application.routes.draw do
     member do
       post :buy
     end
-    resources :comments 
+    collection do
+      get :paid
+    end
+    resources :comments
   end
 
   namespace :admin do
