@@ -7,7 +7,7 @@
 			<% else %>
 				<%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
 			<% end %>
-			<% if current_user && current_user.is_buyer?(@tutorial) %>
+			<% if current_user && current_user.is_buyer?(@tutorial) || current_user == @tutorial.user %>
     		<p><%= markdown(@tutorial.content) %></p>
   		<% else %>
 			<div class="preview">
