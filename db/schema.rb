@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170513144341) do
+ActiveRecord::Schema.define(version: 20170514022730) do
 
   create_table "tutorial_relationships", force: :cascade do |t|
     t.integer  "tutorial_id"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20170513144341) do
     t.datetime "updated_at",                  null: false
     t.boolean  "checked",     default: false
     t.text     "description"
+    t.string   "image"
   end
 
   create_table "users", force: :cascade do |t|
