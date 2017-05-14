@@ -21,7 +21,7 @@ class CommentsController < ApplicationController
     if @comment.save
       redirect_to tutorial_path(@tutorial)
     else
-      render :new
+      redirect_to tutorial_path(@tutorial), alert: "评论不能为空！"
     end
   end
 
@@ -47,7 +47,8 @@ class CommentsController < ApplicationController
 
     def check_permission
       @tutorial = Tutorial.find(params[:tutorial_id])
-      if !current_user.is_buyer?(@tutorial)
+      if current_user == @tutorial.user || current_user.is_buyer?(@tutorial)
+      else
         redirect_to root_path, alert: "你没有权限！"
       end
     end

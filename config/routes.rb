@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   end
 
   namespace :account do
-    resources :tutorials
+    resources :tutorials 
   end
 
   root 'tutorials#index'

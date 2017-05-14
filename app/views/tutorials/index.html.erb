@@ -27,7 +27,7 @@
               <td>
                 <% if current_user == tutorial.user %>
                   <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm btn-success")%>
-                  <%= link_to("编辑",  edit_tutorial_path(tutorial), class:"btn btn-sm btn-primary")%>
+                  <%= link_to("编辑", edit_tutorial_path(tutorial), class:"btn btn-sm btn-primary")%>
                 <% else %>
                   <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm  btn-success")%>
                 <% end %>
