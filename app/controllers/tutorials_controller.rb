@@ -45,11 +45,14 @@ class TutorialsController < ApplicationController
   end
 
   def destroy
-    flash[:alert] = "教程已上架，不得删除"
-    # find_tutorial_and_check_permission
-    # @tutorial.destroy
-    # flash[:alert] = "成功删除"
-    # redirect_to tutorials_path
+    find_tutorial_and_check_permission
+    if @tutorial.checked
+      flash[:alert] = "教程已上架，不得删除"
+    else
+      @tutorial.destroy
+      flash[:alert] = "成功删除"
+    end
+      redirect_to account_tutorials_path
   end
 
   def buy
