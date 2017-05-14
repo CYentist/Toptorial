@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
   before_action :authenticate_user!
-
+  
   def index
     @tutorial = Tutorial.find(params[:tutorial_id])
     @comments = @tutorial.comments.order('created_at DESC')
