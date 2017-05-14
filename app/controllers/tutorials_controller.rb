@@ -1,5 +1,5 @@
 class TutorialsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy, :buy]
+  before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy, :buy, :paid]
 
   def index
     @tutorials = Tutorial.where(:checked => true)
@@ -34,10 +34,9 @@ class TutorialsController < ApplicationController
 
   def update
     find_tutorial_and_check_permission
-    @tutorial.checked = false
 
     if @tutorial.update(tutorial_params)
-      flash[:notice] = "修改成功，请等待审核。"
+      flash[:notice] = "修改成功，已重新上架。"
       redirect_to account_tutorial_path(@tutorial)
     else
       render :edit
@@ -63,6 +62,10 @@ class TutorialsController < ApplicationController
     end
 
     redirect_to tutorial_path(@tutorial)
+  end
+
+  def paid
+    @tutorials = current_user.paid_tutorials.where(:checked => true)
   end
 
 

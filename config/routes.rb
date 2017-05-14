@@ -7,6 +7,9 @@ Rails.application.routes.draw do
     member do
       post :buy
     end
+    collection do
+      get :paid
+    end
   end
 
   namespace :admin do
