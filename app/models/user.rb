@@ -6,6 +6,7 @@ class User < ApplicationRecord
   has_many :tutorials
   has_many :tutorial_relationships
   has_many :paid_tutorials, :through => :tutorial_relationships, :source => :tutorial
+  has_many :comments
 
   def admin?
     is_admin

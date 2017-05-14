@@ -15,6 +15,16 @@
 			</div>
 				<%= link_to("查看教程", buy_tutorial_path(@tutorial), method: :post, class: "btn btn-default",  :data => { :confirm => "确认购买?"} ) %>
 	 		 <% end %>
+			 <div class="comment">
+				<%= render :partial => "comments/comments", :collection => @comments, :as => :comment %>
+				<%= simple_form_for [@tutorial, @comment] do |f| %>
+				<fieldset class="form-group">
+					<%= f.input :post, :label => "回复", placeholder: "输入内容"%>
+				</fieldset>
+				<%= f.submit "发送", class: "button btn btn-sm btn-danger",  data: { disable_with:"发送中..."} %>
+				<% end %>
+			 </div>
+			 <!-- comment -->
     </div>
   </div>
 </div>

@@ -15,6 +15,8 @@ class TutorialsController < ApplicationController
       flash[:warning] = "此教程正在审核中，暂时无法查看。"
       redirect_to root_path
     end
+    @comments = @tutorial.comments.order('created_at DESC')
+    @comment = Comment.new
   end
 
   def create
@@ -35,7 +37,6 @@ class TutorialsController < ApplicationController
   def update
     find_tutorial_and_check_permission
     @tutorial.checked = false
-
     if @tutorial.update(tutorial_params)
       flash[:notice] = "修改成功，请等待审核。"
       redirect_to account_tutorial_path(@tutorial)
