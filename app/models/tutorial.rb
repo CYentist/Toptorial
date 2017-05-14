@@ -1,4 +1,5 @@
 class Tutorial < ApplicationRecord
+  mount_uploader :image, ImageUploader
   belongs_to :user
   has_many :tutorial_relationships
   has_many :buyers, :through => :tutorial_relationships, source: :user
