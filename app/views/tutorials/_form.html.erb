@@ -4,9 +4,8 @@
 <%= f.input :content %>
 <% if @tutorial.image.present? %>
    <%= image_tag(@tutorial.image.thumb.url) %>
-<% else %>
-   <%= f.input :image, as: :file %>
 <% end %>
+<%= f.input :image, as: :file %>
 <%= f.input :description %>
 <%= f.submit "Submit" %>
 <% end %>
