@@ -3,7 +3,7 @@ class TutorialsController < ApplicationController
   before_action :validate_search_key, only: [:search]
 
   def index
-    @tutorials = Tutorial.where(:checked => true)
+    @tutorials = Tutorial.where(:checked => true).all.sort_by {|tutorial| tutorial.get_upvotes.size}.reverse
   end
 
   def new
@@ -73,6 +73,26 @@ class TutorialsController < ApplicationController
     @tutorials = current_user.paid_tutorials.where(:checked => true)
   end
 
+  def upvote
+      @tutorial = Tutorial.find(params[:id])
+    if current_user.is_buyer?(@tutorial)
+      @tutorial.upvote_by current_user
+    else
+      flash[:warning] = "你并未购买教程，不能投票！"
+    end
+      redirect_to :back
+  end
+
+  def downvote
+      @tutorial = Tutorial.find(params[:id])
+    if current_user.is_buyer?(@tutorial)
+      @tutorial.downvote_by current_user
+    else
+      flash[:warning] = "你并未购买教程，不能投票！"
+    end
+      redirect_to :back
+  end
+
   def search
     if @query_string.present?
       @tutorials = Tutorial.checked.ransack(@search_criteria).result(:distinct => true)
@@ -89,6 +109,8 @@ class TutorialsController < ApplicationController
       redirect_to root_path, alert: "你没有权限！"
     end
   end
+
+
 
   def tutorial_params
     params.require(:tutorial).permit(:title, :content, :user_id, :checked, :description, :image)

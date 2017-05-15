@@ -43,6 +43,7 @@ gem 'simplemde-rails'
 gem 'redcarpet'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'acts_as_votable'
 gem 'ransack'
 
 group :development, :test do

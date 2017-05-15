@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :tutorials do
     member do
       post :buy
+      put "like", to: "tutorials#upvote"
+      put "dislike", to: "tutorials#downvote"
     end
     collection do
       get :paid

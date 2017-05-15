@@ -6,7 +6,8 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th>#</th>
+            <th>顶</th>
+            <th>踩</th>
             <th>Title</th>
             <th>Description</th>
             <th> Options</th>
@@ -16,7 +17,10 @@
       <% @tutorials.each do |tutorial| %>
           <tr>
               <td>
-                <%= tutorial.id %>
+                <%= tutorial.get_upvotes.size %>
+              </td>
+              <td>
+                <%= tutorial.get_downvotes.size %>
               </td>
               <td>
                 <%= link_to(tutorial.title, tutorial_path(tutorial)) %>
