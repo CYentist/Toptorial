@@ -1,5 +1,6 @@
 class TutorialsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy, :buy, :paid]
+  before_action :validate_search_key, only: [:search]
 
   def index
     @tutorials = Tutorial.where(:checked => true).all.sort_by {|tutorial| tutorial.get_upvotes.size}.reverse
@@ -92,6 +93,13 @@ class TutorialsController < ApplicationController
       redirect_to :back
   end
 
+  def search
+    if @query_string.present?
+      @tutorials = Tutorial.checked.ransack(@search_criteria).result(:distinct => true)
+    end
+  end
+
+
   private
 
   def find_tutorial_and_check_permission
@@ -106,5 +114,19 @@ class TutorialsController < ApplicationController
 
   def tutorial_params
     params.require(:tutorial).permit(:title, :content, :user_id, :checked, :description, :image)
+  end
+
+
+  protected
+
+  def validate_search_key
+    @query_string = params[:q].gsub(/\\|\'|\/|\?/, "")
+    if params[:q].present?
+      @search_criteria =  search_criteria(@query_string)
+    end
+  end
+
+  def search_criteria(query_string)
+    { :title_or_content_or_description_cont => query_string }
   end
 end

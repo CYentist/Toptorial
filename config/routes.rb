@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     end
     collection do
       get :paid
+      get :search
     end
     resources :comments
   end
