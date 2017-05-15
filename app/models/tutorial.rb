@@ -4,6 +4,7 @@ class Tutorial < ApplicationRecord
   has_many :tutorial_relationships
   has_many :buyers, :through => :tutorial_relationships, source: :user
   has_many :comments
+  acts_as_votable
 
   def check!
     self.checked = true

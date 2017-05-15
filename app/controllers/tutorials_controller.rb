@@ -72,6 +72,25 @@ class TutorialsController < ApplicationController
     @tutorials = current_user.paid_tutorials.where(:checked => true)
   end
 
+  def upvote
+      @tutorial = Tutorial.find(params[:id])
+    if current_user.is_buyer?(@tutorial)
+      @tutorial.upvote_by current_user
+    else
+      flash[:warning] = "你并未购买教程，不能投票！"
+    end
+      redirect_to :back
+  end
+
+  def downvote
+      @tutorial = Tutorial.find(params[:id])
+    if current_user.is_buyer?(@tutorial)
+      @tutorial.downvote_by current_user
+    else
+      flash[:warning] = "你并未购买教程，不能投票！"
+    end
+      redirect_to :back
+  end
 
   private
 
@@ -82,6 +101,8 @@ class TutorialsController < ApplicationController
       redirect_to root_path, alert: "你没有权限！"
     end
   end
+
+
 
   def tutorial_params
     params.require(:tutorial).permit(:title, :content, :user_id, :checked, :description, :image)

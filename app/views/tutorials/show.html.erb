@@ -10,6 +10,17 @@
 			<% end %>
 			<!-- 显示图片 -->
 
+			<div class="voting">
+				<%= link_to like_tutorial_path(@tutorial), method: :put do %>
+				    <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true", style="color: #ff5722;"></i>
+				    <%= @tutorial.get_upvotes.size %>
+				<% end %>
+				<%= link_to dislike_tutorial_path(@tutorial), method: :put do %>
+				    <i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true", style="color: #ff5722;"></i>
+				    <%= @tutorial.get_downvotes.size %>
+				<% end %>
+			</div>
+
 			<% if current_user == @tutorial.user || current_user.is_buyer?(@tutorial) %>
     		<p><%= markdown(@tutorial.content) %></p>
   		<% else %>
