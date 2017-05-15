@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     end
     collection do
       get :paid
+      get :search
     end
     resources :comments
   end
@@ -23,7 +24,7 @@ Rails.application.routes.draw do
   end
 
   namespace :account do
-    resources :tutorials 
+    resources :tutorials
   end
 
   root 'tutorials#index'

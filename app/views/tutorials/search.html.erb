@@ -1,0 +1,21 @@
+<div class="container-fluid search-page">
+  <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+    <% if @tutorials.blank?%>
+      <br>
+      <div>
+        没有适配的搜索结果，请换个关键词试试。
+      </div>
+    <% else %>
+      <h3>一共找到 <%= @tutorials.count %> 个结果</h3>
+      <div class="divider"></div>
+      <div class="search-result">
+        <table class="table table-borderd">
+          <% @tutorials.each do |tutorial| %>
+            <%= link_to(tutorial.title,tutorial_path(tutorial)) %>
+            <hr>
+          <% end %>
+       </table>
+      </div>
+    <% end %>
+  </div>
+</div>
