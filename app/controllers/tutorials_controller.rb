@@ -2,7 +2,7 @@ class TutorialsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy, :buy, :paid]
 
   def index
-    @tutorials = Tutorial.where(:checked => true)
+    @tutorials = Tutorial.where(:checked => true).all.sort_by {|tutorial| tutorial.get_upvotes.size}.reverse
   end
 
   def new
