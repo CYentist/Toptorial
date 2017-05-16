@@ -64,17 +64,22 @@ class TutorialsController < ApplicationController
     @tutorial = Tutorial.find(params[:id])
 
     if !current_user.is_buyer?(@tutorial)
-      current_user.point = current_user.point - @tutorial.price
-      current_user.save
-      @tutorial.user.point = @tutorial.user.point + @tutorial.price
-      @tutorial.user.save
-      current_user.buy!(@tutorial)
-      flash[:notice] = "购买成功！"
+      if current_user.point >= @tutorial.price
+        current_user.point = current_user.point - @tutorial.price
+        current_user.save
+        @tutorial.user.point = @tutorial.user.point + @tutorial.price
+        @tutorial.user.save
+        current_user.buy!(@tutorial)
+        redirect_to tutorial_path(@tutorial)
+        flash[:notice] = "购买成功！"
+      else
+        redirect_to user_path(current_user)
+        flash[:alert] = "您的余额不足，请充值。"
+      end
     else
+      redirect_to tutorial_path(@tutorial)
       flash[:warning] = "你已经购买了这个教程！"
     end
-
-    redirect_to tutorial_path(@tutorial)
   end
 
   def paid
