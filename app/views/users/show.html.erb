@@ -1,6 +1,14 @@
 <h1>我的钱包</h1>
 <p>共有<%= @user.point %>个积分</p>
 
+<%= form_tag charge_user_path, :method => :get, :class => "point-charge-form" do %>
+  <div class="input-group">
+    <input type="number" min="1" class="charge-input" name="p" value="<%= params[:p] %>" placeholder="请输入充值金额">
 
-
-<%= link_to("充值", charge_user_path(@user), method: :post, class:"btn btn-danger") %>
+    <span class="input-group-btn">
+      <button type="submit" class="btn btn-danger charge-submit">
+        充值
+      </button>
+    </span>
+  </div>
+<% end %>

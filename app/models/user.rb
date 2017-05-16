@@ -20,5 +20,4 @@ class User < ApplicationRecord
     paid_tutorials << tutorial
   end
 
-
 end
