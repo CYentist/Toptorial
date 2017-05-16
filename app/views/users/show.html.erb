@@ -1,0 +1,6 @@
+<h1>我的钱包</h1>
+<p>共有<%= @user.point %>个积分</p>
+
+
+
+<%= link_to("充值", charge_user_path(@user), method: :post, class:"btn btn-danger") %>
