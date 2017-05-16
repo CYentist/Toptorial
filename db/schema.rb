@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170515134734) do
+ActiveRecord::Schema.define(version: 20170516061948) do
 
   create_table "comments", force: :cascade do |t|
     t.integer  "tutorial_id"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20170515134734) do
     t.boolean  "checked",     default: false
     t.text     "description"
     t.string   "image"
+    t.integer  "price"
   end
 
   create_table "users", force: :cascade do |t|
