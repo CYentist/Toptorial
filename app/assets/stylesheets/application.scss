@@ -49,6 +49,22 @@ a:hover{text-decoration:none}
 .btn-danger:hover {
   background-color:#FA4659;
 }
+.load_more {
+  background-color: transparent;
+  border-radius: 5px;
+  border:#677987 solid 1px;
+  height: 40px;
+  overflow: hidden;
+  color: #677987;
+  line-height: 1;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 11px 70px 13px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
 // index
 .index-part-1 {
     display: block;

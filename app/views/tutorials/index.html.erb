@@ -27,30 +27,16 @@
 
 <div class="index-part-3">
   <div class="container">
-      <div class="row">
-        <% @tutorials.each do |tutorial| %>
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail tutorialcard">
-            <a href="<%= tutorial_path(tutorial) %>">
-              <% if tutorial.image.present? %>
-                <img src="<%= tutorial.image.medium.url%>" >
-              <% else %>
-               <img src="http://placehold.it/500x300&text=Toptorial" >
-              <% end %>
+      <div class="row" id="tutorials">
+        <%= render @tutorials %>
 
-            <div class="caption">
-              <h3><%= link_to(tutorial.title, tutorial_path(tutorial)) %></h3>
-              <span class="creator"><%= link_to(tutorial.user.display_name, user_path(tutorial.user))  %></span>
-              <div class="vote">
-                <p><a href="<%= tutorial_path(tutorial) %>" class="btn btn-danger" role="button"><i class="fa fa-hand-o-up" aria-hidden="true"></i> 顶 <%= tutorial.get_upvotes.size %></a>
-                  <a href="<%= tutorial_path(tutorial) %>" class="btn btn-default" role="button"><i class="fa fa-hand-o-down" aria-hidden="true"></i> 踩 <%= tutorial.get_downvotes.size %></a>
-                </p>
-              </div>
 
-            </div>
-          </div>
-        </div>
-        <% end %>
+
+
+      </div>
+      <div class="load_more">
+        <p>加载更多</p>
+        <%= will_paginate @tutorials %>
       </div>
 
 

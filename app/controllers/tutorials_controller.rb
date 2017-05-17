@@ -3,7 +3,7 @@ class TutorialsController < ApplicationController
   before_action :validate_search_key, only: [:search]
 
   def index
-    @tutorials = Tutorial.where(:checked => true).all.sort_by {|tutorial| tutorial.get_upvotes.size}.reverse
+    @tutorials = Tutorial.where(:checked => true).paginate(page: params[:page], per_page: 9)
   end
 
   def new
