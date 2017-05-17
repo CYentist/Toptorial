@@ -38,7 +38,11 @@ class TutorialsController < ApplicationController
   def update
     find_tutorial_and_check_permission
     if @tutorial.update(tutorial_params)
-      flash[:notice] = "修改成功，已重新上架。"
+      if @tutorial.checked
+        flash[:notice] = "修改成功，已重新上架。"
+      else
+        flash[:notice] = "修改成功，请等待审核。"
+      end
       redirect_to account_tutorial_path(@tutorial)
     else
       render :edit
@@ -60,13 +64,22 @@ class TutorialsController < ApplicationController
     @tutorial = Tutorial.find(params[:id])
 
     if !current_user.is_buyer?(@tutorial)
-      current_user.buy!(@tutorial)
-      flash[:notice] = "购买成功！"
+      if current_user.point >= @tutorial.price
+        current_user.point = current_user.point - @tutorial.price
+        current_user.save
+        @tutorial.user.point = @tutorial.user.point + @tutorial.price
+        @tutorial.user.save
+        current_user.buy!(@tutorial)
+        redirect_to tutorial_path(@tutorial)
+        flash[:notice] = "购买成功！"
+      else
+        redirect_to user_path(current_user)
+        flash[:alert] = "您的余额不足，请充值。"
+      end
     else
+      redirect_to tutorial_path(@tutorial)
       flash[:warning] = "你已经购买了这个教程！"
     end
-
-    redirect_to tutorial_path(@tutorial)
   end
 
   def paid
@@ -113,7 +126,7 @@ class TutorialsController < ApplicationController
 
 
   def tutorial_params
-    params.require(:tutorial).permit(:title, :content, :user_id, :checked, :description, :image)
+    params.require(:tutorial).permit(:title, :content, :user_id, :checked, :description, :image, :price)
   end
 
 

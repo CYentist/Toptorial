@@ -3,6 +3,7 @@
     <h1> <%= @tutorial.title %> </h1>
 
     <div class="col-md-10" style="float: center;">
+
 			<% if !current_user  %>
 				<%= render "image_and_description" %>
 				<%= link_to("查看教程", buy_tutorial_path(@tutorial), method: :post, class: "btn btn-default",  :data => { :confirm => "确认购买?"} ) %>
@@ -11,6 +12,7 @@
 				<% if current_user == @tutorial.user || current_user.is_buyer?(@tutorial)  %>
 	    		<p><%= markdown(@tutorial.content) %></p>
 				<!-- 全文 -->
+
 				<div class="newcomment">
 					<%= simple_form_for [@tutorial, @comment] do |f| %>
 					<fieldset class="form-group">
