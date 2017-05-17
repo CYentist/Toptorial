@@ -1,5 +1,5 @@
 class TutorialsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy, :buy, :paid]
+  before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy, :upvote, :downvote, :buy, :paid]
   before_action :validate_search_key, only: [:search]
 
   def index
