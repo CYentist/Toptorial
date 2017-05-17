@@ -1,0 +1,22 @@
+<% if @tutorial.image.present? %>
+  <%= image_tag(@tutorial.image.thumb.url, class: "thumbnail") %>
+<% else %>
+  <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+<% end %>
+<!-- 显示图片 -->
+<div class="preview">
+<p><%= @tutorial.description %></p>
+</div>
+<!-- 显示描述 -->
+
+ <div class="voting">
+   <%= link_to like_tutorial_path(@tutorial), method: :put do %>
+       <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true", style="color: #ff5722;"></i>
+       <%= @tutorial.get_upvotes.size %>
+   <% end %>
+   <%= link_to dislike_tutorial_path(@tutorial), method: :put do %>
+       <i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true", style="color: #ff5722;"></i>
+       <%= @tutorial.get_downvotes.size %>
+   <% end %>
+ </div>
+ <!-- 投票 -->
