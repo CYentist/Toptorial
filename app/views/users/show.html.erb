@@ -1,14 +1,48 @@
-<h1>我的钱包</h1>
-<p>共有<%= @user.point %>个积分</p>
+<div class="container">
 
-<%= form_tag charge_user_path, :method => :get, :class => "point-charge-form" do %>
-  <div class="input-group">
-    <input type="number" min="1" class="charge-input" name="p" value="<%= params[:p] %>" placeholder="请输入充值金额">
-
-    <span class="input-group-btn">
-      <button type="submit" class="btn btn-danger charge-submit">
-        充值
-      </button>
-    </span>
-  </div>
-<% end %>
+  <div class="row">
+    <%= @user.username %>
+    </br>
+    <img src= "<%= render_user_avatar_thumb(@user, 200) %>">
+    </br>
+    <%= @user.description %>
+    </br>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>顶</th>
+          <th>踩</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th> Options</th>
+        </tr>
+      </thead>
+      <tbody>
+    <% @tutorials.each do |tutorial| %>
+        <tr>
+            <td>
+              <%= tutorial.get_upvotes.size %>
+            </td>
+            <td>
+              <%= tutorial.get_downvotes.size %>
+            </td>
+            <td>
+              <%= link_to(tutorial.title, tutorial_path(tutorial)) %>
+            </td>
+            <td>
+              <%= tutorial.description %>
+            </td>
+            <td>
+              <% if current_user == tutorial.user %>
+                <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm btn-success")%>
+                <%= link_to("编辑", edit_tutorial_path(tutorial), class:"btn btn-sm btn-primary")%>
+              <% else %>
+                <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm  btn-success")%>
+              <% end %>
+            </td>
+        </tr>
+        <% end %>
+    </tbody>
+  </table>
+</div>
+</div>
