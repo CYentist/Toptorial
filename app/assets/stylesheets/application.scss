@@ -39,6 +39,16 @@ a:hover{text-decoration:none}
 }
 // 卡片阴影设置
 
+// 一些按钮设置
+.btn-danger {
+  border-color:#FA4659 solid 2px;
+  background-color: transparent;
+  color:#FA4659;
+}
+
+.btn-danger:hover {
+  background-color:#FA4659;
+}
 // index
 .index-part-1 {
     display: block;
@@ -105,9 +115,46 @@ a:hover{text-decoration:none}
 .subnavbar {
   margin: 10px 0 10px 0;
 }
+.index-part-1 {
+  display: block;
+  margin: 0px auto 0px auto ;
+  width: 100%;
+  min-width: 960px;
+  height: 450px;
+  position: relative;
+}
+.tutorialcard {
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  float:left;
+  h3 {
 
-
-
+    font-size: 18px;
+    font-weight: 500;
+    a {
+      color: black;
+    }
+    a:hover {
+      color: #A3DE83;
+    }
+  }
+}
+.caption {
+  margin: -20px auto 10px auto;
+}
+.creator {
+  float: left;
+  margin: 20px auto -10px auto;
+  a {
+    color: #677987;
+  }
+}
+.vote {
+  float: right;
+  margin: 15px -5px 0px auto;
+}
 
 
 

@@ -27,50 +27,34 @@
 
 <div class="index-part-3">
   <div class="container">
-
-      <div class="pull-right" style="padding-bottom: 20px;">
-        <%= link_to("发布教程", new_tutorial_path, class: "btn btn-primary") %>
-      </div>
-
-      <% @tutorials.each do |tutorial| %>
       <div class="row">
+        <% @tutorials.each do |tutorial| %>
         <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src= "" alt="nopic">
+          <div class="thumbnail tutorialcard">
+            <a href="<%= tutorial_path(tutorial) %>">
+              <% if tutorial.image.present? %>
+                <img src="<%= tutorial.image.medium.url%>" >
+              <% else %>
+               <img src="http://placehold.it/500x300&text=Toptorial" >
+              <% end %>
+
             <div class="caption">
-              <h3>Thumbnail label</h3>
-              <p><%= tutorial.description %></p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+              <h3><%= link_to(tutorial.title, tutorial_path(tutorial)) %></h3>
+              <span class="creator"><%= link_to(tutorial.user.display_name, user_path(tutorial.user))  %></span>
+              <div class="vote">
+                <p><a href="<%= tutorial_path(tutorial) %>" class="btn btn-danger" role="button"><i class="fa fa-hand-o-up" aria-hidden="true"></i> 顶 <%= tutorial.get_upvotes.size %></a>
+                  <a href="<%= tutorial_path(tutorial) %>" class="btn btn-default" role="button"><i class="fa fa-hand-o-down" aria-hidden="true"></i> 踩 <%= tutorial.get_downvotes.size %></a>
+                </p>
+              </div>
+
             </div>
           </div>
         </div>
+        <% end %>
       </div>
-          <tr>
-              <td>
-                <%= tutorial.get_upvotes.size %>
-              </td>
-              <td>
-                <%= tutorial.get_downvotes.size %>
-              </td>
-              <td>
-                <%= link_to(tutorial.title, tutorial_path(tutorial)) %>
-              </td>
-              <td>
-                <%= tutorial.description %>
-              </td>
-              <td><%= link_to(tutorial.user.display_name, user_path(tutorial.user))  %></td>
-              <td>
-                <% if current_user == tutorial.user %>
-                  <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm btn-success")%>
-                  <%= link_to("编辑", edit_tutorial_path(tutorial), class:"btn btn-sm btn-primary")%>
-                <% else %>
-                  <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm  btn-success")%>
-                <% end %>
-              </td>
-          </tr>
-          <% end %>
-      </tbody>
-    </table>
+
+
+
   </div>
 </div>
 
