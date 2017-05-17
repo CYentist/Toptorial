@@ -84,6 +84,7 @@ class TutorialsController < ApplicationController
 
   def paid
     @tutorials = current_user.paid_tutorials.where(:checked => true)
+    render layout: "account" 
   end
 
   def upvote

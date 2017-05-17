@@ -1,38 +1,32 @@
-<div class="container">
-  <div class="row">
-    <h1>我购买的教程</h1>
-      <div class="pull-right" style="padding-bottom: 20px;">
-        <%= link_to("发布教程", new_tutorial_path, class: "btn btn-primary") %>
-      </div>
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Title</th>
-            <th>Description</th>
-            <th> Options</th>
-          </tr>
-        </thead>
-        <tbody>
-      <% @tutorials.each do |tutorial| %>
-          <tr>
-              <td>
-                <%= tutorial.id %>
-              </td>
-              <td>
-                <%= link_to(tutorial.title, tutorial_path(tutorial)) %>
-              </td>
-              <td>
-                <%= tutorial.description %>
-              </td>
-              <td>
-                  <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm  btn-success")%>
-              </td>
-          </tr>
-          <% end %>
-      </tbody>
-    </table>
+<h1>我购买的教程</h1>
+  <div class="pull-right" style="padding-bottom: 20px;">
+    <%= link_to("发布教程", new_tutorial_path, class: "btn btn-primary") %>
   </div>
-  <!-- row -->
-</div>
-<!-- container -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th> Options</th>
+      </tr>
+    </thead>
+    <tbody>
+  <% @tutorials.each do |tutorial| %>
+      <tr>
+          <td>
+            <%= tutorial.id %>
+          </td>
+          <td>
+            <%= link_to(tutorial.title, tutorial_path(tutorial)) %>
+          </td>
+          <td>
+            <%= tutorial.description %>
+          </td>
+          <td>
+              <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm  btn-success")%>
+          </td>
+      </tr>
+      <% end %>
+  </tbody>
+</table>
