@@ -28,6 +28,7 @@ class User < ApplicationRecord
   has_many :tutorial_relationships
   has_many :paid_tutorials, :through => :tutorial_relationships, :source => :tutorial
   has_many :comments
+  mount_uploader :avatar, ImageUploader
 
   def admin?
     is_admin
@@ -40,5 +41,14 @@ class User < ApplicationRecord
   def buy!(tutorial)
     paid_tutorials << tutorial
   end
+
+  def display_name
+    if self.username.present?
+      self.username
+    else
+      self.email.split("@").first
+    end
+  end
+  # 如果没有用户名的时候显示 email
 
 end

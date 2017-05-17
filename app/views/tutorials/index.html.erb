@@ -10,6 +10,7 @@
             <th>踩</th>
             <th>Title</th>
             <th>Description</th>
+            <th>Creator</th>
             <th> Options</th>
           </tr>
         </thead>
@@ -28,6 +29,7 @@
               <td>
                 <%= tutorial.description %>
               </td>
+              <td><%= link_to(tutorial.user.display_name, user_path(tutorial.user))  %></td>
               <td>
                 <% if current_user == tutorial.user %>
                   <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm btn-success")%>
