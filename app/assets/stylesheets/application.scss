@@ -26,6 +26,91 @@ body {
 }
 a:hover{text-decoration:none}
 
+.card{
+  background-color: #fff;
+  overflow: hidden;
+  margin: 10px auto 5px auto;
+}
+// 卡片背景设置
+
+.paper {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+}
+// 卡片阴影设置
+
+// index
+.index-part-1 {
+    display: block;
+    background: #677987;
+    background-image: url('http://odv1eilcn.bkt.clouddn.com/images/2017-05-17-clean-setup-keyboard-and-glossy-desktop-display-picjumbo-com.jpg');
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+    margin: 0px auto 0px auto ;
+    width: 100%;
+    min-width: 960px;
+    height: 450px;
+    position: relative;
+    h1 {
+        font-size: 44px;
+        line-height: 56px;
+        color: white;
+    }
+    h2 {
+        font-size: 18px;
+        line-height: 44px;
+        color: white;
+        font-weight: 200;
+    }
+}
+.lp-block-1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 450px;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+}
+.lp-block-1-button {
+    border-radius: 10px;
+    background: transparent;
+    display: inline-block;
+    border: 2px solid #fff;
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 70px 13px;
+    margin-right: 10px;
+    margin-top: 20px;
+    }
+.lp-block-1-button:hover{
+    background-color: white;
+    text-decoration: none;
+  }
+
+.search {
+  float: left;
+  width: 400px;
+  margin-left: 40px; /*右边距*/
+  margin-top: 10px; /*上边距*/
+  position: relative; /*相对定位*/
+}
+
+.subnavbar {
+  margin: 10px 0 10px 0;
+}
+
+
+
+
+
+
 /****** LOGIN MODAL ******/
 .loginmodal-container {
   padding: 30px;
@@ -158,7 +243,7 @@ a:hover{text-decoration:none}
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #A3DE83;
+  color: #677987;
   background-color: #F0F4F8;
 
 }
