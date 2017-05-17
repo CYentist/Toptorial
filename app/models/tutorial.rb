@@ -22,6 +22,11 @@ class Tutorial < ApplicationRecord
   has_many :comments
   acts_as_votable
 
+  validates :price, presence: true
+  validates :content, presence: true
+  validates :description, presence: true
+  validates :title, presence: true
+
   def check!
     self.checked = true
     self.save
