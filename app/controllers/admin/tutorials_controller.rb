@@ -73,6 +73,6 @@ class Admin::TutorialsController < ApplicationController
   private
 
   def tutorial_params
-    params.require(:tutorial).permit(:title, :content, :user_id, :checked, :description, :image)
+    params.require(:tutorial).permit(:title, :content, :user_id, :checked, :description, :image, :price)
   end
 end

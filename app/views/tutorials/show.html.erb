@@ -26,8 +26,11 @@
   		<% else %>
 			<div class="preview">
 				<p><%= @tutorial.description %></p>
+				<div class="label-success">
+					教程价格为<%= @tutorial.price %>元
+				</div>
 			</div>
-				<%= link_to("查看教程", buy_tutorial_path(@tutorial), method: :post, class: "btn btn-default",  :data => { :confirm => "确认购买?"} ) %>
+				<%= link_to("购买教程", buy_tutorial_path(@tutorial), method: :post, class: "btn btn-default",  :data => { :confirm => "确认购买?"} ) %>
 	 		 <% end %>
 			 <!-- 显示全文 -->
 
