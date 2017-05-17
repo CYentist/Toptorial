@@ -28,6 +28,7 @@ class User < ApplicationRecord
   has_many :tutorial_relationships
   has_many :paid_tutorials, :through => :tutorial_relationships, :source => :tutorial
   has_many :comments
+  mount_uploader :avatar, ImageUploader
 
   def admin?
     is_admin
@@ -49,4 +50,5 @@ class User < ApplicationRecord
     end
   end
   # 如果没有用户名的时候显示 email
+
 end
