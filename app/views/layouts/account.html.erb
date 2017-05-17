@@ -9,36 +9,43 @@
   </head>
 
   <body>
-    <div class="row">
-      <div class="container-fluid">
-        <%= render "common/navbar" %>
-        <%= render "common/flashes" %>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-        <div class="col-md-10">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <%= yield %>
+    <div id="id_wrapper">
+      <div id="id_header">
+        <div class="row">
+          <div class="container-fluid">
+            <%= render "common/navbar" %>
+            <%= render "common/flashes" %>
+          </div>
+        </div>
+      </div> <!-- /id_header -->
+      <div id="id_content">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-10">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <%= yield %>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <ul class="list-group">
+                <%= link_to("个人信息", "#", class:"list-group-item") %>
+                <%= link_to("我的钱包", user_path(current_user), class:"list-group-item") %>
+                <%= link_to("发布的教程", account_tutorials_path, class:"list-group-item") %>
+                <%= link_to("购买的教程", paid_tutorials_path, method: :get, class:"list-group-item") %>
+                <%= link_to("售出的教程", "#", class:"list-group-item") %>
+                <%= link_to("答疑订单", "#", class:"list-group-item") %>
+                <%= link_to("修改密码", "#", class:"list-group-item") %>
+                <%= link_to(content_tag(:i, "退出登录", class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete, class:"list-group-item") %>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="col-md-2">
-          <ul class="list-group">
-            <li class="list-group-item"><%= link_to("个人信息", "#") %></li>
-            <li class="list-group-item"><%= link_to("我的钱包", user_path(current_user)) %></li>
-            <li class="list-group-item"><%= link_to("发布的教程", account_tutorials_path) %></li>
-            <li class="list-group-item"><%= link_to("购买的教程", paid_tutorials_path, method: :get) %></li>
-            <li class="list-group-item"><%= link_to("售出的教程", "#") %></li>
-            <li class="list-group-item"><%= link_to("答疑订单", "#") %></li>
-            <li class="list-group-item"><%= link_to("修改密码", "#") %></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  <%= render "common/footer" %>
+      </div> <!-- /id_content -->
+      <div id="id_footer">
+        <%= render "common/footer" %>
+      </div> <!-- /id_footer -->
+    </div> <!-- /id_wrapper -->
   </body>
 </html>

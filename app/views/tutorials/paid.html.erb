@@ -1,32 +1,15 @@
-<h1>我购买的教程</h1>
-  <div class="pull-right" style="padding-bottom: 20px;">
-    <%= link_to("发布教程", new_tutorial_path, class: "btn btn-primary") %>
-  </div>
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Title</th>
-        <th>Description</th>
-        <th> Options</th>
-      </tr>
-    </thead>
-    <tbody>
+<h2>我购买的教程</h2>
+
+<div class="row">
   <% @tutorials.each do |tutorial| %>
-      <tr>
-          <td>
-            <%= tutorial.id %>
-          </td>
-          <td>
-            <%= link_to(tutorial.title, tutorial_path(tutorial)) %>
-          </td>
-          <td>
-            <%= tutorial.description %>
-          </td>
-          <td>
-              <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm  btn-success")%>
-          </td>
-      </tr>
-      <% end %>
-  </tbody>
-</table>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="http://placehold.it/200x200&text=No Pic" alt="No Pic">
+        <div class="caption">
+          <h3><%= tutorial.title %></h3>
+          <p><%= tutorial.description %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

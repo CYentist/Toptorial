@@ -1,12 +1,11 @@
-<div class="pull-right" style="padding-bottom: 20px;">
-  <%= link_to("发布教程", new_tutorial_path, class: "btn btn-primary") %>
-</div>
-<table class="table table-bordered">
+<h2>我发布的教程</h2>
+
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>#</th>
-      <th>Title</th>
-      <th>Description</th>
+      <th>标题</th>
+      <th>顶</th>
+      <th>踩</th>
       <th>Options</th>
     </tr>
   </thead>
@@ -14,19 +13,19 @@
     <% @tutorials.each do |tutorial| %>
       <tr>
         <td>
-          <%= tutorial.id %>
-        </td>
-        <td>
           <%= render_account_tutorial_status(tutorial) %>
           <%= link_to(tutorial.title, account_tutorial_path(tutorial)) %>
         </td>
         <td>
-          <%= tutorial.description %>
+          <%= tutorial.get_upvotes.size %>
+        </td>
         <td>
-          <%= link_to("查看", account_tutorial_path(tutorial), class:"btn btn-sm btn-success")%>
-          <%= link_to("编辑", edit_tutorial_path(tutorial), class:"btn btn-sm btn-primary")%>
+          <%= tutorial.get_downvotes.size %>
+        </td>
+        <td>
+          <%= link_to("编辑", edit_tutorial_path(tutorial), class:"btn btn-xs btn-primary")%>
           <% if !tutorial.checked %>
-            <%= link_to("删除", tutorial_path(tutorial), method: :delete, class:"btn btn-sm btn-danger")%>
+            <%= link_to("删除", tutorial_path(tutorial), method: :delete, class:"btn btn-xs btn-danger")%>
           <% end %>
         </td>
       </tr>

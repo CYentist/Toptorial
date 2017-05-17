@@ -24,6 +24,51 @@
 body {
   background-color: #F0F4F8;
 }
+
+// footer置底  开始--
+html, body {
+    /* 設定body高度為100% 拉到視窗可視的大小 */
+    height: 100%;
+}
+
+#id_wrapper {
+    /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
+    min-height: 100%;
+    /* 位置設為relative, 作為footer區塊位置的參考 */
+    position: relative;
+}
+
+#id_header {
+    /* 設定header的高度 */
+    height: 56px;
+
+}
+
+#id_content {
+    /* 留出header及footer區塊的空間 */
+    padding-top: 56px;
+    padding-bottom: 60px;
+}
+
+#id_footer {
+    /* 背景色 */
+    background-color: #FFFFFF;
+    /* 設定footer的高度 */
+    height: 60px;
+    box-sizing: border-box;
+    /* 設定footer絕對位置在底部 */
+    position: absolute;
+    bottom: 0;
+    /* 展開footer寬度 */
+    width: 100%;
+}
+// footer置底  --结束
+
+.search-bar {
+  padding-top: 8px;
+  margin-bottom: 0;
+}
+
 a:hover{text-decoration:none}
 
 /****** LOGIN MODAL ******/
@@ -126,6 +171,8 @@ a:hover{text-decoration:none}
      background-color: white;  //背景颜色
 
      margin-bottom: 0; //底部 margin 不撑开距离
+     padding-left: 50px;
+     padding-right: 50px;
  }
 
 @media (min-width: 768px) {
@@ -186,10 +233,7 @@ a:hover{text-decoration:none}
     margin:0 40px;
   }
 }
-.site-footer, .page-wrap:after {
-  margin-top: 40px;
-  height: 70px;
-}
+
 .site-footer {
   background: white;
   color: #677987;
