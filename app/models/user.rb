@@ -41,4 +41,12 @@ class User < ApplicationRecord
     paid_tutorials << tutorial
   end
 
+  def display_name
+    if self.username.present?
+      self.username
+    else
+      self.email.split("@").first
+    end
+  end
+  # 如果没有用户名的时候显示 email
 end

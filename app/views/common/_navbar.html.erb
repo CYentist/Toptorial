@@ -21,12 +21,13 @@
               <% else %>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      Hi!, <%= current_user.email %>
+                      Hi!, <%= current_user.display_name  %>
                   </a>
                   <ul class="dropdown-menu">
                     <% if current_user.admin? %>
                       <li> <%= link_to("管理员后台", admin_tutorials_path) %> </li>
                     <% end %>
+                    <li> <%= link_to "个人中心", edit_account_user_path(current_user) %> </li>
                     <li> <%= link_to("我的钱包", user_path(current_user.id)) %></li>
                     <li> <%= link_to("我发布的教程", account_tutorials_path) %></li>
                     <li> <%= link_to("我购买的教程", paid_tutorials_path, method: :get) %></li>
