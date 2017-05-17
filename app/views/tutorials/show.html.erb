@@ -3,42 +3,16 @@
     <h1> <%= @tutorial.title %> </h1>
 
     <div class="col-md-10" style="float: center;">
-			<% if @tutorial.image.present? %>
-				<%= image_tag(@tutorial.image.thumb.url, class: "thumbnail") %>
+
+			<% if !current_user  %>
+				<%= render "image_and_description" %>
+				<%= link_to("查看教程", buy_tutorial_path(@tutorial), method: :post, class: "btn btn-default",  :data => { :confirm => "确认购买?"} ) %>
 			<% else %>
-				<%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
-			<% end %>
-			<!-- 显示图片 -->
+				<%= render "image_and_description" %>
+				<% if current_user == @tutorial.user || current_user.is_buyer?(@tutorial)  %>
+	    		<p><%= markdown(@tutorial.content) %></p>
+				<!-- 全文 -->
 
-			<div class="voting">
-				<%= link_to like_tutorial_path(@tutorial), method: :put do %>
-				    <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true", style="color: #ff5722;"></i>
-				    <%= @tutorial.get_upvotes.size %>
-				<% end %>
-				<%= link_to dislike_tutorial_path(@tutorial), method: :put do %>
-				    <i class="fa fa-thumbs-o-down fa-2x" aria-hidden="true", style="color: #ff5722;"></i>
-				    <%= @tutorial.get_downvotes.size %>
-				<% end %>
-			</div>
-
-			<% if current_user == @tutorial.user || current_user.is_buyer?(@tutorial) %>
-    		<p><%= markdown(@tutorial.content) %></p>
-  		<% else %>
-			<div class="preview">
-				<p><%= @tutorial.description %></p>
-				<div class="label-success">
-					教程价格为<%= @tutorial.price %>元
-				</div>
-			</div>
-				<%= link_to("购买教程", buy_tutorial_path(@tutorial), method: :post, class: "btn btn-default",  :data => { :confirm => "确认购买?"} ) %>
-	 		 <% end %>
-			 <!-- 显示全文 -->
-
-			 <div class="comment">
-				<%= render :partial => "comments/comments", :collection => @comments, :as => :comment %>
-				<!-- 显示评论 -->
-
-				<% if current_user == @tutorial.user || current_user.is_buyer?(@tutorial) %>
 				<div class="newcomment">
 					<%= simple_form_for [@tutorial, @comment] do |f| %>
 					<fieldset class="form-group">
@@ -46,14 +20,23 @@
 					</fieldset>
 					<%= f.submit "发送", class: "button btn btn-sm btn-danger",  data: { disable_with:"发送中..."} %>
 					<% end %>
+				<% else %>
+					<%= link_to("查看教程", buy_tutorial_path(@tutorial), method: :post, class: "btn btn-default",  :data => { :confirm => "确认购买?"} ) %>
+
 				<% end %>
 				<!-- 可以发表评论 -->
 				</div>
-			 </div>
-			 <!-- comment -->
+		  <% end %>
 
-    </div>
-  </div>
-	<!-- row -->
-</div>
-<!-- container -->
+				<div class="comment">
+				 <%= render :partial => "comments/comments", :collection => @comments, :as => :comment %>
+				 <!-- 显示评论 -->
+
+				</div>
+
+
+	    </div>
+	  </div>
+		<!-- row -->
+	</div>
+	<!-- container -->
