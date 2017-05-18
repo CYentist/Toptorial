@@ -1,3 +1,76 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.avatar {
+  width: auto;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 22px;
+
+  img {
+  display: table;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  }
+  h1 {
+    text-align: center;
+    color:#000;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 12px;
+
+  }
+  button {
+    display: table;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+.user_description {
+  display: block;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.user_total_votes {
+  display: block;
+  text-align: center;
+  margin-top: 18px;
+  color: #677987;
+}
+
+.BlockTitle{
+  position: relative;
+  display: block;
+  margin-bottom: 32px;
+  line-height: 22px;
+
+  top:30px;
+
+}
+.BlockTitle-title {
+    position: relative;
+    display: inline;
+    padding-right: 16px;
+    font-weight: 700;
+    background-color: white;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+.BlockTitle-line {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  color: #f0f0f0;
+  background: currentColor;
+  }

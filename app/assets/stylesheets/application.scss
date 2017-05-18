@@ -49,6 +49,17 @@ a:hover{text-decoration:none}
 .btn-danger:hover {
   background-color:#FA4659;
 }
+
+.btn-success {
+  border-color:#2EB872 solid 2px;
+  background-color: transparent;
+  color:#2EB872;
+}
+
+.btn-danger:hover {
+  background-color:#2EB872;
+}
+
 .load_more {
   background-color: transparent;
   border-radius: 5px;
@@ -145,7 +156,7 @@ a:hover{text-decoration:none}
   overflow: hidden;
   background-color: white;
   float:left;
-  h3 {
+   h3{
 
     font-size: 18px;
     font-weight: 500;
@@ -156,6 +167,10 @@ a:hover{text-decoration:none}
       color: #A3DE83;
     }
   }
+}
+.tutorial_title {
+  height: 60px;
+  overflow: hidden;
 }
 .caption {
   margin: -20px auto 10px auto;

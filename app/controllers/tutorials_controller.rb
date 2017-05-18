@@ -23,7 +23,7 @@ class TutorialsController < ApplicationController
       flash[:warning] = "此教程正在审核中，暂时无法查看。"
       redirect_to root_path
     end
-    if !current_user.is_buyer?(@tutorial)
+    if !current_user || !current_user.is_buyer?(@tutorial)
       redirect_to preview_tutorial_path(@tutorial)
     end
     @comments = @tutorial.comments.order('created_at DESC')
