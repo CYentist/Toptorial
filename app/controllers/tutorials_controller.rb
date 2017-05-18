@@ -3,7 +3,14 @@ class TutorialsController < ApplicationController
   before_action :validate_search_key, only: [:search]
 
   def index
-    @tutorials = Tutorial.checked.order(:cached_votes_up => :desc).paginate(page: params[:page], per_page: 9)
+    @tutorials = case params[:order]
+    when 'by_votes'
+      Tutorial.checked.order(:cached_votes_up => :desc).paginate(page: params[:page], per_page: 9)
+    when 'by_time'
+      Tutorial.checked.recent.paginate(page: params[:page], per_page: 9)
+    else
+      Tutorial.checked.order(:cached_votes_up => :desc).paginate(page: params[:page], per_page: 9)
+    end
   end
 
   def new
