@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170517052043) do
+ActiveRecord::Schema.define(version: 20170518114232) do
 
   create_table "average_caches", force: :cascade do |t|
     t.integer  "rater_id"
@@ -119,12 +119,20 @@ ActiveRecord::Schema.define(version: 20170517052043) do
     t.string   "title"
     t.text     "content"
     t.integer  "user_id"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
-    t.boolean  "checked",     default: false
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
+    t.boolean  "checked",            default: false
     t.text     "description"
     t.string   "image"
     t.integer  "price"
+    t.integer  "cached_votes_total", default: 0
+    t.integer  "cached_votes_score", default: 0
+    t.integer  "cached_votes_up",    default: 0
+    t.integer  "cached_votes_down",  default: 0
+    t.index ["cached_votes_down"], name: "index_tutorials_on_cached_votes_down"
+    t.index ["cached_votes_score"], name: "index_tutorials_on_cached_votes_score"
+    t.index ["cached_votes_total"], name: "index_tutorials_on_cached_votes_total"
+    t.index ["cached_votes_up"], name: "index_tutorials_on_cached_votes_up"
   end
 
   create_table "users", force: :cascade do |t|

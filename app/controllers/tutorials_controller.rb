@@ -3,7 +3,7 @@ class TutorialsController < ApplicationController
   before_action :validate_search_key, only: [:search]
 
   def index
-    @tutorials = Tutorial.where(:checked => true).paginate(page: params[:page], per_page: 9)
+    @tutorials = Tutorial.checked.order(:cached_votes_up => :desc).paginate(page: params[:page], per_page: 9)
   end
 
   def new
@@ -16,8 +16,20 @@ class TutorialsController < ApplicationController
       flash[:warning] = "此教程正在审核中，暂时无法查看。"
       redirect_to root_path
     end
+    if !current_user.is_buyer?(@tutorial)
+      redirect_to preview_tutorial_path(@tutorial)
+    end
     @comments = @tutorial.comments.order('created_at DESC')
     @comment = Comment.new
+  end
+
+  def preview
+    @tutorial = Tutorial.find(params[:id])
+    if !@tutorial.checked
+      flash[:warning] = "此教程正在审核中，暂时无法查看。"
+      redirect_to root_path
+    end
+    @comments = @tutorial.comments.order('created_at DESC')
   end
 
   def create

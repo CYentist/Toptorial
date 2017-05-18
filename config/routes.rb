@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   resources :tutorials do
     member do
       post :buy
+      get :preview
       put "like", to: "tutorials#upvote"
       put "dislike", to: "tutorials#downvote"
     end
