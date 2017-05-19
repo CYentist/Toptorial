@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toptorial</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="id_wrapper">
+      <div id="id_header">
+        <div class="row">
+          <div class="container-fluid">
+            <%= render "common/navbar" %>
+            <%= render "common/flashes" %>
+          </div>
+        </div>
+      </div> <!-- /id_header -->
+      <div id="id_content">
+        <div class="container-fluid" style="max-width:1000px">
+          <div class="row">
+              <div class="col-md-12">
+                <div class="panel panel-default" id="content-panel">
+                  <%= yield %>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div> <!-- /id_content -->
+      <div id="id_footer">
+        <%= render "common/footer" %>
+      </div> <!-- /id_footer -->
+    </div> <!-- /id_wrapper -->
+  </body>
+</html>

@@ -1,18 +1,22 @@
-<h2>我购买的教程</h2>
+<div class="panel-heading">
+  <div class="panel-title">
+    <h3>我购买的教程</h3>
+  </div>
+</div>
 
-<div class="row">
-  <% @tutorials.each do |tutorial| %>
-    <div class="col-md-12">
-      <%= link_to(tutorial_path(tutorial)) do %>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title"><%= tutorial.title %></h3>
+<div class="panel-body">
+  <div class="container-fluid">
+      <% @tutorials.each do |tutorial| %>
+        <%= link_to(tutorial_path(tutorial)) do %>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"><%= tutorial.title %></h3>
+            </div>
+            <div class="panel-body">
+              <p><%= tutorial.description %></p>
+            </div>
           </div>
-          <div class="panel-body">
-            <p><%= tutorial.description %></p>
-          </div>
-        </div>
+        <% end %>
       <% end %>
-    </div>
-  <% end %>
+  </div>
 </div>

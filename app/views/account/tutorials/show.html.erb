@@ -1,33 +1,39 @@
-<div class="row-fluid">
+<div class="panel-heading">
 	<%= render_account_show_tutorial_status(@tutorial) %>
-  <h1> <%= @tutorial.title %> </h1>
-  <div class="col-md-10">
-		<% if @tutorial.image.present? %>
-			<%= image_tag(@tutorial.image.thumb.url, class: "thumbnail") %>
-		<% else %>
-			<%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
-		<% end %>
-		<!-- 显示图片 -->
-
-  		<p><%= markdown(@tutorial.content) %></p>
-		 <!-- 显示全文 -->
-
-		 <div class="comment">
-			<%= render :partial => "comments/comments", :collection => @comments, :as => :comment %>
-			<!-- 显示评论 -->
-
-			<div class="newcomment">
-				<%= simple_form_for [@tutorial, @comment] do |f| %>
-				<fieldset class="form-group">
-					<%= f.input :post, :label => "回复", placeholder: "输入内容"%>
-				</fieldset>
-				<%= f.submit "发送", class: "button btn btn-sm btn-danger",  data: { disable_with:"发送中..."} %>
-				<% end %>
-			<!-- 可以发表评论 -->
-			</div>
-		 </div>
-		 <!-- comment -->
-
-  </div>
+	<div class="panel-title">
+		<h3> <%= @tutorial.title %> </h3>
+	</div>
 </div>
-<!-- row -->
+<div class="panel-body">
+	<div class="row">
+	  <div class="col-md-10">
+			<% if @tutorial.image.present? %>
+				<%= image_tag(@tutorial.image.thumb.url, class: "thumbnail") %>
+			<% else %>
+				<%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+			<% end %>
+			<!-- 显示图片 -->
+
+	  		<p><%= markdown(@tutorial.content) %></p>
+			 <!-- 显示全文 -->
+
+			 <div class="comment">
+				<%= render :partial => "comments/comments", :collection => @comments, :as => :comment %>
+				<!-- 显示评论 -->
+
+				<div class="newcomment">
+					<%= simple_form_for [@tutorial, @comment] do |f| %>
+					<fieldset class="form-group">
+						<%= f.input :post, :label => "回复", placeholder: "输入内容"%>
+					</fieldset>
+					<%= f.submit "发送", class: "button btn btn-sm btn-danger",  data: { disable_with:"发送中..."} %>
+					<% end %>
+				<!-- 可以发表评论 -->
+				</div>
+			 </div>
+			 <!-- comment -->
+
+	  </div>
+	</div>
+</div>
+<!-- panel-body -->

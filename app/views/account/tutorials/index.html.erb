@@ -1,60 +1,33 @@
-<!-- <h2>我发布的教程</h2>
+<div class="panel-heading">
+  <div class="panel-title">
+    <h3>我发布的教程</h3>
+  </div>
+</div>
 
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>标题</th>
-      <th>顶</th>
-      <th>踩</th>
-      <th>Options</th>
-    </tr>
-  </thead>
-  <tbody>
+<div class="panel-body">
+  <div class="container-fluid">
     <% @tutorials.each do |tutorial| %>
-      <tr>
-        <td>
-          <%= render_account_tutorial_status(tutorial) %>
-          <%= link_to(tutorial.title, account_tutorial_path(tutorial)) %>
-        </td>
-        <td>
-          <%= tutorial.get_upvotes.size %>
-        </td>
-        <td>
-          <%= tutorial.get_downvotes.size %>
-        </td>
-        <td>
-          <%= link_to("编辑", edit_tutorial_path(tutorial), class:"btn btn-xs btn-primary")%>
-          <% if !tutorial.checked %>
-            <%= link_to("删除", tutorial_path(tutorial), method: :delete, class:"btn btn-xs btn-danger")%>
-          <% end %>
-        </td>
-      </tr>
+      <%= link_to(account_tutorial_path(tutorial)) do %>
+        <% if tutorial.checked %>
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title"><%= tutorial.title %><span class="pull-right" style="font-size:10px">已上架</span></h3>
+            </div>
+            <div class="panel-body">
+              <p><%= tutorial.description %></p>
+            </div>
+          </div>
+        <% else %>
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3 class="panel-title"><%= tutorial.title %><span class="pull-right" style="font-size:10px">审核中</span></h3>
+            </div>
+            <div class="panel-body">
+              <p><%= tutorial.description %></p>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
     <% end %>
-  </tbody>
-</table> -->
-
-<h2>我发布的教程</h2>
-
-<% @tutorials.each do |tutorial| %>
-  <%= link_to(account_tutorial_path(tutorial)) do %>
-    <% if tutorial.checked %>
-      <div class="panel panel-success">
-        <div class="panel-heading">
-          <h3 class="panel-title"><%= tutorial.title %><span class="pull-right" style="font-size:10px">已上架</span></h3>
-        </div>
-        <div class="panel-body">
-          <p><%= tutorial.description %></p>
-        </div>
-      </div>
-    <% else %>
-      <div class="panel panel-warning">
-        <div class="panel-heading">
-          <h3 class="panel-title"><%= tutorial.title %><span class="pull-right" style="font-size:10px">审核中</span></h3>
-        </div>
-        <div class="panel-body">
-          <p><%= tutorial.description %></p>
-        </div>
-      </div>
-    <% end %>
-  <% end %>
-<% end %>
+  </div>
+</div>

@@ -1,47 +1,20 @@
-<div class="container">
-  <div class="row">
-    <%= @user.username %>
-    </br>
-    <img src= "<%= render_user_avatar_thumb(@user, 200) %>">
-    </br>
-    <%= @user.description %>
-    </br>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>顶</th>
-          <th>踩</th>
-          <th>Title</th>
-          <th>Description</th>
-          <th> Options</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @tutorials.each do |tutorial| %>
-          <tr>
-              <td>
-                <%= tutorial.get_upvotes.size %>
-              </td>
-              <td>
-                <%= tutorial.get_downvotes.size %>
-              </td>
-              <td>
-                <%= link_to(tutorial.title, tutorial_path(tutorial)) %>
-              </td>
-              <td>
-                <%= tutorial.description %>
-              </td>
-              <td>
-                <% if current_user == tutorial.user %>
-                  <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm btn-success")%>
-                  <%= link_to("编辑", edit_tutorial_path(tutorial), class:"btn btn-sm btn-primary")%>
-                <% else %>
-                  <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm  btn-success")%>
-                <% end %>
-              </td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
+<div class="container-fluid">
+  <div class="row card">
+    <div class="avatar">
+      <img src= "<%= render_user_avatar_thumb(@user, 200) %>">
+      <h1><%= @user.display_name %></h1>
+      <p class="user_description"><%= @user.description %></p>
+      <button type="button" class="btn btn-success">找我答疑</button>
+      <div class="user_total_votes">
+        共收到<%= user_total_votes %>个顶
+      </div>
+    </div>
+    <div class="container col-xs-12 col-sm-12 col-md-12">
+      <div class="BlockTitle">
+        <h2 class="BlockTitle-title">他的教程</h2>
+        <span class="BlockTitle-line"></span>
+      </div>
+        <%= render @user.tutorials.checked %>
+    </div>
   </div>
 </div>

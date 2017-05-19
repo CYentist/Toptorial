@@ -19,17 +19,15 @@
         </div>
       </div> <!-- /id_header -->
       <div id="id_content">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <div class="col-md-10">
-              <div class="panel panel-default">
-                <div class="panel-body">
-                  <%= yield %>
-                </div>
+        <div class="container-fluid" style="max-width:1200px">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="panel panel-default" id="content-panel">
+                <%= yield %>
               </div>
             </div>
-            <div class="col-md-2">
-              <div class="list-group">
+            <div class="col-md-3">
+              <div class="list-group" id="account-menu">
                 <%= link_to("个人信息", edit_account_user_path(current_user), class:"list-group-item") %>
                 <%= link_to("我的钱包", account_user_path(current_user), class:"list-group-item") %>
                 <%= link_to("发布的教程", account_tutorials_path, class:"list-group-item") %>
