@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+u = User.new
+u.email = "admin@gmail.com"           # 可以改成自己的 email
+u.password = "toptorialadmin"                # 最少要六码
+u.password_confirmation = "toptorialadmin"   # 最少要六码
+u.is_admin = true
+u.save
+puts "成功建立管理员账号admin@gmail.com"
