@@ -22,7 +22,7 @@
               <%= link_to("注册", "#", class: %w(btn btn-sm btn-info navbar-btn), data: { toggle: "modal", target: "#signup-modal"  }) %>
               <%= link_to("登录", "#", class: %w(btn btn-sm btn-info navbar-btn), data: { toggle: "modal", target: "#login-modal"  }) %>
             <% else %>
-              <%= link_to("用户中心", user_path(current_user.id), class:"btn btn-sm btn-info navbar-btn") %>
+              <%= link_to("用户中心", edit_account_user_path(current_user), class:"btn btn-sm btn-info navbar-btn") %>
             <% end %>
           </ul>
         </div>

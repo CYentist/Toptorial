@@ -35,4 +35,27 @@ module ApplicationHelper
   def devise_mapping
       @devise_mapping ||= Devise.mappings[:user]
   end
+
+  def avatar_url(user, size)
+  gravatar_id = Digest::MD5.hexdigest(user.email.downcase)
+  "http://gravatar.com/avatar/#{gravatar_id}.png?s=#{size}&d=identicon"
+  end
+  # 配置默认头像为 gravatar
+
+  def render_user_avatar(user, size)
+    if user.avatar.present?
+      user.avatar.mini
+    else
+      avatar_url(user, size)
+    end
+  end
+  # 如果有头像的话显示头像
+
+  def render_user_avatar_thumb(user, size)
+    if user.avatar.present?
+      user.avatar.thumb
+    else
+      avatar_url(user, size)
+    end
+  end
 end

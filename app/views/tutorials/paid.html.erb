@@ -2,14 +2,17 @@
 
 <div class="row">
   <% @tutorials.each do |tutorial| %>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <img src="http://placehold.it/200x200&text=No Pic" alt="No Pic">
-        <div class="caption">
-          <h3><%= tutorial.title %></h3>
-          <p><%= tutorial.description %></p>
+    <div class="col-md-12">
+      <%= link_to(tutorial_path(tutorial)) do %>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><%= tutorial.title %></h3>
+          </div>
+          <div class="panel-body">
+            <p><%= tutorial.description %></p>
+          </div>
         </div>
-      </div>
+      <% end %>
     </div>
   <% end %>
 </div>

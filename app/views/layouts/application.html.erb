@@ -18,7 +18,15 @@
         </div>
       </div> <!-- /id_header -->
       <div id="id_content">
-        <%= yield %>
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-12">
+              <div class="panel panel-default">
+                <%= yield %>
+              </div>
+            </div>
+          </div>
+        </div>    
       </div> <!-- /id_content -->
       <div id="id_footer">
         <%= render "common/footer" %>

@@ -1,4 +1,4 @@
-<h2>我发布的教程</h2>
+<!-- <h2>我发布的教程</h2>
 
 <table class="table table-striped">
   <thead>
@@ -31,4 +31,30 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+</table> -->
+
+<h2>我发布的教程</h2>
+
+<% @tutorials.each do |tutorial| %>
+  <%= link_to(account_tutorial_path(tutorial)) do %>
+    <% if tutorial.checked %>
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title"><%= tutorial.title %><span class="pull-right" style="font-size:10px">已上架</span></h3>
+        </div>
+        <div class="panel-body">
+          <p><%= tutorial.description %></p>
+        </div>
+      </div>
+    <% else %>
+      <div class="panel panel-warning">
+        <div class="panel-heading">
+          <h3 class="panel-title"><%= tutorial.title %><span class="pull-right" style="font-size:10px">审核中</span></h3>
+        </div>
+        <div class="panel-body">
+          <p><%= tutorial.description %></p>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+<% end %>

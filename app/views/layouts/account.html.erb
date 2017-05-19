@@ -29,16 +29,16 @@
               </div>
             </div>
             <div class="col-md-2">
-              <ul class="list-group">
-                <%= link_to("个人信息", "#", class:"list-group-item") %>
-                <%= link_to("我的钱包", user_path(current_user), class:"list-group-item") %>
+              <div class="list-group">
+                <%= link_to("个人信息", edit_account_user_path(current_user), class:"list-group-item") %>
+                <%= link_to("我的钱包", account_user_path(current_user), class:"list-group-item") %>
                 <%= link_to("发布的教程", account_tutorials_path, class:"list-group-item") %>
                 <%= link_to("购买的教程", paid_tutorials_path, method: :get, class:"list-group-item") %>
                 <%= link_to("售出的教程", "#", class:"list-group-item") %>
                 <%= link_to("答疑订单", "#", class:"list-group-item") %>
                 <%= link_to("修改密码", "#", class:"list-group-item") %>
                 <%= link_to(content_tag(:i, "退出登录", class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete, class:"list-group-item") %>
-              </ul>
+              </div>
             </div>
           </div>
         </div>
