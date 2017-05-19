@@ -301,6 +301,9 @@ a:hover{text-decoration:none}
    color: #677987; //字体颜色
    padding: 10px 15px; //上下10px，左右15px
    line-height: 30px; //文字行高
+   img {
+     margin: 0;
+   }
  }
 // navbar
 .navbar-default .navbar-brand:hover,
