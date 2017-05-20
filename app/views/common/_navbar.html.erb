@@ -15,68 +15,19 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
+            <li>
+              <%= link_to new_tutorial_path do %><i class="fa fa-file-text-o" aria-hidden="true"></i> 写教程<% end %>
+            </li>
             <% if !current_user %>
-            <li><a href="#" data-toggle="modal" data-target="#signup-modal">注册</a></li>
-            <li><a href="#" data-toggle="modal" data-target="#login-modal">登入</a></li>
-              <% else %>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <img src= "<%= render_user_avatar(current_user, 30) %>">
-
-                      Hi!, <%= current_user.display_name  %>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <% if current_user.admin? %>
-                      <li> <%= link_to("管理员后台", admin_tutorials_path) %> </li>
-                    <% end %>
-                    <li> <%= link_to "个人中心", edit_account_user_path(current_user) %> </li>
-                    <li> <%= link_to("我的钱包", account_user_path(current_user)) %></li>
-                    <li> <%= link_to("我发布的教程", account_tutorials_path) %></li>
-                    <li> <%= link_to("我购买的教程", paid_tutorials_path, method: :get) %></li>
-                    <li class="divider"> </li>
-                    <li> <%= link_to(content_tag(:i, '登出', class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete) %> </li>
-                  </ul>
-                </li>
+              <%= link_to("注册", new_user_registration_path, class: "btn btn-sm btn-info navbar-btn") %>
+            <% elsif current_user.is_admin%>
+              <%= link_to("管理员后台", admin_tutorials_path, class:"btn btn-sm btn-info navbar-btn") %>
+            <% else %>
+              <%= link_to("用户中心", edit_account_user_path(current_user), class:"btn btn-sm btn-info navbar-btn") %>
             <% end %>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container-fluid -->
-    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-      <div class="modal-dialog" role="document">
-        <div class="loginmodal-container">
-           <h2>登录</h2>
-           <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-             <div class="form-inputs">
-               <%= f.input :email, :label => "注册邮箱", required: false, autofocus: true %>
-               <%= f.input :password, :label => "密码", required: false %>
-               <%= f.input :remember_me, :label => "记住我", as: :boolean if devise_mapping.rememberable? %>
-             </div>
-             <div class="form-actions">
-               <%= f.button :submit, "登录" %>
-             </div>
-           <% end %>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-  <div class="modal-dialog">
-    <div class="loginmodal-container">
-      <h2>注册</h2>
-        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-        <%= f.error_notification %>
-        <div class="input">
-          <%= f.input :email, :label => "注册邮箱", required: true, autofocus: true %>
-          <%= f.input :password, :label => "注册密码", required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
-          <%= f.input :password_confirmation, :label => "确认册密码", required: true %>
-        </div>
-        <div class="form-actions">
-            <%= f.button :submit, "注册" %>
-        </div>
-      <% end %>
-    </div>
-  </div>
-</div>
 </nav>

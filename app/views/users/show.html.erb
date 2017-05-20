@@ -1,5 +1,4 @@
-<div class="container">
-
+<div class="container-fluid">
   <div class="row card">
     <div class="avatar">
       <img src= "<%= render_user_avatar_thumb(@user, 200) %>">
@@ -15,9 +14,7 @@
         <h2 class="BlockTitle-title">他的教程</h2>
         <span class="BlockTitle-line"></span>
       </div>
-
-        <%= render @user.tutorials %>
-
+        <%= render @user.tutorials.checked %>
+    </div>
   </div>
-</div>
 </div>

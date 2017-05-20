@@ -1,5 +1,5 @@
-<div class="container">
-	<div class="row-fluid">
+<div class="container-fluid">
+	<div class="row">
     <h1> <%= @tutorial.title %> </h1>
     <div class="col-md-10" style="float: center;">
 			<% if @tutorial.image.present? %>
@@ -14,7 +14,6 @@
 			<% else %>
 				<%= link_to("通过审核", check_admin_tutorial_path(@tutorial), :method => :post, :class => "btn btn-success") %>
 			<% end %>
-
     </div>
   </div>
 </div>

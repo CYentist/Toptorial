@@ -1,5 +1,6 @@
 class Account::TutorialsController < ApplicationController
-
+  layout "account"
+  
   def index
     @tutorials = current_user.tutorials
   end

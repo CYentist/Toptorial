@@ -1,14 +1,26 @@
-<h1>我的钱包</h1>
-<p>共有<%= @user.point %>个积分</p>
-
-<%= form_tag charge_user_path, :method => :get, :class => "point-charge-form" do %>
-  <div class="input-group">
-    <input type="number" min="1" class="charge-input" name="p" value="<%= params[:p] %>" placeholder="请输入充值金额">
-
-    <span class="input-group-btn">
-      <button type="submit" class="btn btn-danger charge-submit">
-        充值
-      </button>
-    </span>
+<div class="panel-heading">
+  <div class="panel-title">
+    <h3>我的钱包</h3>
   </div>
-<% end %>
+</div>
+
+<div class="container-fluid" style="margin: 20px 20px 20px 20px">
+  <div class="row">
+    <div class="col-md-6">
+      <p><img id="coin" src="http://icons.iconarchive.com/icons/ph03nyx/super-mario/128/Retro-Coin-icon.png" alt="coin"   width="50px" height="50px"><span style="font-size:50px"> ×</span><span style="font-size:50px"> <%= @user.point %></span></p>
+      <%= form_tag charge_account_user_path, :method => :get, :class => "point-charge-form" do %>
+        <div class="input-group" id="charge-input">
+          <input type="number" min="1" class="form-control" name="p" value="<%= params[:p] %>" placeholder="请输入充值金额">
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-danger charge-submit">
+              充值
+            </button>
+          </span>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-md-6">
+      <h4>充值说明</h4>
+    </div>
+  </div>
+</div>

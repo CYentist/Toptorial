@@ -1,9 +1,9 @@
 module Account::TutorialsHelper
   def render_account_tutorial_status(tutorial)
     if tutorial.checked
-      "(已上架)"
+      content_tag(:span, "已上架", :class => "label label-success")
     else
-      "(审核中)"
+      content_tag(:span, "审核中", :class => "label label-warning")
     end
   end
 

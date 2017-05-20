@@ -11,6 +11,7 @@ class TutorialsController < ApplicationController
     else
       Tutorial.checked.order(:cached_votes_up => :desc).paginate(page: params[:page], per_page: 9)
     end
+    render layout: "welcome"
   end
 
   def new
@@ -103,6 +104,7 @@ class TutorialsController < ApplicationController
 
   def paid
     @tutorials = current_user.paid_tutorials.where(:checked => true)
+    render layout: "account"
   end
 
   def upvote
