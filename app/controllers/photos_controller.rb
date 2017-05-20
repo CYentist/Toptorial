@@ -1,10 +1,12 @@
 class PhotosController < ApplicationController
+  before_action :authenticate_user!
   def index
-      @photos = Photo.all
+      @photos = current_user.photos
     end
 
    def create
       @photo = Photo.new(file_name: params[:file])
+      @photo.user = current_user
       if @photo.save!
         render json: @photo
       else
