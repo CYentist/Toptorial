@@ -1,14 +1,19 @@
 <div class="container-fluid">
 	<div class="row">
-    <h1> <%= @tutorial.title %> </h1>
-    <div class="col-md-10" style="float: center;">
-			<% if @tutorial.image.present? %>
-				<%= image_tag(@tutorial.image.thumb.url, class: "thumbnail") %>
-			<% else %>
-				<%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
-			<% end %>
-			<p><%= @tutorial.description %></p>
-      <p><%= markdown(@tutorial.content) %></p>
+		<div class="col-md-12 col-lg-10">
+
+			<%= render "tutorials/image_and_description" %>
+
+			<div class="line">
+
+			</div>
+			<div class="TutorialShow">
+				<p><%= markdown(@tutorial.content) %></p>
+			</div>
+			<div class="comments">
+			</div>
+
+
 			<% if @tutorial.checked %>
 				<%= link_to("重新审核", recheck_admin_tutorial_path(@tutorial), :method => :post, :class => "btn btn-danger") %>
 			<% else %>

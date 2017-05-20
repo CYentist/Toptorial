@@ -2,17 +2,22 @@
 	<div class="row-fluid">
 
 
-    <div class="col-md-10" style="float: center;">
+    <div class="col-md-12 col-lg-10">
 
 
 				<%= render "image_and_description" %>
-				<h1> <%= @tutorial.title %> </h1>
-				<%= link_to("查看教程", buy_tutorial_path(@tutorial), method: :post, class: "btn btn-default",  :data => { :confirm => "确认购买?"} ) %>
-        <div class="comment">
-         <%= render :partial => "comments/comments", :collection => @comments, :as => :comment %>
-         <!-- 显示评论 -->
+<div class="BuyBtn">
+	<%= link_to("查看完整教程", buy_tutorial_path(@tutorial), method: :post, class: "btn btn-primary",  :data => { :confirm => "确认购买?"} ) %>
+</div>
 
-        </div>
+
+				<div class="comments">
+
+					<div class="comment">
+					 <%= render :partial => "comments/comments", :collection => @comments, :as => :comment %>
+					 <!-- 显示评论 -->
+					</div>
+				</div>
 
 
 				</div>
