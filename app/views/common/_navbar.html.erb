@@ -22,6 +22,7 @@
               <%= link_to("注册", new_user_registration_path, class: "btn btn-sm btn-info navbar-btn") %>
             <% elsif current_user.is_admin%>
               <%= link_to("管理员后台", admin_tutorials_path, class:"btn btn-sm btn-info navbar-btn") %>
+              <%= link_to("用户中心", edit_account_user_path(current_user), class:"btn btn-sm btn-info navbar-btn") %>
             <% else %>
               <%= link_to("用户中心", edit_account_user_path(current_user), class:"btn btn-sm btn-info navbar-btn") %>
             <% end %>

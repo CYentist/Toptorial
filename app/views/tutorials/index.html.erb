@@ -14,18 +14,15 @@
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="btn btn-default dropdown-toggle" style="margin-top: 8px;" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              排序
-              <span class="caret"></span>
-            </li>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+            
+
               <li ><%= link_to("最新", tutorials_path(:order => "by_time"))%></li>
               <li><%= link_to("最热", tutorials_path(:order =>"by_votes"))%></li>
-            </ul>
+
 
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">其他</a></li>
+
           </ul>
         </div>
       </div>
