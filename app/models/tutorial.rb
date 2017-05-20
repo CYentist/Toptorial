@@ -40,4 +40,8 @@ class Tutorial < ApplicationRecord
   scope :checked, -> { where(checked: true) }
 
   scope :unchecked, -> { where(checked: false) }
+
+  scope :recent, -> { order('created_at DESC') }
+
+  
 end

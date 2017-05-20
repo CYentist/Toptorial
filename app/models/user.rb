@@ -51,4 +51,13 @@ class User < ApplicationRecord
   end
   # 如果没有用户名的时候显示 email
 
+  def total_votes
+    sum = 0
+    tutorials.each do |tutorial|
+      if tutorial.present?
+        sum += tutorial.cached_votes_up
+      end
+    end
+    sum
+  end
 end

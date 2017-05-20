@@ -1,47 +1,56 @@
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-      <div class="pull-right" style="padding-bottom: 20px;">
-        <%= link_to("发布教程", new_tutorial_path, class: "btn btn-primary") %>
+    <div class="index-part-1">
+      <div class="lp-block-1">
+          <h1>让知识有价值</h1>
+        <h2>与更多的人分享你的知识和技能</h2>
+        <div>
+          <%= link_to("开始写教程", new_tutorial_path, class:"lp-block-1-button") %>
+        </div>
       </div>
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>顶</th>
-            <th>踩</th>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Creator</th>
-            <th> Options</th>
-          </tr>
-        </thead>
-        <tbody>
-      <% @tutorials.each do |tutorial| %>
-          <tr>
-              <td>
-                <%= tutorial.get_upvotes.size %>
-              </td>
-              <td>
-                <%= tutorial.get_downvotes.size %>
-              </td>
-              <td>
-                <%= link_to(tutorial.title, tutorial_path(tutorial)) %>
-              </td>
-              <td>
-                <%= tutorial.description %>
-              </td>
-              <td><%= link_to(tutorial.user.display_name, user_path(tutorial.user))  %></td>
-              <td>
-                <% if current_user == tutorial.user %>
-                  <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm btn-success")%>
-                  <%= link_to("编辑", edit_tutorial_path(tutorial), class:"btn btn-sm btn-primary")%>
-                <% else %>
-                  <%= link_to("查看", tutorial_path(tutorial), class:"btn btn-sm  btn-success")%>
-                <% end %>
-              </td>
-          </tr>
-          <% end %>
-      </tbody>
-    </table>
+    </div>
+
+    <nav class="subnavbar navbar navbar-default">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="btn btn-default dropdown-toggle" style="margin-top: 8px;" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              排序
+            <span class="caret"></span>
+          </li>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+              <li ><%= link_to("最新", tutorials_path(:order => "by_time"))%></li>
+              <li><%= link_to("最热", tutorials_path(:order =>"by_votes"))%></li>
+            </ul>
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">其他</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<div class="index-part-3">
+  <div class="container">
+      <div class="row" id="tutorials">
+        <%= render @tutorials %>
+      </div>
+      <!-- <div class="load_more">
+        <p>加载更多</p>
+        <%= will_paginate @tutorials %>
+      </div> -->
+    <div class="text-center">
+      <%= will_paginate @tutorials,  renderer: BootstrapPagination::Rails%>
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
   </div>
   <!-- row -->
 </div>
