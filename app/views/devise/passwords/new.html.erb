@@ -1,20 +1,91 @@
-<div class="container">
-<div class="card paper User_Login">
+<style>
+*{margin: 0;padding: 0;}
+#container {
+  position: absolute;
+  top: 0px;
+  left: -5px;
+  height: 600px;
+  width: 100%;
+}
+#output {
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+.color{
+  width: 120px;
+  height: 20px;
+  margin: 0 auto;
+  position: fixed;
+  left: 50%;
+  margin-left: -60px;
+  bottom: 20px;
+}
+.color li{
+  float: left;
+  margin: 0 5px;
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  box-shadow: 0 0 4px #FFF;
+  list-style: none;
+  cursor: pointer;
+}
+.color li:nth-child(1){
+  background: #002c4a;
+}
+.color li:nth-child(2){
+  background: #35ac03;
+}
+.color li:nth-child(3){
+  background: #ac0908;
+}
+.color li:nth-child(4){
+  background: #18bbff;
+}
+</style>
+<script src="js/jquery.js"></script>
+<script src="js/vector.js"></script>
+<script>
+$(function(){
+  // 初始化 传入dom id
+  var victor = new Victor("container", "output");
+  var theme = [
+      ["#002c4a", "#005584"],
+      ["#35ac03", "#3f4303"],
+      ["#ac0908", "#cd5726"],
+      ["#18bbff", "#00486b"]
+    ]
+  $(".color li").each(function(index, val) {
+    var color = theme[index];
+     $(this).mouseover(function(){
+      victor(color).set();
+     })
+  });
+});
+</script>
 
-<h2>Forgot your password?</h2>
+<div id="container"><div id="output"></div></div>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <div class="panel panel-default" style="margin-top:50px">
+        <div class="panel-body">
+          <h2>重置密码</h2>
 
-<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= f.error_notification %>
+          <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+            <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.input :email, required: true, autofocus: true %>
+            <div class="form-inputs">
+              <%= f.input :email, label: false, placeholder: "请输入注册时使用的邮箱", required: true, autofocus: true %>
+            </div>
+
+            <div class="form-actions">
+              <%= f.button :submit, "发送密码重置邮件" %>
+            </div>
+          <% end %>
+
+          <%= render "devise/shared/links" %>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Send me reset password instructions" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
-</div>
-</div>
