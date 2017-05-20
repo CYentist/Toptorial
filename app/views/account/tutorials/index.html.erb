@@ -1,38 +1,33 @@
-<div class="container">
+<div class="panel-heading">
+  <div class="panel-title">
+    <h3>我发布的教程</h3>
+  </div>
+</div>
 
-  <div class="row">
-    <div class="pull-right" style="padding-bottom: 20px;">
-      <%= link_to("发布教程", new_tutorial_path, class: "btn btn-primary") %>
-    </div>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Title</th>
-          <th>Description</th>
-          <th>Options</th>
-        </tr>
-      </thead>
-      <tbody>
+<div class="panel-body">
+  <div class="container-fluid">
     <% @tutorials.each do |tutorial| %>
-        <tr>
-            <td>
-              <%= tutorial.id %>
-            </td>
-            <td>
-              <%= render_account_tutorial_status(tutorial) %>
-              <%= link_to(tutorial.title, account_tutorial_path(tutorial)) %>
-            </td>
-            <td>
-              <%= tutorial.description %>
-            <td>
-              <%= link_to("查看", account_tutorial_path(tutorial), class:"btn btn-sm btn-success")%>
-              <%= link_to("编辑", edit_tutorial_path(tutorial), class:"btn btn-sm btn-primary")%>
-              <% if !tutorial.checked %>
-                <%= link_to("删除", tutorial_path(tutorial), method: :delete, class:"btn btn-sm btn-danger")%>
-              <% end %>
-            </td>
-        </tr>
+      <%= link_to(account_tutorial_path(tutorial)) do %>
+        <% if tutorial.checked %>
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title"><%= tutorial.title %><span class="pull-right" style="font-size:10px">已上架</span></h3>
+            </div>
+            <div class="panel-body">
+              <p><%= tutorial.description %></p>
+            </div>
+          </div>
+        <% else %>
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3 class="panel-title"><%= tutorial.title %><span class="pull-right" style="font-size:10px">审核中</span></h3>
+            </div>
+            <div class="panel-body">
+              <p><%= tutorial.description %></p>
+            </div>
+          </div>
         <% end %>
-    </tbody>
-  </table>
+      <% end %>
+    <% end %>
+  </div>
+</div>

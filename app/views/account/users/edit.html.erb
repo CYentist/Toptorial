@@ -1,18 +1,26 @@
-<div class="container">
-
-
-<h2> 修改个人资料 </h2>
-
-<%= simple_form_for [:account, @user] do |f| %>
-<div>
-
-  <img src= "<%= render_user_avatar_thumb(current_user, 200) %>">
-  <%= f.input :avatar, :label =>"用户头像", as: :file %>
-  <%= f.input :username, :label =>"用户名" %>
-  <%= f.input :description, :label =>"个人简介" %>
-  <%= f.input :contact, :label =>"联系方式" %>
-  <%= f.input :email, :label =>"邮箱地址" %>
-  <%= f.submit "提交", class: "btn btn-sm btn-default" %>
+<div class="panel-heading">
+  <div class="panel-title">
+    <h3> 修改个人资料 </h3>
+  </div>
 </div>
-<% end %>
+<div class="panel-body">
+  <div class="container-fluid">
+    <%= simple_form_for [:account, @user] do |f| %>
+    <div class="row">
+      <div class="col-md-4">
+        <img src= "<%= render_user_avatar_thumb(current_user, 200) %>" class="img-circle" height="150" width="150">
+        <%= f.input :avatar, :label =>"用户头像", as: :file%>
+      </div>
+      <div class="col-md-8">
+        <%= f.input :username, :label =>"用户名" %>
+        <%= f.input :email, :label =>"邮箱地址" %>
+        <%= f.input :contact, :label =>"联系方式" %>
+      </div>
+      <div class="col-md-12">
+        <%= f.input :description, :label =>"个人简介" %>
+        <%= f.submit "更新信息", class: "btn btn-sm btn-success pull-right" %>
+      </div>
+    </div>
+    <% end %>
+  </div>
 </div>

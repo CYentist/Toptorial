@@ -1,5 +1,6 @@
 class Account::UsersController < ApplicationController
   before_action :authenticate_user!
+  layout "account"
 
   def edit
     @user = current_user

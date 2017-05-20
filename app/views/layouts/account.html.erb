@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toptorial</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="id_wrapper">
+      <div id="id_header">
+        <div class="row">
+          <div class="container-fluid">
+            <%= render "common/flashes" %>
+            <%= render "common/navbar" %>
+          </div>
+        </div>
+      </div> <!-- /id_header -->
+      <div id="id_content">
+        <div class="container-fluid" style="max-width:1200px">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="panel panel-default" id="content-panel">
+                <%= yield %>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="list-group" id="account-menu">
+                <%= link_to("个人信息", edit_account_user_path(current_user), class:"list-group-item") %>
+                <%= link_to("我的钱包", account_user_path(current_user), class:"list-group-item") %>
+                <%= link_to("发布的教程", account_tutorials_path, class:"list-group-item") %>
+                <%= link_to("购买的教程", paid_tutorials_path, method: :get, class:"list-group-item") %>
+                <%= link_to("售出的教程", "#", class:"list-group-item") %>
+                <%= link_to("答疑订单", "#", class:"list-group-item") %>
+                <%= link_to("修改密码", "#", class:"list-group-item") %>
+                <%= link_to(content_tag(:i, "退出登录", class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete, class:"list-group-item") %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /id_content -->
+      <div id="id_footer">
+        <%= render "common/footer" %>
+      </div> <!-- /id_footer -->
+    </div> <!-- /id_wrapper -->
+  </body>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Toptorial Admin</title>
+    <title>Toptorial</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,25 +9,38 @@
   </head>
 
   <body>
-    <div class="row">
-      <div class="container-fluid">
-        <%= render "common/navbar" %>
-        <%= render "common/flashes" %>
-
+    <div id="id_wrapper">
+      <div id="id_header">
         <div class="row">
-          <div class="col-md-2">
-            <ul class="nav nav-pills nav-stacked" style="max-width: 300px; padding-top:20px;">
-              <li class="active"><%= link_to("全部教程", admin_tutorials_path ) %> </li>
-              <li><%= link_to("待审核教程", admin_tutorials_path(:order => "unchecked")) %> </li>
-              <li><%= link_to("已上架教程", admin_tutorials_path(:order => "checked")) %> </li>
-            </ul>
-          </div>
-          <div class="col-md-10">
-            <%= yield %>
+          <div class="container-fluid">
+            <%= render "common/flashes" %>
+            <%= render "common/navbar" %>
           </div>
         </div>
-      </div>
-    </div>
-  <%= render "common/footer" %>
+      </div> <!-- /id_header -->
+      <div id="id_content">
+        <div class="container-fluid" style="margin-top:20px; margin-buttom:20px;">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="list-group" id="admin-menu">
+                <%= link_to("全部教程", admin_tutorials_path, class:"list-group-item") %>
+                <%= link_to("待审核教程", admin_tutorials_path(:order => "unchecked"), class:"list-group-item") %>
+                <%= link_to("已上架教程", admin_tutorials_path(:order => "checked"), class:"list-group-item") %>
+                <%= link_to("修改密码", "#", class:"list-group-item") %>
+                <%= link_to(content_tag(:i, "退出登录", class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete, class:"list-group-item") %>
+              </div>
+            </div>
+            <div class="col-md-10">
+              <div class="panel panel-default" id="admin-panel">
+                <%= yield %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /id_content -->
+      <div id="id_footer">
+        <%= render "common/footer" %>
+      </div> <!-- /id_footer -->
+    </div> <!-- /id_wrapper -->
   </body>
 </html>
