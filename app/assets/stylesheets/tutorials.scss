@@ -1,3 +1,93 @@
 // Place all the styles related to the tutorials controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.PreviewDetail{
+  padding: 15px;
+  overflow: hidden;
+}
+
+.PreviewPic {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width:auto;
+  max-width: 500px;
+  height: 300px;
+}
+.line {
+  width: 90%;
+  height: 0.5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #677987;
+  background-color: #677987;
+  margin-top:20px;
+}
+.PreviewDes {
+  display: block;
+  text-align: left;
+  margin: 18px auto -8px auto;
+  font-size: 15px;
+  font-weight: 380;
+  color: #677987;
+  padding: 8px;
+}
+.TutorialDetail {
+  img {margin: 0;}
+  margin: 0px 5px 20px auto;
+  button {
+    float: left;
+    margin: 15px -5px 0px 20px;
+  }
+
+}
+
+.TutorialShow {
+  margin-top:15px;
+  margin-bottom: 15px;
+  img {
+    width:100%;
+  }
+}
+.newcomment {
+  .btn {
+    float:right;
+    margin-top: -20px;
+  }
+  margin-bottom: 30px;
+}
+.comments {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  border-top: 1px solid #F0F4F8;
+}
+.verticalline {
+  border-left: 1px solid #F0F4F8;
+}
+.CommentContent {
+  margin-left: 100px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 380;
+
+}
+.CommentBtn {
+  float:right;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color:white;
+  a {
+    color:#F0F4F8;
+  }
+  a:hover {
+    color:#677987;
+  }
+}
+.CommentDiv {
+  li {
+    margin-top: 10px;
+    margin-bottom: -20px !important;
+    border-radius: 0 !important;
+  }
+}

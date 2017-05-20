@@ -1,11 +1,12 @@
 <div class="container">
 	<div class="row-fluid">
-    <h1> <%= @tutorial.title %> </h1>
+
 
     <div class="col-md-10" style="float: center;">
 
 
 				<%= render "image_and_description" %>
+				<h1> <%= @tutorial.title %> </h1>
 				<%= link_to("查看教程", buy_tutorial_path(@tutorial), method: :post, class: "btn btn-default",  :data => { :confirm => "确认购买?"} ) %>
         <div class="comment">
          <%= render :partial => "comments/comments", :collection => @comments, :as => :comment %>
@@ -19,7 +20,7 @@
 
 
 
-	    
+
 	  </div>
 		<!-- row -->
 	</div>

@@ -234,7 +234,7 @@ a:hover{text-decoration:none}
 }
 .creator {
   float: left;
-  margin: 20px auto -10px auto;
+  margin: 15px auto -10px auto;
   a {
     color: #677987;
   }
@@ -413,6 +413,7 @@ a:hover{text-decoration:none}
 }
 
 .site-footer {
+  position: absolute;
   background: white;
   color: #677987;
   padding-top: 20px;
