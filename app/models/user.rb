@@ -29,6 +29,7 @@ class User < ApplicationRecord
   has_many :paid_tutorials, :through => :tutorial_relationships, :source => :tutorial
   has_many :comments
   mount_uploader :avatar, ImageUploader
+  has_many :photos
 
   def admin?
     is_admin

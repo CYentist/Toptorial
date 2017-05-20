@@ -16,6 +16,7 @@ class TutorialsController < ApplicationController
 
   def new
     @tutorial = Tutorial.new
+    @photos = current_user.photos
   end
 
   def show

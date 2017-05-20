@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require dropzone/dropzone
  */
 
 @import "bootstrap-sprockets";
@@ -429,4 +430,10 @@ a:hover{text-decoration:none}
   a:visited {color: #677987}	;
   a:hover {color: black}	;
   a:active {color:black};
+}
+.dropzone {
+  background: #f4f4f4 !important;
+  border: none !important;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
