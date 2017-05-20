@@ -40,6 +40,7 @@ Rails.application.routes.draw do
       end
     end
     resources :tutorials
+    resources :photos
   end
 
   root 'tutorials#index'

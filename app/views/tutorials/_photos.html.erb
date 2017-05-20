@@ -1,13 +1,15 @@
 <div class="container">
-  <div class="row" style="margin-top: 50px;">
+  <div class="row">
 
-      <div class="col-lg-1">
+    <div class="col-lg-1 PhotoBtn">
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">图片管理</button>
+  </div>
+
+      <div class="col-lg-1 PhotoBtn">
       <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">上传图片</button>
     </div>
 
-      <div class="col-lg-1">
-      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">图片管理</button>
-    </div>
+
 
 
 
@@ -26,11 +28,14 @@
         <h4 class="modal-title" id="myModalLabel">上传图片</h4>
       </div>
       <div class="modal-body">
+        <div class="row col-lg-12">
         <%= form_tag '/photos', method: :post, class: 'dropzone form', id: 'media-dropzone' do %>
           <div class="fallback">
             <%= file_field_tag 'media', multiple: true %>
           </div>
         <% end %>
+        <p class="Littlenotice">如果不显示拖拽上传，请刷新页面</p>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
