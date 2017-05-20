@@ -1,5 +1,5 @@
 <div class="panel-heading">
-	<%= render_account_show_tutorial_status(@tutorial) %>
+	<%= render_account_show_tutorial_status(@tutorial) %><span class="pull-right"><%= link_to("编辑", edit_tutorial_path(@tutorial), class: "btn btn-sm btn-success") %></span>
 	<div class="panel-title">
 		<h3> <%= @tutorial.title %> </h3>
 	</div>
