@@ -8,7 +8,9 @@ Rails.application.routes.draw do
       get :charge
     end
   end
-
+  resources :photos
+  delete 'delete_media', to: "photos#delete_media"
+  delete 'delete_all', to: 'photos#delete_all'
   resources :tutorials do
     member do
       post :buy
