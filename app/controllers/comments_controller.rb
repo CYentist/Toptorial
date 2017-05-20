@@ -19,7 +19,7 @@ class CommentsController < ApplicationController
     @comment.user = current_user
 
     if @comment.save
-      redirect_to tutorial_path(@tutorial)
+      redirect_to :back
     else
       redirect_to tutorial_path(@tutorial), alert: "评论不能为空！"
     end

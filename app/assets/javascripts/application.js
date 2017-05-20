@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require bootstrap
 //= require simplemde.min
+//= require dropzone
 //= require_tree .
 
 // $(document).ready(function() {
@@ -31,6 +32,7 @@
 // });
 // 滚动翻页
 
+
 $(document).ready(function() {
     // alert auto close
     window.setTimeout(function() {
@@ -43,4 +45,11 @@ $(document).ready(function() {
     //     });
     // }, 2000);
 
-});
+
+$(function() {
+  var mediaDropzone;
+  mediaDropzone = new Dropzone("#media-dropzone");
+  return mediaDropzone.on("success", function(file, responseText) {
+    var imageUrl;
+    imageUrl = responseText.file_name.url;
+  });

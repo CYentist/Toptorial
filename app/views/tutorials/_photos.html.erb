@@ -1,0 +1,89 @@
+<div class="container">
+  <div class="row" style="margin-top: 50px;">
+
+      <div class="col-lg-1">
+      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">上传图片</button>
+    </div>
+
+      <div class="col-lg-1">
+      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">图片管理</button>
+    </div>
+
+
+
+  <div class="row" style="margin-top: 25px;">
+    <div class="col-lg-10 col-lg-offset-1">
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">上传图片</h4>
+      </div>
+      <div class="modal-body">
+        <%= form_tag '/photos', method: :post, class: 'dropzone form', id: 'media-dropzone' do %>
+          <div class="fallback">
+            <%= file_field_tag 'media', multiple: true %>
+          </div>
+        <% end %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">取消</span></button>
+        <h4 class="modal-title" id="myModalLabel">管理我的图片</h4>
+      </div>
+      <div class="modal-body">
+        <div class="well">
+          <div class="row">
+            <div class="col-lg-12">
+              <%= form_tag '/delete_media', method: :delete do %>
+                <%= submit_tag '删除', id: 'delete', class: 'btn btn-danger', disabled: @photos.empty? %>
+
+                <br><br>
+                <div class="row">
+                  <div id="media-contents" class="col-lg-12">
+                    <% if @photos.empty? %>
+                      <h5 id="no-media">没有图片</h5>
+                    <% else %>
+                      <% @photos.each do |media| %>
+                        <div class="col-lg-4">
+                          <div class="thumbnail">
+                            <%= image_tag media.file_name.url %>
+                            <div class="caption">
+                              <p>
+                                <%= check_box_tag 'photos[]', media.id %>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      <% end %>
+                    <% end %>
+                  </div>
+                </div>
+              <% end %>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
