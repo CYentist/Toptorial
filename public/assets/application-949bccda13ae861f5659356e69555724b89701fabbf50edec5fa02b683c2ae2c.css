@@ -44,46 +44,53 @@
 /* line 37, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .TutorialDetail img {
   margin: 0;
+  height: 30px;
+  width: 30px;
 }
-/* line 39, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 43, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .TutorialDetail button {
   float: left;
   margin: 15px -5px 0px 20px;
 }
 
-/* line 46, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 50, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .TutorialShow {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-/* line 49, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 53, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .TutorialShow img {
-  width: 100%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-/* line 53, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 62, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .newcomment {
   margin-bottom: 30px;
 }
-/* line 54, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 63, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .newcomment .btn {
   float: right;
   margin-top: -20px;
 }
 
-/* line 60, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 69, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .comments {
   margin-top: 20px;
   margin-bottom: 60px;
   border-top: 1px solid #F0F4F8;
 }
 
-/* line 65, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 74, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .verticalline {
   border-left: 1px solid #F0F4F8;
 }
 
-/* line 68, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 77, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .CommentContent {
   margin-left: 100px;
   padding: 10px;
@@ -91,7 +98,7 @@
   font-weight: 380;
 }
 
-/* line 75, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 84, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .CommentBtn {
   float: right;
   margin-top: -20px;
@@ -99,35 +106,34 @@
   font-size: 12px;
   color: white;
 }
-/* line 81, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 90, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .CommentBtn a {
   color: #F0F4F8;
 }
-/* line 84, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 93, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .CommentBtn a:hover {
   color: #677987;
 }
 
-/* line 89, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 98, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .CommentDiv li {
   margin-top: 10px;
   margin-bottom: -20px !important;
   border-radius: 0 !important;
 }
 
-/* line 95, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 104, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .BuyBtn {
   display: table;
   margin: 25px auto 15px auto;
 }
 
-/* line 99, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 108, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .PhotoBtn {
-  float: right;
-  margin: -30px 35px auto auto;
+  margin: 5px;
 }
 
-/* line 103, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 112, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .Littlenotice {
   float: right;
   margin-top: -20px;

@@ -14,8 +14,8 @@
       <span class="creator">
         <%= link_to(tutorial.user.display_name, user_path(tutorial.user))  %></span>
       <div class="vote">
-        <p><a href="<%= tutorial_path(tutorial) %>" class="btn btn-danger" role="button"><i class="fa fa-hand-o-up" aria-hidden="true"></i> 顶 <%= tutorial.get_upvotes.size %></a>
-          <a href="<%= tutorial_path(tutorial) %>" class="btn btn-default" role="button"><i class="fa fa-hand-o-down" aria-hidden="true"></i> 踩 <%= tutorial.get_downvotes.size %></a>
+        <p><a href="<%= tutorial_path(tutorial) %>" class="btn btn-danger" role="button"><i class="fa fa-thumbs-o-up fa-rotate-270" aria-hidden="true"></i> 顶 <%= tutorial.get_upvotes.size %></a>
+          <a href="<%= tutorial_path(tutorial) %>" class="btn btn-default" role="button"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 踩 <%= tutorial.get_downvotes.size %></a>
         </p>
       </div>
 
