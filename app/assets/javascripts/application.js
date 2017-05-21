@@ -40,19 +40,19 @@ $(document).ready(function() {
     window.setTimeout(function() {
       $('.alert').alert('close');
     }, 3000);
-    /* 特效2
-    window.setTimeout(function() {
-      $(".alert").fadeTo(1000, 0).slideUp(1000, function(){
-            $(this).alert('close');
-      });
-    }, 3000);
-    */
+    // 特效2
+    // window.setTimeout(function() {
+    //     $(".alert").fadeTo(1000, 0).slideUp(1000, function(){
+    //         $(this).alert('close');
+    //     });
+    // }, 2000);
 });
 
-// $(function() {
-//   var mediaDropzone;
-//   mediaDropzone = new Dropzone("#media-dropzone");
-//   return mediaDropzone.on("success", function(file, responseText) {
-//     var imageUrl;
-//     imageUrl = responseText.file_name.url;
-//   })
+$(function() {
+  var mediaDropzone;
+  mediaDropzone = new Dropzone("#media-dropzone");
+  return mediaDropzone.on("success", function(file, responseText) {
+    var imageUrl;
+    imageUrl = responseText.file_name.url;
+  });
+});

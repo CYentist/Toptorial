@@ -16474,7 +16474,7 @@ $(document).ready(function() {
     //         $(this).alert('close');
     //     });
     // }, 2000);
-
+});
 
 $(function() {
   var mediaDropzone;
@@ -16483,3 +16483,4 @@ $(function() {
     var imageUrl;
     imageUrl = responseText.file_name.url;
   });
+});
