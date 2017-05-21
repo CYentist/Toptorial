@@ -6,34 +6,37 @@
 </div>
 <div class="panel-body">
 		<div class="row">
-		  <div class="col-md-12">
-				<% if @tutorial.image.present? %>
-					<%= image_tag(@tutorial.image.thumb.url, class: "thumbnail") %>
-				<% else %>
-					<%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
-				<% end %>
-				<!-- 显示图片 -->
-				<div class="TutorialShow">
-		  		<p><%= markdown(@tutorial.content) %></p>
+			<div class="col-md-12 col-lg-10">
+
+				<%= render "tutorials/image_and_description" %>
+
+				<div class="line">
+
 				</div>
-				 <!-- 显示全文 -->
+				<div class="TutorialShow">
+					<p><%= markdown(@tutorial.content) %></p>
+				</div>
 
-				 <div class="comment">
-					<%= render :partial => "comments/comments", :collection => @comments, :as => :comment %>
-					<!-- 显示评论 -->
+					<!-- 全文 -->
 
-					<div class="newcomment">
-						<%= simple_form_for [@tutorial, @comment] do |f| %>
-						<fieldset class="form-group">
-							<%= f.input :post, :label => "回复", placeholder: "输入内容"%>
-						</fieldset>
-						<%= f.submit "发送", class: "button btn btn-sm btn-danger",  data: { disable_with:"发送中..."} %>
-						<% end %>
-					<!-- 可以发表评论 -->
+					<div class="comments">
+
+
+						<div class="newcomment">
+							<%= simple_form_for [@tutorial, @comment] do |f| %>
+							<fieldset class="form-group">
+								<%= f.input :post, :label => "回复", placeholder: "输入内容"%>
+							</fieldset>
+							<%= f.submit "发送", class: "button btn btn-sm btn-success",  data: { disable_with:"发送中..."} %>
+							<% end %>
+						<!-- 可以发表评论 -->
+						</div>
+
+						<div class="comment">
+						 <%= render :partial => "comments/comments", :collection => @comments, :as => :comment %>
+						 <!-- 显示评论 -->
+						</div>
 					</div>
-				 </div>
-				 <!-- comment -->
-
 		  </div>
 		</div>
 
