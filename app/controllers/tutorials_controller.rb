@@ -54,6 +54,7 @@ class TutorialsController < ApplicationController
 
   def edit
     find_tutorial_and_check_permission
+    @photos = current_user.photos
   end
 
   def update
