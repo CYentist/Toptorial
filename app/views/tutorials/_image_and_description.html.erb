@@ -1,0 +1,44 @@
+<div class="paper PreviewDetail">
+
+
+<div class="PreviewPic">
+  <% if @tutorial.image.present? %>
+    <img src="<%= @tutorial.image.medium.url%>" >
+  <% else %>
+   <img src="http://placehold.it/500x300&text=Toptorial" >
+  <% end %>
+</div>
+<!-- 显示图片 -->
+<h2> <%= @tutorial.title %> </h2>
+
+<div class="PreviewDes">
+<p><%= @tutorial.description %></p>
+</div>
+<!-- 显示描述 -->
+
+
+<div class="TutorialDetail">
+  <span class="creator">
+    <a href="<%= user_path(@tutorial.user)%>">
+    <img src= "<%= render_user_avatar_thumb(@tutorial.user, 30) %>"></a>
+    <%= link_to(@tutorial.user.display_name, user_path(@tutorial.user), style:"margin-left:5px")  %>
+    </span>
+    <div class="">
+      <button type="button" class="btn btn-success">找我答疑</button>
+    </div>
+
+  <div class="vote">
+    <%= link_to like_tutorial_path(@tutorial), class:"btn btn-danger", role:"button", method: :put do %>
+     <i class="fa fa-hand-o-up" aria-hidden="true"></i> 顶
+        <%= @tutorial.get_upvotes.size %>
+    <% end %>
+    <%= link_to dislike_tutorial_path(@tutorial), class:"btn btn-default", role:"button", method: :put do %>
+        <i class="fa fa-hand-o-down" aria-hidden="true"></i> 踩
+        <%= @tutorial.get_downvotes.size %>
+    <% end %>
+  </div>
+  <!-- 投票 -->
+</div>
+
+
+</div>

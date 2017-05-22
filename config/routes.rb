@@ -1,7 +1,48 @@
 Rails.application.routes.draw do
-  devise_for :users
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  
-  root 'welcome#index'
+  devise_for :users
+
+
+  resources :users
+
+  resources :photos
+  delete 'delete_media', to: "photos#delete_media"
+  delete 'delete_all', to: 'photos#delete_all'
+
+  resources :tutorials do
+    member do
+      post :buy
+      get :preview
+      put "like", to: "tutorials#upvote"
+      put "dislike", to: "tutorials#downvote"
+    end
+    collection do
+      get :paid
+      get :search
+    end
+    resources :comments
+  end
+
+  namespace :admin do
+    resources :tutorials do
+      member do
+        post :check
+        post :recheck
+      end
+    end
+  end
+
+  namespace :account do
+    resources :users do
+      member do
+        get :charge
+      end
+    end
+    resources :tutorials
+    resources :photos
+  end
+
+  root 'tutorials#index'
 
 end

@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="row">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Options</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @tutorials.each do |tutorial| %>
+        <tr>
+          <td>
+            <%= tutorial.id %>
+          </td>
+          <td>
+            <%= render_tutorial_status(tutorial) %>
+            <%= link_to(tutorial.title, admin_tutorial_path(tutorial)) %>
+          </td>
+          <td>
+            <%= tutorial.description %>
+          </td>
+          <td>
+              <%= link_to("查看", admin_tutorial_path(tutorial), class:"btn btn-sm btn-success")%>
+              <%= link_to("编辑", edit_admin_tutorial_path(tutorial), class:"btn btn-sm btn-primary")%>
+              <%= link_to("删除", admin_tutorial_path(tutorial), class:"btn btn-sm btn-danger", :method => :delete, :data => { :confirm => "确认删除?" })%>
+          </td>
+        </tr>
+        <% end %>
+    </tbody>
+    </table>
+  </div>
+  <!-- row -->
+</div>
+<!-- container -->

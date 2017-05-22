@@ -1,0 +1,14 @@
+  <%= simple_form_for [:admin, @tutorial] do |f| %>
+
+    <%= f.input :title %>
+    <%= f.input :content %>
+
+  <% if @tutorial.image.present? %>
+     <%= image_tag(@tutorial.image.thumb.url) %>
+  <% end %>
+   <%= f.input :image, as: :file %>
+    <%= f.input :description %>
+    <%= f.input :checked %>
+    <%= f.submit "Submit" %>
+  <% end %>
+  <%= render "tutorials/simplemde" %>

@@ -1,0 +1,28 @@
+<div class="panel-heading">
+  <div class="panel-title">
+    <h3>我的钱包</h3>
+  </div>
+</div>
+
+<div class="container-fluid" style="margin: 20px 20px 20px 20px">
+  <div class="row">
+    <div class="col-md-6">
+      <p><img id="coin" src="http://icons.iconarchive.com/icons/ph03nyx/super-mario/128/Retro-Coin-icon.png" alt="coin"   width="50px" height="50px"><span style="font-size:50px"> ×</span><span style="font-size:50px"> <%= @user.point %></span></p>
+      <%= form_tag charge_account_user_path, :method => :get, :class => "point-charge-form" do %>
+        <div class="input-group" id="charge-input">
+          <input type="number" min="1" class="form-control" name="p" value="<%= params[:p] %>" placeholder="请输入充值金额">
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-danger charge-submit">
+              充值
+            </button>
+          </span>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-md-6">
+      <h4>充值说明</h4>
+    </br>
+      <p>“顶教程”正在测试阶段，现在你可以给自己尝试充值，目前这是完全免费的</p>
+    </div>
+  </div>
+</div>

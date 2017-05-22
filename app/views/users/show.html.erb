@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <div class="row card">
+    <div class="avatar">
+      <img src= "<%= render_user_avatar_thumb(@user, 200) %>">
+      <h1><%= @user.display_name %></h1>
+      <p class="user_description"><%= @user.description %></p>
+      <button type="button" class="btn btn-success">找我答疑</button>
+      <div class="user_total_votes">
+        共收到<%= user_total_votes %>个顶
+      </div>
+    </div>
+    <div class="container col-xs-12 col-sm-12 col-md-12">
+      <div class="BlockTitle">
+        <h2 class="BlockTitle-title">他的教程</h2>
+        <span class="BlockTitle-line"></span>
+      </div>
+        <%= render @user.tutorials.checked %>
+    </div>
+  </div>
+</div>

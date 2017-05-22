@@ -1,0 +1,38 @@
+<div class="panel-heading">
+  <div class="panel-title">
+    <div class="pull-right" style="float:right">
+      <%=link_to account_photos_path,  class: "btn btn-sm btn-success" do %><i class="fa fa-picture-o" aria-hidden="true"></i> 我的图片<% end %>
+    </div>
+    <h3>我发布的教程</h3>
+</div>
+</div>
+
+
+
+<div class="panel-body">
+  <div class="container-fluid">
+    <% @tutorials.each do |tutorial| %>
+      <%= link_to(account_tutorial_path(tutorial)) do %>
+        <% if tutorial.checked %>
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h3 class="panel-title"><%= tutorial.title %><span class="pull-right" style="font-size:10px">已上架</span></h3>
+            </div>
+            <div class="panel-body">
+              <p><%= tutorial.description %></p>
+            </div>
+          </div>
+        <% else %>
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3 class="panel-title"><%= tutorial.title %><span class="pull-right" style="font-size:10px">审核中</span></h3>
+            </div>
+            <div class="panel-body">
+              <p><%= tutorial.description %></p>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
+</div>

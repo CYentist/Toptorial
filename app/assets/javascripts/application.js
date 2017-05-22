@@ -11,7 +11,48 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap
+//= require simplemde.min
+//= require dropzone
+//= require turbolinks
 //= require_tree .
+
+
+// $(document).ready(function() {
+//   if ($('.pagination').length) {
+//     $(window).scroll(function() {
+//       var url = $('.pagination .next_page').attr('href');
+//       if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 50) {
+//         $('.pagination').text("Please Wait...");
+//         return $.getScript(url);
+//       }
+//     });
+//     return $(window).scroll();
+//   }
+// });
+// 滚动翻页
+
+
+$(document).ready(function() {
+    // alert auto close
+    window.setTimeout(function() {
+        $('.alert').alert('close');
+    }, 3000);
+    // 特效2
+    // window.setTimeout(function() {
+    //     $(".alert").fadeTo(1000, 0).slideUp(1000, function(){
+    //         $(this).alert('close');
+    //     });
+    // }, 2000);
+});
+
+$(function() {
+  var mediaDropzone;
+  mediaDropzone = new Dropzone("#media-dropzone");
+  return mediaDropzone.on("success", function(file, responseText) {
+    var imageUrl;
+    imageUrl = responseText.file_name.url;
+  });
+});
