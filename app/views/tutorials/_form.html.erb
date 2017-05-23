@@ -1,14 +1,17 @@
 <%= simple_form_for @tutorial do |f| %>
 
-<%= f.input :title %>
-<%= f.input :content %>
+<%= f.input :title, :label =>"标题" %>
+<%= f.input :content, :label =>"正文内容" %>
+<p class="Littlenotice">推荐使用markdown 进行写作，<a href="https://sspai.com/post/25137">了解 markdown</a>。</p>
 <% if @tutorial.image.present? %>
    <%= image_tag(@tutorial.image.thumb.url) %>
 <% end %>
-<%= f.input :image, as: :file %>
-<%= f.input :description %>
-<%= f.input :price, input_html: { type: 'number', min: 0 }, as: :radio_buttons, collection: ["免费", "9"] %>
-<%= f.submit "Submit" %>
+<%= f.input :image, as: :file, :label =>"封面图片" %>
+<%= f.input :description, :label =>"内容简介" %>
+<img id="coin" src="http://icons.iconarchive.com/icons/ph03nyx/super-mario/128/Retro-Coin-icon.png" alt="coin"  width="16px" height="16px" style="margin-top:16px;float:left;">
+<%= f.input :price, input_html: { type: 'number', min: 0 }, as: :radio_buttons, collection: ['0','9'], :label =>"价格", :selected => ['9']%>
+
+<%= f.submit "保存", class: 'btn btn-default'  %>
 <% end %>
 
 <%= render "simplemde" %>
