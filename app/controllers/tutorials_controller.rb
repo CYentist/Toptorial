@@ -95,7 +95,7 @@ class TutorialsController < ApplicationController
         redirect_to tutorial_path(@tutorial)
         flash[:notice] = "购买成功！"
       else
-        redirect_to user_path(current_user)
+        redirect_to account_user_path(current_user)
         flash[:alert] = "您的余额不足，请充值。"
       end
     else

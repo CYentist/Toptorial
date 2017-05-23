@@ -1,6 +1,6 @@
 <ul class="list-group CommentDiv">
   <li class="list-group-item">
-    <div class="title">
+    <!-- <div class="title"> -->
       <span class="creator">
         <a href="<%= user_path(comment.user)%>">
         <img src= "<%= render_user_avatar_thumb(comment.user, 30) %>"></a>
@@ -9,13 +9,12 @@
         <div class="CommentContent verticalline">
           <p><%= simple_format(comment.post) %></p>
         </div>
-
         <ul class="actions CommentBtn" href="#">
           <% if current_user == comment.user %>
           <li><a class="reply"><%= link_to("删除", tutorial_comment_path(@tutorial, comment), :method => :delete, :data => { :confirm => "确认删除?" })%></a></li>
           <% end %>
         </ul>
       </li>
-    </div>
+    <!-- </div> -->
 
 </ul>
