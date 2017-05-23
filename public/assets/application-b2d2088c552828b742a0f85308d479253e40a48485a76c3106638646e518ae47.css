@@ -269,8 +269,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.eot');
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -1268,15 +1268,15 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 56px;
+  font-size: 40px;
 }
 h2,
 .h2 {
-  font-size: 45px;
+  font-size: 35px;
 }
 h3,
 .h3 {
-  font-size: 34px;
+  font-size: 30px;
 }
 h4,
 .h4 {
@@ -4277,10 +4277,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 20.5px 15px;
-  font-size: 17px;
-  line-height: 23px;
-  height: 64px;
+
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4292,7 +4289,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
-    margin-left: -15px;
+
   }
 }
 .navbar-toggle {
@@ -6759,9 +6756,7 @@ button.close {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
-.navbar-brand {
-  font-size: 24px;
-}
+
 .navbar-inverse .navbar-form input[type=text],
 .navbar-inverse .navbar-form input[type=password] {
   color: #fff;
@@ -7772,8 +7767,8 @@ input[type="checkbox"]:disabled:checked:after,
   float: right;
   padding: 30px !important;
 }
-/* line 82, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
-.TutorialShow img {
+/* line 83, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+.TutorialShow .contentShow img {
   width: 80%;
   height: 80%;
   margin-top: 20px;
@@ -7785,29 +7780,28 @@ input[type="checkbox"]:disabled:checked:after,
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-/* line 94, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 96, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .newcomment {
   margin-bottom: 30px;
 }
-/* line 95, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 97, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .newcomment .btn {
   float: right;
   margin-top: -20px;
 }
 
-/* line 101, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 103, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .comments {
   margin-top: 20px;
   margin-bottom: 60px;
-  border-top: 1px solid #F0F4F8;
 }
 
-/* line 106, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 108, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .verticalline {
   border-left: 1px solid #F0F4F8;
 }
 
-/* line 109, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 111, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .CommentContent {
   margin-left: 120px;
   padding: 10px;
@@ -7815,7 +7809,7 @@ input[type="checkbox"]:disabled:checked:after,
   font-weight: 380;
 }
 
-/* line 116, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 118, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .CommentBtn {
   float: right;
   margin-top: -20px;
@@ -7823,34 +7817,34 @@ input[type="checkbox"]:disabled:checked:after,
   font-size: 12px;
   color: white;
 }
-/* line 122, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 124, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .CommentBtn a {
   color: #F0F4F8;
 }
-/* line 125, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 127, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .CommentBtn a:hover {
   color: #677987;
 }
 
-/* line 130, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 132, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .CommentDiv li {
   margin-top: 10px;
   margin-bottom: -20px !important;
   border-radius: 0 !important;
 }
 
-/* line 136, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 138, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .BuyBtn {
   display: table;
   margin: 25px auto 15px auto;
 }
 
-/* line 140, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 142, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .PhotoBtn {
   margin: 5px;
 }
 
-/* line 144, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
+/* line 146, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
 .Littlenotice {
   float: right;
   margin-top: -20px;
@@ -8367,8 +8361,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/glyphicons-halflings-regular.eot");
-  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.eot");
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.woff") format("woff"), url("https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 /* line 275, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .glyphicon {
@@ -9941,19 +9935,19 @@ h6 .small,
 /* line 1269, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 h1,
 .h1 {
-  font-size: 56px;
+  font-size: 40px;
 }
 
 /* line 1273, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 h2,
 .h2 {
-  font-size: 45px;
+  font-size: 35px;
 }
 
 /* line 1277, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 h3,
 .h3 {
-  font-size: 34px;
+  font-size: 30px;
 }
 
 /* line 1281, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
@@ -14184,31 +14178,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 /* line 4278, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-brand {
   float: left;
-  padding: 20.5px 15px;
-  font-size: 17px;
-  line-height: 23px;
-  height: 64px;
 }
 
-/* line 4285, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4282, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
 }
 
-/* line 4289, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4286, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-brand > img {
   display: block;
 }
 
-@media (min-width: 768px) {
-  /* line 4293, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
-  .navbar > .container .navbar-brand,
-  .navbar > .container-fluid .navbar-brand {
-    margin-left: -15px;
-  }
-}
-/* line 4298, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4295, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-toggle {
   position: relative;
   float: right;
@@ -14222,12 +14205,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-radius: 3px;
 }
 
-/* line 4310, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4307, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-toggle:focus {
   outline: 0;
 }
 
-/* line 4313, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4310, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-toggle .icon-bar {
   display: block;
   width: 22px;
@@ -14235,23 +14218,23 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-radius: 1px;
 }
 
-/* line 4319, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4316, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
 
 @media (min-width: 768px) {
-  /* line 4323, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4320, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-toggle {
     display: none;
   }
 }
-/* line 4327, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4324, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-nav {
   margin: 10.25px -15px;
 }
 
-/* line 4330, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4327, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -14259,7 +14242,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 @media (max-width: 767px) {
-  /* line 4336, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4333, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -14271,42 +14254,42 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     box-shadow: none;
   }
 
-  /* line 4346, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4343, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-nav .open .dropdown-menu > li > a,
   .navbar-nav .open .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
 
-  /* line 4350, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4347, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-nav .open .dropdown-menu > li > a {
     line-height: 23px;
   }
 
-  /* line 4353, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4350, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-nav .open .dropdown-menu > li > a:focus {
     background-image: none;
   }
 }
 @media (min-width: 768px) {
-  /* line 4359, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4356, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-nav {
     float: left;
     margin: 0;
   }
 
-  /* line 4363, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4360, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-nav > li {
     float: left;
   }
 
-  /* line 4366, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4363, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-nav > li > a {
     padding-top: 20.5px;
     padding-bottom: 20.5px;
   }
 }
-/* line 4371, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4368, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-form {
   margin-left: -15px;
   margin-right: -15px;
@@ -14320,50 +14303,50 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 @media (min-width: 768px) {
-  /* line 4383, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4380, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-form .form-group {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
 
-  /* line 4388, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4385, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-form .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
   }
 
-  /* line 4393, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4390, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-form .form-control-static {
     display: inline-block;
   }
 
-  /* line 4396, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4393, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-form .input-group {
     display: inline-table;
     vertical-align: middle;
   }
 
-  /* line 4400, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4397, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-form .input-group .input-group-addon,
   .navbar-form .input-group .input-group-btn,
   .navbar-form .input-group .form-control {
     width: auto;
   }
 
-  /* line 4405, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4402, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-form .input-group > .form-control {
     width: 100%;
   }
 
-  /* line 4408, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4405, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-form .control-label {
     margin-bottom: 0;
     vertical-align: middle;
   }
 
-  /* line 4412, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4409, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-form .radio,
   .navbar-form .checkbox {
     display: inline-block;
@@ -14372,37 +14355,37 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     vertical-align: middle;
   }
 
-  /* line 4419, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4416, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-form .radio label,
   .navbar-form .checkbox label {
     padding-left: 0;
   }
 
-  /* line 4423, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4420, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-form .radio input[type="radio"],
   .navbar-form .checkbox input[type="checkbox"] {
     position: relative;
     margin-left: 0;
   }
 
-  /* line 4428, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4425, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-form .has-feedback .form-control-feedback {
     top: 0;
   }
 }
 @media (max-width: 767px) {
-  /* line 4433, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4430, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-form .form-group {
     margin-bottom: 5px;
   }
 
-  /* line 4436, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4433, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-form .form-group:last-child {
     margin-bottom: 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 4441, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4438, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-form {
     width: auto;
     border: 0;
@@ -14414,14 +14397,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     box-shadow: none;
   }
 }
-/* line 4452, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4449, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-nav > li > .dropdown-menu {
   margin-top: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
-/* line 4457, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4454, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
   margin-bottom: 0;
   border-top-right-radius: 3px;
@@ -14430,32 +14413,32 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-left-radius: 0;
 }
 
-/* line 4464, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4461, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-btn {
   margin-top: 13.5px;
   margin-bottom: 13.5px;
 }
 
-/* line 4468, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4465, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-btn.btn-sm {
   margin-top: 17px;
   margin-bottom: 17px;
 }
 
-/* line 4472, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4469, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-btn.btn-xs {
   margin-top: 21px;
   margin-bottom: 21px;
 }
 
-/* line 4476, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4473, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-text {
   margin-top: 20.5px;
   margin-bottom: 20.5px;
 }
 
 @media (min-width: 768px) {
-  /* line 4481, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4478, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-text {
     float: left;
     margin-left: 15px;
@@ -14463,58 +14446,58 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 @media (min-width: 768px) {
-  /* line 4488, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4485, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-left {
     float: left !important;
   }
 
-  /* line 4491, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4488, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-right {
     float: right !important;
     margin-right: -15px;
   }
 
-  /* line 4495, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4492, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-right ~ .navbar-right {
     margin-right: 0;
   }
 }
-/* line 4499, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4496, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default {
   background-color: #ffffff;
   border-color: transparent;
 }
 
-/* line 4503, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4500, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default .navbar-brand {
   color: #666666;
 }
 
-/* line 4506, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4503, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: #212121;
   background-color: transparent;
 }
 
-/* line 4511, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4508, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default .navbar-text {
   color: #bbbbbb;
 }
 
-/* line 4514, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4511, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default .navbar-nav > li > a {
   color: #666666;
 }
 
-/* line 4517, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4514, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #212121;
   background-color: transparent;
 }
 
-/* line 4522, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4519, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -14522,7 +14505,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #eeeeee;
 }
 
-/* line 4528, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4525, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {
@@ -14530,29 +14513,29 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 
-/* line 4534, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4531, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default .navbar-toggle {
   border-color: transparent;
 }
 
-/* line 4537, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4534, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: transparent;
 }
 
-/* line 4541, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4538, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 4544, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4541, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
   border-color: transparent;
 }
 
-/* line 4548, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4545, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
@@ -14561,19 +14544,19 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 @media (max-width: 767px) {
-  /* line 4555, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4552, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #666666;
   }
 
-  /* line 4558, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4555, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #212121;
     background-color: transparent;
   }
 
-  /* line 4563, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4560, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
@@ -14581,7 +14564,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     background-color: #eeeeee;
   }
 
-  /* line 4569, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4566, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -14589,28 +14572,28 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     background-color: transparent;
   }
 }
-/* line 4576, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4573, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default .navbar-link {
   color: #666666;
 }
 
-/* line 4579, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4576, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default .navbar-link:hover {
   color: #212121;
 }
 
-/* line 4582, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4579, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default .btn-link {
   color: #666666;
 }
 
-/* line 4585, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4582, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
   color: #212121;
 }
 
-/* line 4589, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4586, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-default .btn-link[disabled]:hover,
 fieldset[disabled] .navbar-default .btn-link:hover,
 .navbar-default .btn-link[disabled]:focus,
@@ -14618,42 +14601,42 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #cccccc;
 }
 
-/* line 4595, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4592, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse {
   background-color: #2196f3;
   border-color: transparent;
 }
 
-/* line 4599, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4596, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-brand {
   color: #b2dbfb;
 }
 
-/* line 4602, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4599, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
   color: #ffffff;
   background-color: transparent;
 }
 
-/* line 4607, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4604, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-text {
   color: #bbbbbb;
 }
 
-/* line 4610, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4607, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-nav > li > a {
   color: #b2dbfb;
 }
 
-/* line 4613, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4610, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #ffffff;
   background-color: transparent;
 }
 
-/* line 4618, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4615, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
@@ -14661,7 +14644,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: #0c7cd5;
 }
 
-/* line 4624, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4621, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
 .navbar-inverse .navbar-nav > .disabled > a:focus {
@@ -14669,29 +14652,29 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: transparent;
 }
 
-/* line 4630, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4627, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-toggle {
   border-color: transparent;
 }
 
-/* line 4633, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4630, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
   background-color: transparent;
 }
 
-/* line 4637, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4634, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 4640, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4637, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   border-color: #0c84e4;
 }
 
-/* line 4644, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4641, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
@@ -14700,29 +14683,29 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 
 @media (max-width: 767px) {
-  /* line 4651, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4648, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: transparent;
   }
 
-  /* line 4654, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4651, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
     background-color: transparent;
   }
 
-  /* line 4657, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4654, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #b2dbfb;
   }
 
-  /* line 4660, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4657, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #ffffff;
     background-color: transparent;
   }
 
-  /* line 4665, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4662, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
@@ -14730,7 +14713,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     background-color: #0c7cd5;
   }
 
-  /* line 4671, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4668, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -14738,28 +14721,28 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     background-color: transparent;
   }
 }
-/* line 4678, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4675, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-link {
   color: #b2dbfb;
 }
 
-/* line 4681, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4678, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-link:hover {
   color: #ffffff;
 }
 
-/* line 4684, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4681, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .btn-link {
   color: #b2dbfb;
 }
 
-/* line 4687, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4684, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link:focus {
   color: #ffffff;
 }
 
-/* line 4691, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4688, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .btn-link[disabled]:hover,
 fieldset[disabled] .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link[disabled]:focus,
@@ -14767,7 +14750,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444444;
 }
 
-/* line 4697, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4694, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .breadcrumb {
   padding: 8px 15px;
   margin-bottom: 23px;
@@ -14776,24 +14759,24 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-radius: 3px;
 }
 
-/* line 4704, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4701, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .breadcrumb > li {
   display: inline-block;
 }
 
-/* line 4707, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4704, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .breadcrumb > li + li:before {
   content: "/\00a0";
   padding: 0 5px;
   color: #cccccc;
 }
 
-/* line 4712, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4709, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .breadcrumb > .active {
   color: #bbbbbb;
 }
 
-/* line 4715, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4712, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pagination {
   display: inline-block;
   padding-left: 0;
@@ -14801,12 +14784,12 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-radius: 3px;
 }
 
-/* line 4721, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4718, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pagination > li {
   display: inline;
 }
 
-/* line 4724, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4721, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pagination > li > a,
 .pagination > li > span {
   position: relative;
@@ -14820,7 +14803,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   margin-left: -1px;
 }
 
-/* line 4736, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4733, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
   margin-left: 0;
@@ -14828,14 +14811,14 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-top-left-radius: 3px;
 }
 
-/* line 4742, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4739, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pagination > li:last-child > a,
 .pagination > li:last-child > span {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
 }
 
-/* line 4747, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4744, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pagination > li > a:hover,
 .pagination > li > span:hover,
 .pagination > li > a:focus,
@@ -14846,7 +14829,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-color: #dddddd;
 }
 
-/* line 4756, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4753, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pagination > .active > a,
 .pagination > .active > span,
 .pagination > .active > a:hover,
@@ -14860,7 +14843,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   cursor: default;
 }
 
-/* line 4768, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4765, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pagination > .disabled > span,
 .pagination > .disabled > span:hover,
 .pagination > .disabled > span:focus,
@@ -14873,7 +14856,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   cursor: not-allowed;
 }
 
-/* line 4779, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4776, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pagination-lg > li > a,
 .pagination-lg > li > span {
   padding: 10px 16px;
@@ -14881,21 +14864,21 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   line-height: 1.3333333;
 }
 
-/* line 4785, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4782, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pagination-lg > li:first-child > a,
 .pagination-lg > li:first-child > span {
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
 }
 
-/* line 4790, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4787, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pagination-lg > li:last-child > a,
 .pagination-lg > li:last-child > span {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
 }
 
-/* line 4795, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4792, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pagination-sm > li > a,
 .pagination-sm > li > span {
   padding: 5px 10px;
@@ -14903,21 +14886,21 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   line-height: 1.5;
 }
 
-/* line 4801, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4798, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pagination-sm > li:first-child > a,
 .pagination-sm > li:first-child > span {
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
 }
 
-/* line 4806, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4803, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pagination-sm > li:last-child > a,
 .pagination-sm > li:last-child > span {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
 }
 
-/* line 4811, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4808, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pager {
   padding-left: 0;
   margin: 23px 0;
@@ -14925,12 +14908,12 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   text-align: center;
 }
 
-/* line 4817, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4814, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pager li {
   display: inline;
 }
 
-/* line 4820, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4817, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pager li > a,
 .pager li > span {
   display: inline-block;
@@ -14940,26 +14923,26 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-radius: 15px;
 }
 
-/* line 4828, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4825, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
 }
 
-/* line 4833, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4830, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pager .next > a,
 .pager .next > span {
   float: right;
 }
 
-/* line 4837, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4834, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pager .previous > a,
 .pager .previous > span {
   float: left;
 }
 
-/* line 4841, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4838, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
@@ -14969,7 +14952,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   cursor: not-allowed;
 }
 
-/* line 4849, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4846, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .label {
   display: inline;
   padding: .2em .6em .3em;
@@ -14983,7 +14966,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-radius: .25em;
 }
 
-/* line 4861, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4858, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.label:hover,
 a.label:focus {
   color: #ffffff;
@@ -14991,84 +14974,84 @@ a.label:focus {
   cursor: pointer;
 }
 
-/* line 4867, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4864, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .label:empty {
   display: none;
 }
 
-/* line 4870, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4867, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn .label {
   position: relative;
   top: -1px;
 }
 
-/* line 4874, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4871, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .label-default {
   background-color: #bbbbbb;
 }
 
-/* line 4877, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4874, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .label-default[href]:hover,
 .label-default[href]:focus {
   background-color: #a2a2a2;
 }
 
-/* line 4881, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4878, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .label-primary {
   background-color: #2196f3;
 }
 
-/* line 4884, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4881, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .label-primary[href]:hover,
 .label-primary[href]:focus {
   background-color: #0c7cd5;
 }
 
-/* line 4888, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4885, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .label-success {
   background-color: #4caf50;
 }
 
-/* line 4891, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4888, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .label-success[href]:hover,
 .label-success[href]:focus {
   background-color: #3d8b40;
 }
 
-/* line 4895, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4892, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .label-info {
   background-color: #9c27b0;
 }
 
-/* line 4898, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4895, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .label-info[href]:hover,
 .label-info[href]:focus {
   background-color: #771e86;
 }
 
-/* line 4902, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4899, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .label-warning {
   background-color: #ff9800;
 }
 
-/* line 4905, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4902, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .label-warning[href]:hover,
 .label-warning[href]:focus {
   background-color: #cc7a00;
 }
 
-/* line 4909, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4906, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .label-danger {
   background-color: #e51c23;
 }
 
-/* line 4912, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4909, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .label-danger[href]:hover,
 .label-danger[href]:focus {
   background-color: #b9151b;
 }
 
-/* line 4916, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4913, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .badge {
   display: inline-block;
   min-width: 10px;
@@ -15084,25 +15067,25 @@ a.label:focus {
   border-radius: 10px;
 }
 
-/* line 4930, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4927, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .badge:empty {
   display: none;
 }
 
-/* line 4933, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4930, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn .badge {
   position: relative;
   top: -1px;
 }
 
-/* line 4937, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4934, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-xs .badge,
 .btn-group-xs > .btn .badge {
   top: 0;
   padding: 1px 5px;
 }
 
-/* line 4942, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4939, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.badge:hover,
 a.badge:focus {
   color: #ffffff;
@@ -15110,29 +15093,29 @@ a.badge:focus {
   cursor: pointer;
 }
 
-/* line 4948, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4945, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
   color: #2196f3;
   background-color: #ffffff;
 }
 
-/* line 4953, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4950, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item > .badge {
   float: right;
 }
 
-/* line 4956, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4953, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item > .badge + .badge {
   margin-right: 5px;
 }
 
-/* line 4959, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4956, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
 
-/* line 4962, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4959, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .jumbotron {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -15141,25 +15124,25 @@ a.badge:focus {
   background-color: #f5f5f5;
 }
 
-/* line 4969, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4966, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .jumbotron h1,
 .jumbotron .h1 {
   color: #444444;
 }
 
-/* line 4973, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4970, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .jumbotron p {
   margin-bottom: 15px;
   font-size: 20px;
   font-weight: 200;
 }
 
-/* line 4978, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4975, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .jumbotron > hr {
   border-top-color: #dcdcdc;
 }
 
-/* line 4981, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4978, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .container .jumbotron,
 .container-fluid .jumbotron {
   border-radius: 3px;
@@ -15167,32 +15150,32 @@ a.badge:focus {
   padding-right: 15px;
 }
 
-/* line 4987, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 4984, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .jumbotron .container {
   max-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 4991, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4988, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .jumbotron {
     padding-top: 48px;
     padding-bottom: 48px;
   }
 
-  /* line 4995, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4992, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .container .jumbotron,
   .container-fluid .jumbotron {
     padding-left: 60px;
     padding-right: 60px;
   }
 
-  /* line 5000, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 4997, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .jumbotron h1,
   .jumbotron .h1 {
     font-size: 59px;
   }
 }
-/* line 5005, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5002, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .thumbnail {
   display: block;
   padding: 4px;
@@ -15206,27 +15189,27 @@ a.badge:focus {
   transition: border 0.2s ease-in-out;
 }
 
-/* line 5017, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5014, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .thumbnail > img,
 .thumbnail a > img {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 5022, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5019, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
   border-color: #2196f3;
 }
 
-/* line 5027, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5024, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .thumbnail .caption {
   padding: 9px;
   color: #666666;
 }
 
-/* line 5031, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5028, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert {
   padding: 15px;
   margin-bottom: 23px;
@@ -15234,35 +15217,35 @@ a.thumbnail.active {
   border-radius: 3px;
 }
 
-/* line 5037, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5034, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert h4 {
   margin-top: 0;
   color: inherit;
 }
 
-/* line 5041, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5038, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert .alert-link {
   font-weight: bold;
 }
 
-/* line 5044, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5041, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert > p,
 .alert > ul {
   margin-bottom: 0;
 }
 
-/* line 5048, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5045, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert > p + p {
   margin-top: 5px;
 }
 
-/* line 5051, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5048, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert-dismissable,
 .alert-dismissible {
   padding-right: 35px;
 }
 
-/* line 5055, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5052, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert-dismissable .close,
 .alert-dismissible .close {
   position: relative;
@@ -15271,70 +15254,70 @@ a.thumbnail.active {
   color: inherit;
 }
 
-/* line 5062, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5059, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert-success {
   background-color: #4caf50;
   border-color: #509d44;
   color: #ffffff;
 }
 
-/* line 5067, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5064, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert-success hr {
   border-top-color: #478b3d;
 }
 
-/* line 5070, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5067, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert-success .alert-link {
   color: #e6e6e6;
 }
 
-/* line 5073, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5070, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert-info {
   background-color: #9c27b0;
   border-color: #75229b;
   color: #ffffff;
 }
 
-/* line 5078, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5075, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert-info hr {
   border-top-color: #661e86;
 }
 
-/* line 5081, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5078, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert-info .alert-link {
   color: #e6e6e6;
 }
 
-/* line 5084, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5081, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert-warning {
   background-color: #ff9800;
   border-color: #e66300;
   color: #ffffff;
 }
 
-/* line 5089, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5086, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert-warning hr {
   border-top-color: #cc5800;
 }
 
-/* line 5092, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5089, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert-warning .alert-link {
   color: #e6e6e6;
 }
 
-/* line 5095, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5092, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert-danger {
   background-color: #e51c23;
   border-color: #d0183d;
   color: #ffffff;
 }
 
-/* line 5100, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5097, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert-danger hr {
   border-top-color: #b91536;
 }
 
-/* line 5103, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5100, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert-danger .alert-link {
   color: #e6e6e6;
 }
@@ -15363,7 +15346,7 @@ a.thumbnail.active {
     background-position: 0 0;
   }
 }
-/* line 5130, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5127, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress {
   overflow: hidden;
   height: 23px;
@@ -15374,7 +15357,7 @@ a.thumbnail.active {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* line 5139, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5136, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress-bar {
   float: left;
   width: 0%;
@@ -15391,7 +15374,7 @@ a.thumbnail.active {
   transition: width 0.6s ease;
 }
 
-/* line 5154, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5151, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress-striped .progress-bar,
 .progress-bar-striped {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -15401,7 +15384,7 @@ a.thumbnail.active {
   background-size: 40px 40px;
 }
 
-/* line 5162, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5159, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress.active .progress-bar,
 .progress-bar.active {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
@@ -15409,99 +15392,99 @@ a.thumbnail.active {
   animation: progress-bar-stripes 2s linear infinite;
 }
 
-/* line 5168, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5165, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress-bar-success {
   background-color: #4caf50;
 }
 
-/* line 5171, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5168, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress-striped .progress-bar-success {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-/* line 5176, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5173, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress-bar-info {
   background-color: #9c27b0;
 }
 
-/* line 5179, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5176, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress-striped .progress-bar-info {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-/* line 5184, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5181, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress-bar-warning {
   background-color: #ff9800;
 }
 
-/* line 5187, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5184, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress-striped .progress-bar-warning {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-/* line 5192, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5189, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress-bar-danger {
   background-color: #e51c23;
 }
 
-/* line 5195, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5192, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress-striped .progress-bar-danger {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-/* line 5200, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5197, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .media {
   margin-top: 15px;
 }
 
-/* line 5203, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5200, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .media:first-child {
   margin-top: 0;
 }
 
-/* line 5206, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5203, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .media,
 .media-body {
   zoom: 1;
   overflow: hidden;
 }
 
-/* line 5211, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5208, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .media-body {
   width: 10000px;
 }
 
-/* line 5214, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5211, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .media-object {
   display: block;
 }
 
-/* line 5217, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5214, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .media-object.img-thumbnail {
   max-width: none;
 }
 
-/* line 5220, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5217, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .media-right,
 .media > .pull-right {
   padding-left: 10px;
 }
 
-/* line 5224, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5221, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .media-left,
 .media > .pull-left {
   padding-right: 10px;
 }
 
-/* line 5228, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5225, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .media-left,
 .media-right,
 .media-body {
@@ -15509,35 +15492,35 @@ a.thumbnail.active {
   vertical-align: top;
 }
 
-/* line 5234, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5231, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .media-middle {
   vertical-align: middle;
 }
 
-/* line 5237, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5234, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .media-bottom {
   vertical-align: bottom;
 }
 
-/* line 5240, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5237, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .media-heading {
   margin-top: 0;
   margin-bottom: 5px;
 }
 
-/* line 5244, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5241, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .media-list {
   padding-left: 0;
   list-style: none;
 }
 
-/* line 5248, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5245, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group {
   margin-bottom: 20px;
   padding-left: 0;
 }
 
-/* line 5252, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5249, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item {
   position: relative;
   display: block;
@@ -15547,32 +15530,32 @@ a.thumbnail.active {
   border: 1px solid #dddddd;
 }
 
-/* line 5260, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5257, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item:first-child {
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
 }
 
-/* line 5264, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5261, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item:last-child {
   margin-bottom: 0;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
 
-/* line 5269, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5266, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item,
 button.list-group-item {
   color: #555555;
 }
 
-/* line 5273, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5270, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item .list-group-item-heading,
 button.list-group-item .list-group-item-heading {
   color: #333333;
 }
 
-/* line 5277, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5274, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item:hover,
 button.list-group-item:hover,
 a.list-group-item:focus,
@@ -15582,13 +15565,13 @@ button.list-group-item:focus {
   background-color: #f5f5f5;
 }
 
-/* line 5285, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5282, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 button.list-group-item {
   width: 100%;
   text-align: left;
 }
 
-/* line 5289, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5286, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item.disabled,
 .list-group-item.disabled:hover,
 .list-group-item.disabled:focus {
@@ -15597,21 +15580,21 @@ button.list-group-item {
   cursor: not-allowed;
 }
 
-/* line 5296, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5293, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item.disabled .list-group-item-heading,
 .list-group-item.disabled:hover .list-group-item-heading,
 .list-group-item.disabled:focus .list-group-item-heading {
   color: inherit;
 }
 
-/* line 5301, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5298, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item.disabled .list-group-item-text,
 .list-group-item.disabled:hover .list-group-item-text,
 .list-group-item.disabled:focus .list-group-item-text {
   color: #bbbbbb;
 }
 
-/* line 5306, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5303, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
@@ -15621,7 +15604,7 @@ button.list-group-item {
   border-color: #2196f3;
 }
 
-/* line 5314, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5311, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item.active .list-group-item-heading,
 .list-group-item.active:hover .list-group-item-heading,
 .list-group-item.active:focus .list-group-item-heading,
@@ -15634,32 +15617,32 @@ button.list-group-item {
   color: inherit;
 }
 
-/* line 5325, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5322, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item.active .list-group-item-text,
 .list-group-item.active:hover .list-group-item-text,
 .list-group-item.active:focus .list-group-item-text {
   color: #e3f2fd;
 }
 
-/* line 5330, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5327, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item-success {
   color: #4caf50;
   background-color: #dff0d8;
 }
 
-/* line 5334, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5331, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item-success,
 button.list-group-item-success {
   color: #4caf50;
 }
 
-/* line 5338, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5335, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item-success .list-group-item-heading,
 button.list-group-item-success .list-group-item-heading {
   color: inherit;
 }
 
-/* line 5342, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5339, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item-success:hover,
 button.list-group-item-success:hover,
 a.list-group-item-success:focus,
@@ -15668,7 +15651,7 @@ button.list-group-item-success:focus {
   background-color: #d0e9c6;
 }
 
-/* line 5349, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5346, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item-success.active,
 button.list-group-item-success.active,
 a.list-group-item-success.active:hover,
@@ -15680,25 +15663,25 @@ button.list-group-item-success.active:focus {
   border-color: #4caf50;
 }
 
-/* line 5359, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5356, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item-info {
   color: #9c27b0;
   background-color: #e1bee7;
 }
 
-/* line 5363, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5360, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item-info,
 button.list-group-item-info {
   color: #9c27b0;
 }
 
-/* line 5367, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5364, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item-info .list-group-item-heading,
 button.list-group-item-info .list-group-item-heading {
   color: inherit;
 }
 
-/* line 5371, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5368, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item-info:hover,
 button.list-group-item-info:hover,
 a.list-group-item-info:focus,
@@ -15707,7 +15690,7 @@ button.list-group-item-info:focus {
   background-color: #d8abe0;
 }
 
-/* line 5378, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5375, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item-info.active,
 button.list-group-item-info.active,
 a.list-group-item-info.active:hover,
@@ -15719,25 +15702,25 @@ button.list-group-item-info.active:focus {
   border-color: #9c27b0;
 }
 
-/* line 5388, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5385, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item-warning {
   color: #ff9800;
   background-color: #ffe0b2;
 }
 
-/* line 5392, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5389, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item-warning,
 button.list-group-item-warning {
   color: #ff9800;
 }
 
-/* line 5396, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5393, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item-warning .list-group-item-heading,
 button.list-group-item-warning .list-group-item-heading {
   color: inherit;
 }
 
-/* line 5400, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5397, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item-warning:hover,
 button.list-group-item-warning:hover,
 a.list-group-item-warning:focus,
@@ -15746,7 +15729,7 @@ button.list-group-item-warning:focus {
   background-color: #ffd699;
 }
 
-/* line 5407, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5404, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item-warning.active,
 button.list-group-item-warning.active,
 a.list-group-item-warning.active:hover,
@@ -15758,25 +15741,25 @@ button.list-group-item-warning.active:focus {
   border-color: #ff9800;
 }
 
-/* line 5417, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5414, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item-danger {
   color: #e51c23;
   background-color: #f9bdbb;
 }
 
-/* line 5421, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5418, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item-danger,
 button.list-group-item-danger {
   color: #e51c23;
 }
 
-/* line 5425, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5422, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item-danger .list-group-item-heading,
 button.list-group-item-danger .list-group-item-heading {
   color: inherit;
 }
 
-/* line 5429, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5426, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item-danger:hover,
 button.list-group-item-danger:hover,
 a.list-group-item-danger:focus,
@@ -15785,7 +15768,7 @@ button.list-group-item-danger:focus {
   background-color: #f7a6a4;
 }
 
-/* line 5436, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5433, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a.list-group-item-danger.active,
 button.list-group-item-danger.active,
 a.list-group-item-danger.active:hover,
@@ -15797,19 +15780,19 @@ button.list-group-item-danger.active:focus {
   border-color: #e51c23;
 }
 
-/* line 5446, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5443, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item-heading {
   margin-top: 0;
   margin-bottom: 5px;
 }
 
-/* line 5450, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5447, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item-text {
   margin-bottom: 0;
   line-height: 1.3;
 }
 
-/* line 5454, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5451, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel {
   margin-bottom: 23px;
   background-color: #ffffff;
@@ -15819,12 +15802,12 @@ button.list-group-item-danger.active:focus {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-/* line 5462, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5459, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-body {
   padding: 15px;
 }
 
-/* line 5465, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5462, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-heading {
   padding: 10px 15px;
   border-bottom: 1px solid transparent;
@@ -15832,12 +15815,12 @@ button.list-group-item-danger.active:focus {
   border-top-left-radius: 2px;
 }
 
-/* line 5471, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5468, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;
 }
 
-/* line 5474, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5471, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -15845,7 +15828,7 @@ button.list-group-item-danger.active:focus {
   color: inherit;
 }
 
-/* line 5480, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5477, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-title > a,
 .panel-title > small,
 .panel-title > .small,
@@ -15854,7 +15837,7 @@ button.list-group-item-danger.active:focus {
   color: inherit;
 }
 
-/* line 5487, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5484, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-footer {
   padding: 10px 15px;
   background-color: #f5f5f5;
@@ -15863,20 +15846,20 @@ button.list-group-item-danger.active:focus {
   border-bottom-left-radius: 2px;
 }
 
-/* line 5494, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5491, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .list-group,
 .panel > .panel-collapse > .list-group {
   margin-bottom: 0;
 }
 
-/* line 5498, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5495, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .list-group .list-group-item,
 .panel > .panel-collapse > .list-group .list-group-item {
   border-width: 1px 0;
   border-radius: 0;
 }
 
-/* line 5503, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5500, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .list-group:first-child .list-group-item:first-child,
 .panel > .panel-collapse > .list-group:first-child .list-group-item:first-child {
   border-top: 0;
@@ -15884,7 +15867,7 @@ button.list-group-item-danger.active:focus {
   border-top-left-radius: 2px;
 }
 
-/* line 5509, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5506, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .list-group:last-child .list-group-item:last-child,
 .panel > .panel-collapse > .list-group:last-child .list-group-item:last-child {
   border-bottom: 0;
@@ -15892,30 +15875,30 @@ button.list-group-item-danger.active:focus {
   border-bottom-left-radius: 2px;
 }
 
-/* line 5515, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5512, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
-/* line 5519, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5516, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-heading + .list-group .list-group-item:first-child {
   border-top-width: 0;
 }
 
-/* line 5522, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5519, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group + .panel-footer {
   border-top-width: 0;
 }
 
-/* line 5525, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5522, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .table,
 .panel > .table-responsive > .table,
 .panel > .panel-collapse > .table {
   margin-bottom: 0;
 }
 
-/* line 5530, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5527, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .table caption,
 .panel > .table-responsive > .table caption,
 .panel > .panel-collapse > .table caption {
@@ -15923,14 +15906,14 @@ button.list-group-item-danger.active:focus {
   padding-right: 15px;
 }
 
-/* line 5536, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5533, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .table:first-child,
 .panel > .table-responsive:first-child > .table:first-child {
   border-top-right-radius: 2px;
   border-top-left-radius: 2px;
 }
 
-/* line 5541, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5538, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .table:first-child > thead:first-child > tr:first-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
 .panel > .table:first-child > tbody:first-child > tr:first-child,
@@ -15939,7 +15922,7 @@ button.list-group-item-danger.active:focus {
   border-top-right-radius: 2px;
 }
 
-/* line 5548, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5545, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
@@ -15951,7 +15934,7 @@ button.list-group-item-danger.active:focus {
   border-top-left-radius: 2px;
 }
 
-/* line 5558, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5555, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .table:first-child > thead:first-child > tr:first-child td:last-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
 .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
@@ -15963,14 +15946,14 @@ button.list-group-item-danger.active:focus {
   border-top-right-radius: 2px;
 }
 
-/* line 5568, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5565, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .table:last-child,
 .panel > .table-responsive:last-child > .table:last-child {
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
 }
 
-/* line 5573, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5570, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .table:last-child > tbody:last-child > tr:last-child,
 .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
 .panel > .table:last-child > tfoot:last-child > tr:last-child,
@@ -15979,7 +15962,7 @@ button.list-group-item-danger.active:focus {
   border-bottom-right-radius: 2px;
 }
 
-/* line 5580, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5577, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,
 .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
 .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
@@ -15991,7 +15974,7 @@ button.list-group-item-danger.active:focus {
   border-bottom-left-radius: 2px;
 }
 
-/* line 5590, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5587, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .table:last-child > tbody:last-child > tr:last-child td:last-child,
 .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
 .panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
@@ -16003,7 +15986,7 @@ button.list-group-item-danger.active:focus {
   border-bottom-right-radius: 2px;
 }
 
-/* line 5600, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5597, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .panel-body + .table,
 .panel > .panel-body + .table-responsive,
 .panel > .table + .panel-body,
@@ -16011,19 +15994,19 @@ button.list-group-item-danger.active:focus {
   border-top: 1px solid #dddddd;
 }
 
-/* line 5606, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5603, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .table > tbody:first-child > tr:first-child th,
 .panel > .table > tbody:first-child > tr:first-child td {
   border-top: 0;
 }
 
-/* line 5610, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5607, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .table-bordered,
 .panel > .table-responsive > .table-bordered {
   border: 0;
 }
 
-/* line 5614, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5611, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .table-bordered > thead > tr > th:first-child,
 .panel > .table-responsive > .table-bordered > thead > tr > th:first-child,
 .panel > .table-bordered > tbody > tr > th:first-child,
@@ -16039,7 +16022,7 @@ button.list-group-item-danger.active:focus {
   border-left: 0;
 }
 
-/* line 5628, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5625, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .table-bordered > thead > tr > th:last-child,
 .panel > .table-responsive > .table-bordered > thead > tr > th:last-child,
 .panel > .table-bordered > tbody > tr > th:last-child,
@@ -16055,7 +16038,7 @@ button.list-group-item-danger.active:focus {
   border-right: 0;
 }
 
-/* line 5642, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5639, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .table-bordered > thead > tr:first-child > td,
 .panel > .table-responsive > .table-bordered > thead > tr:first-child > td,
 .panel > .table-bordered > tbody > tr:first-child > td,
@@ -16067,7 +16050,7 @@ button.list-group-item-danger.active:focus {
   border-bottom: 0;
 }
 
-/* line 5652, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5649, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .table-bordered > tbody > tr:last-child > td,
 .panel > .table-responsive > .table-bordered > tbody > tr:last-child > td,
 .panel > .table-bordered > tfoot > tr:last-child > td,
@@ -16079,218 +16062,218 @@ button.list-group-item-danger.active:focus {
   border-bottom: 0;
 }
 
-/* line 5662, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5659, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel > .table-responsive {
   border: 0;
   margin-bottom: 0;
 }
 
-/* line 5666, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5663, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-group {
   margin-bottom: 23px;
 }
 
-/* line 5669, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5666, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-group .panel {
   margin-bottom: 0;
   border-radius: 3px;
 }
 
-/* line 5673, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5670, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-group .panel + .panel {
   margin-top: 5px;
 }
 
-/* line 5676, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5673, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-group .panel-heading {
   border-bottom: 0;
 }
 
-/* line 5679, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5676, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-group .panel-heading + .panel-collapse > .panel-body,
 .panel-group .panel-heading + .panel-collapse > .list-group {
   border-top: 1px solid #dddddd;
 }
 
-/* line 5683, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5680, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-group .panel-footer {
   border-top: 0;
 }
 
-/* line 5686, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5683, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-group .panel-footer + .panel-collapse .panel-body {
   border-bottom: 1px solid #dddddd;
 }
 
-/* line 5689, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5686, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-default {
   border-color: #dddddd;
 }
 
-/* line 5692, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5689, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-default > .panel-heading {
   color: #212121;
   background-color: #f5f5f5;
   border-color: #dddddd;
 }
 
-/* line 5697, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5694, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #dddddd;
 }
 
-/* line 5700, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5697, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-default > .panel-heading .badge {
   color: #f5f5f5;
   background-color: #212121;
 }
 
-/* line 5704, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5701, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-default > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #dddddd;
 }
 
-/* line 5707, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5704, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-primary {
   border-color: #2196f3;
 }
 
-/* line 5710, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5707, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-primary > .panel-heading {
   color: #ffffff;
   background-color: #2196f3;
   border-color: #2196f3;
 }
 
-/* line 5715, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5712, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #2196f3;
 }
 
-/* line 5718, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5715, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-primary > .panel-heading .badge {
   color: #2196f3;
   background-color: #ffffff;
 }
 
-/* line 5722, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5719, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #2196f3;
 }
 
-/* line 5725, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5722, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-success {
   border-color: #d6e9c6;
 }
 
-/* line 5728, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5725, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-success > .panel-heading {
   color: #ffffff;
   background-color: #4caf50;
   border-color: #d6e9c6;
 }
 
-/* line 5733, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5730, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-success > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #d6e9c6;
 }
 
-/* line 5736, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5733, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-success > .panel-heading .badge {
   color: #4caf50;
   background-color: #ffffff;
 }
 
-/* line 5740, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5737, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-success > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #d6e9c6;
 }
 
-/* line 5743, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5740, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-info {
   border-color: #cba4dd;
 }
 
-/* line 5746, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5743, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-info > .panel-heading {
   color: #ffffff;
   background-color: #9c27b0;
   border-color: #cba4dd;
 }
 
-/* line 5751, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5748, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-info > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #cba4dd;
 }
 
-/* line 5754, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5751, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-info > .panel-heading .badge {
   color: #9c27b0;
   background-color: #ffffff;
 }
 
-/* line 5758, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5755, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-info > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #cba4dd;
 }
 
-/* line 5761, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5758, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-warning {
   border-color: #ffc599;
 }
 
-/* line 5764, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5761, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-warning > .panel-heading {
   color: #ffffff;
   background-color: #ff9800;
   border-color: #ffc599;
 }
 
-/* line 5769, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5766, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-warning > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #ffc599;
 }
 
-/* line 5772, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5769, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-warning > .panel-heading .badge {
   color: #ff9800;
   background-color: #ffffff;
 }
 
-/* line 5776, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5773, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-warning > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #ffc599;
 }
 
-/* line 5779, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5776, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-danger {
   border-color: #f7a4af;
 }
 
-/* line 5782, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5779, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-danger > .panel-heading {
   color: #ffffff;
   background-color: #e51c23;
   border-color: #f7a4af;
 }
 
-/* line 5787, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5784, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-danger > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #f7a4af;
 }
 
-/* line 5790, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5787, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-danger > .panel-heading .badge {
   color: #e51c23;
   background-color: #ffffff;
 }
 
-/* line 5794, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5791, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-danger > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #f7a4af;
 }
 
-/* line 5797, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5794, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .embed-responsive {
   position: relative;
   display: block;
@@ -16299,7 +16282,7 @@ button.list-group-item-danger.active:focus {
   overflow: hidden;
 }
 
-/* line 5804, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5801, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .embed-responsive .embed-responsive-item,
 .embed-responsive iframe,
 .embed-responsive embed,
@@ -16314,17 +16297,17 @@ button.list-group-item-danger.active:focus {
   border: 0;
 }
 
-/* line 5817, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5814, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .embed-responsive-16by9 {
   padding-bottom: 56.25%;
 }
 
-/* line 5820, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5817, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .embed-responsive-4by3 {
   padding-bottom: 75%;
 }
 
-/* line 5823, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5820, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .well {
   min-height: 20px;
   padding: 19px;
@@ -16336,25 +16319,25 @@ button.list-group-item-danger.active:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-/* line 5833, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5830, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .well blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
 
-/* line 5837, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5834, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .well-lg {
   padding: 24px;
   border-radius: 3px;
 }
 
-/* line 5841, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5838, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .well-sm {
   padding: 9px;
   border-radius: 3px;
 }
 
-/* line 5845, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5842, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .close {
   float: right;
   font-size: 19.5px;
@@ -16366,7 +16349,7 @@ button.list-group-item-danger.active:focus {
   filter: alpha(opacity=20);
 }
 
-/* line 5855, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5852, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .close:hover,
 .close:focus {
   color: #000000;
@@ -16376,7 +16359,7 @@ button.list-group-item-danger.active:focus {
   filter: alpha(opacity=50);
 }
 
-/* line 5863, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5860, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 button.close {
   padding: 0;
   cursor: pointer;
@@ -16385,12 +16368,12 @@ button.close {
   -webkit-appearance: none;
 }
 
-/* line 5870, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5867, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal-open {
   overflow: hidden;
 }
 
-/* line 5873, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5870, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal {
   display: none;
   overflow: hidden;
@@ -16404,7 +16387,7 @@ button.close {
   outline: 0;
 }
 
-/* line 5885, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5882, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0, -25%);
   -ms-transform: translate(0, -25%);
@@ -16415,7 +16398,7 @@ button.close {
   transition: transform 0.3s ease-out;
 }
 
-/* line 5894, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5891, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
@@ -16423,20 +16406,20 @@ button.close {
   transform: translate(0, 0);
 }
 
-/* line 5900, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5897, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-/* line 5904, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5901, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal-dialog {
   position: relative;
   width: auto;
   margin: 10px;
 }
 
-/* line 5909, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5906, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal-content {
   position: relative;
   background-color: #ffffff;
@@ -16450,7 +16433,7 @@ button.close {
   outline: 0;
 }
 
-/* line 5921, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5918, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -16461,65 +16444,65 @@ button.close {
   background-color: #000000;
 }
 
-/* line 5930, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5927, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal-backdrop.fade {
   opacity: 0;
   filter: alpha(opacity=0);
 }
 
-/* line 5934, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5931, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal-backdrop.in {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
 
-/* line 5938, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5935, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal-header {
   padding: 15px;
   border-bottom: 1px solid transparent;
 }
 
-/* line 5942, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5939, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal-header .close {
   margin-top: -2px;
 }
 
-/* line 5945, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5942, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal-title {
   margin: 0;
   line-height: 1.846;
 }
 
-/* line 5949, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5946, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal-body {
   position: relative;
   padding: 15px;
 }
 
-/* line 5953, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5950, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal-footer {
   padding: 15px;
   text-align: right;
   border-top: 1px solid transparent;
 }
 
-/* line 5958, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5955, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal-footer .btn + .btn {
   margin-left: 5px;
   margin-bottom: 0;
 }
 
-/* line 5962, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5959, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal-footer .btn-group .btn + .btn {
   margin-left: -1px;
 }
 
-/* line 5965, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5962, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal-footer .btn-block + .btn-block {
   margin-left: 0;
 }
 
-/* line 5968, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5965, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
@@ -16529,30 +16512,30 @@ button.close {
 }
 
 @media (min-width: 768px) {
-  /* line 5976, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 5973, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .modal-dialog {
     width: 600px;
     margin: 30px auto;
   }
 
-  /* line 5980, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 5977, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
 
-  /* line 5984, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 5981, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .modal-sm {
     width: 300px;
   }
 }
 @media (min-width: 992px) {
-  /* line 5989, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 5986, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .modal-lg {
     width: 900px;
   }
 }
-/* line 5993, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 5990, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .tooltip {
   position: absolute;
   z-index: 1070;
@@ -16577,37 +16560,37 @@ button.close {
   filter: alpha(opacity=0);
 }
 
-/* line 6016, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6013, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .tooltip.in {
   opacity: 0.9;
   filter: alpha(opacity=90);
 }
 
-/* line 6020, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6017, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .tooltip.top {
   margin-top: -3px;
   padding: 5px 0;
 }
 
-/* line 6024, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6021, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .tooltip.right {
   margin-left: 3px;
   padding: 0 5px;
 }
 
-/* line 6028, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6025, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .tooltip.bottom {
   margin-top: 3px;
   padding: 5px 0;
 }
 
-/* line 6032, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6029, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .tooltip.left {
   margin-left: -3px;
   padding: 0 5px;
 }
 
-/* line 6036, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6033, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .tooltip-inner {
   max-width: 200px;
   padding: 3px 8px;
@@ -16617,7 +16600,7 @@ button.close {
   border-radius: 3px;
 }
 
-/* line 6044, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6041, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .tooltip-arrow {
   position: absolute;
   width: 0;
@@ -16626,7 +16609,7 @@ button.close {
   border-style: solid;
 }
 
-/* line 6051, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6048, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .tooltip.top .tooltip-arrow {
   bottom: 0;
   left: 50%;
@@ -16635,7 +16618,7 @@ button.close {
   border-top-color: #727272;
 }
 
-/* line 6058, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6055, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .tooltip.top-left .tooltip-arrow {
   bottom: 0;
   right: 5px;
@@ -16644,7 +16627,7 @@ button.close {
   border-top-color: #727272;
 }
 
-/* line 6065, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6062, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .tooltip.top-right .tooltip-arrow {
   bottom: 0;
   left: 5px;
@@ -16653,7 +16636,7 @@ button.close {
   border-top-color: #727272;
 }
 
-/* line 6072, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6069, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .tooltip.right .tooltip-arrow {
   top: 50%;
   left: 0;
@@ -16662,7 +16645,7 @@ button.close {
   border-right-color: #727272;
 }
 
-/* line 6079, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6076, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .tooltip.left .tooltip-arrow {
   top: 50%;
   right: 0;
@@ -16671,7 +16654,7 @@ button.close {
   border-left-color: #727272;
 }
 
-/* line 6086, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6083, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .tooltip.bottom .tooltip-arrow {
   top: 0;
   left: 50%;
@@ -16680,7 +16663,7 @@ button.close {
   border-bottom-color: #727272;
 }
 
-/* line 6093, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6090, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .tooltip.bottom-left .tooltip-arrow {
   top: 0;
   right: 5px;
@@ -16689,7 +16672,7 @@ button.close {
   border-bottom-color: #727272;
 }
 
-/* line 6100, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6097, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .tooltip.bottom-right .tooltip-arrow {
   top: 0;
   left: 5px;
@@ -16698,7 +16681,7 @@ button.close {
   border-bottom-color: #727272;
 }
 
-/* line 6107, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6104, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover {
   position: absolute;
   top: 0;
@@ -16732,27 +16715,27 @@ button.close {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* line 6139, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6136, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover.top {
   margin-top: -10px;
 }
 
-/* line 6142, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6139, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover.right {
   margin-left: 10px;
 }
 
-/* line 6145, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6142, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover.bottom {
   margin-top: 10px;
 }
 
-/* line 6148, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6145, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover.left {
   margin-left: -10px;
 }
 
-/* line 6151, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6148, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover-title {
   margin: 0;
   padding: 8px 14px;
@@ -16762,12 +16745,12 @@ button.close {
   border-radius: 2px 2px 0 0;
 }
 
-/* line 6159, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6156, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover-content {
   padding: 9px 14px;
 }
 
-/* line 6162, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6159, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover > .arrow,
 .popover > .arrow:after {
   position: absolute;
@@ -16778,18 +16761,18 @@ button.close {
   border-style: solid;
 }
 
-/* line 6171, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6168, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover > .arrow {
   border-width: 11px;
 }
 
-/* line 6174, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6171, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover > .arrow:after {
   border-width: 10px;
   content: "";
 }
 
-/* line 6178, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6175, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover.top > .arrow {
   left: 50%;
   margin-left: -11px;
@@ -16799,7 +16782,7 @@ button.close {
   bottom: -11px;
 }
 
-/* line 6186, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6183, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover.top > .arrow:after {
   content: " ";
   bottom: 1px;
@@ -16808,7 +16791,7 @@ button.close {
   border-top-color: #ffffff;
 }
 
-/* line 6193, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6190, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover.right > .arrow {
   top: 50%;
   left: -11px;
@@ -16818,7 +16801,7 @@ button.close {
   border-right-color: rgba(0, 0, 0, 0.12);
 }
 
-/* line 6201, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6198, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover.right > .arrow:after {
   content: " ";
   left: 1px;
@@ -16827,7 +16810,7 @@ button.close {
   border-right-color: #ffffff;
 }
 
-/* line 6208, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6205, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover.bottom > .arrow {
   left: 50%;
   margin-left: -11px;
@@ -16837,7 +16820,7 @@ button.close {
   top: -11px;
 }
 
-/* line 6216, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6213, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover.bottom > .arrow:after {
   content: " ";
   top: 1px;
@@ -16846,7 +16829,7 @@ button.close {
   border-bottom-color: #ffffff;
 }
 
-/* line 6223, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6220, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover.left > .arrow {
   top: 50%;
   right: -11px;
@@ -16856,7 +16839,7 @@ button.close {
   border-left-color: rgba(0, 0, 0, 0.12);
 }
 
-/* line 6231, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6228, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover.left > .arrow:after {
   content: " ";
   right: 1px;
@@ -16865,19 +16848,19 @@ button.close {
   bottom: -10px;
 }
 
-/* line 6238, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6235, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel {
   position: relative;
 }
 
-/* line 6241, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6238, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-inner {
   position: relative;
   overflow: hidden;
   width: 100%;
 }
 
-/* line 6246, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6243, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-inner > .item {
   display: none;
   position: relative;
@@ -16886,14 +16869,14 @@ button.close {
   transition: 0.6s ease-in-out left;
 }
 
-/* line 6253, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6250, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   line-height: 1;
 }
 
 @media all and (transform-3d), (-webkit-transform-3d) {
-  /* line 6258, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6255, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .carousel-inner > .item {
     -webkit-transition: -webkit-transform 0.6s ease-in-out;
     -o-transition: -o-transform 0.6s ease-in-out;
@@ -16904,7 +16887,7 @@ button.close {
     perspective: 1000px;
   }
 
-  /* line 6267, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6264, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .carousel-inner > .item.next,
   .carousel-inner > .item.active.right {
     -webkit-transform: translate3d(100%, 0, 0);
@@ -16912,7 +16895,7 @@ button.close {
     left: 0;
   }
 
-  /* line 6273, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6270, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .carousel-inner > .item.prev,
   .carousel-inner > .item.active.left {
     -webkit-transform: translate3d(-100%, 0, 0);
@@ -16920,7 +16903,7 @@ button.close {
     left: 0;
   }
 
-  /* line 6279, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6276, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .carousel-inner > .item.next.left,
   .carousel-inner > .item.prev.right,
   .carousel-inner > .item.active {
@@ -16929,19 +16912,19 @@ button.close {
     left: 0;
   }
 }
-/* line 6287, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6284, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-inner > .active,
 .carousel-inner > .next,
 .carousel-inner > .prev {
   display: block;
 }
 
-/* line 6292, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6289, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-inner > .active {
   left: 0;
 }
 
-/* line 6295, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6292, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-inner > .next,
 .carousel-inner > .prev {
   position: absolute;
@@ -16949,33 +16932,33 @@ button.close {
   width: 100%;
 }
 
-/* line 6301, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6298, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-inner > .next {
   left: 100%;
 }
 
-/* line 6304, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6301, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-inner > .prev {
   left: -100%;
 }
 
-/* line 6307, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6304, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-inner > .next.left,
 .carousel-inner > .prev.right {
   left: 0;
 }
 
-/* line 6311, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6308, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-inner > .active.left {
   left: -100%;
 }
 
-/* line 6314, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6311, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-inner > .active.right {
   left: 100%;
 }
 
-/* line 6317, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6314, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-control {
   position: absolute;
   top: 0;
@@ -16991,7 +16974,7 @@ button.close {
   background-color: transparent;
 }
 
-/* line 6331, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6328, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-control.left {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
@@ -17001,7 +16984,7 @@ button.close {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
 }
 
-/* line 6339, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6336, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-control.right {
   left: auto;
   right: 0;
@@ -17013,7 +16996,7 @@ button.close {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
 
-/* line 6349, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6346, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-control:hover,
 .carousel-control:focus {
   outline: 0;
@@ -17023,7 +17006,7 @@ button.close {
   filter: alpha(opacity=90);
 }
 
-/* line 6357, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6354, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-control .icon-prev,
 .carousel-control .icon-next,
 .carousel-control .glyphicon-chevron-left,
@@ -17035,21 +17018,21 @@ button.close {
   display: inline-block;
 }
 
-/* line 6367, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6364, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-control .icon-prev,
 .carousel-control .glyphicon-chevron-left {
   left: 50%;
   margin-left: -10px;
 }
 
-/* line 6372, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6369, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-control .icon-next,
 .carousel-control .glyphicon-chevron-right {
   right: 50%;
   margin-right: -10px;
 }
 
-/* line 6377, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6374, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-control .icon-prev,
 .carousel-control .icon-next {
   width: 20px;
@@ -17058,17 +17041,17 @@ button.close {
   font-family: serif;
 }
 
-/* line 6384, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6381, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-control .icon-prev:before {
   content: '\2039';
 }
 
-/* line 6387, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6384, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-control .icon-next:before {
   content: '\203a';
 }
 
-/* line 6390, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6387, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-indicators {
   position: absolute;
   bottom: 10px;
@@ -17081,7 +17064,7 @@ button.close {
   text-align: center;
 }
 
-/* line 6401, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6398, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-indicators li {
   display: inline-block;
   width: 10px;
@@ -17095,7 +17078,7 @@ button.close {
   background-color: transparent;
 }
 
-/* line 6413, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6410, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-indicators .active {
   margin: 0;
   width: 12px;
@@ -17103,7 +17086,7 @@ button.close {
   background-color: #ffffff;
 }
 
-/* line 6419, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6416, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-caption {
   position: absolute;
   left: 15%;
@@ -17117,13 +17100,13 @@ button.close {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-/* line 6431, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6428, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-caption .btn {
   text-shadow: none;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 6435, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6432, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
@@ -17134,31 +17117,31 @@ button.close {
     font-size: 30px;
   }
 
-  /* line 6444, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6441, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .icon-prev {
     margin-left: -10px;
   }
 
-  /* line 6448, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6445, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-next {
     margin-right: -10px;
   }
 
-  /* line 6452, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6449, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .carousel-caption {
     left: 20%;
     right: 20%;
     padding-bottom: 30px;
   }
 
-  /* line 6457, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6454, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .carousel-indicators {
     bottom: 20px;
   }
 }
-/* line 6461, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6458, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .clearfix:before,
 .clearfix:after,
 .dl-horizontal dd:before,
@@ -17195,7 +17178,7 @@ button.close {
   display: table;
 }
 
-/* line 6496, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6493, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .clearfix:after,
 .dl-horizontal dd:after,
 .container:after,
@@ -17215,39 +17198,39 @@ button.close {
   clear: both;
 }
 
-/* line 6514, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6511, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 6519, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6516, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pull-right {
   float: right !important;
 }
 
-/* line 6522, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6519, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .pull-left {
   float: left !important;
 }
 
-/* line 6525, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6522, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .hide {
   display: none !important;
 }
 
-/* line 6528, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6525, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .show {
   display: block !important;
 }
 
-/* line 6531, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6528, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .invisible {
   visibility: hidden;
 }
 
-/* line 6534, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6531, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .text-hide {
   font: 0/0 a;
   color: transparent;
@@ -17256,12 +17239,12 @@ button.close {
   border: 0;
 }
 
-/* line 6541, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6538, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .hidden {
   display: none !important;
 }
 
-/* line 6544, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6541, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .affix {
   position: fixed;
 }
@@ -17269,7 +17252,7 @@ button.close {
 @-ms-viewport {
   width: device-width;
 }
-/* line 6550, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6547, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .visible-xs,
 .visible-sm,
 .visible-md,
@@ -17277,7 +17260,7 @@ button.close {
   display: none !important;
 }
 
-/* line 6556, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6553, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .visible-xs-block,
 .visible-xs-inline,
 .visible-xs-inline-block,
@@ -17294,268 +17277,263 @@ button.close {
 }
 
 @media (max-width: 767px) {
-  /* line 6571, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6568, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-xs {
     display: block !important;
   }
 
-  /* line 6574, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6571, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   table.visible-xs {
     display: table !important;
   }
 
-  /* line 6577, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6574, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   tr.visible-xs {
     display: table-row !important;
   }
 
-  /* line 6580, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6577, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   th.visible-xs,
   td.visible-xs {
     display: table-cell !important;
   }
 }
 @media (max-width: 767px) {
-  /* line 6586, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6583, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-xs-block {
     display: block !important;
   }
 }
 @media (max-width: 767px) {
-  /* line 6591, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6588, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-xs-inline {
     display: inline !important;
   }
 }
 @media (max-width: 767px) {
-  /* line 6596, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6593, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-xs-inline-block {
     display: inline-block !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 6601, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6598, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-sm {
     display: block !important;
   }
 
-  /* line 6604, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6601, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   table.visible-sm {
     display: table !important;
   }
 
-  /* line 6607, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6604, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   tr.visible-sm {
     display: table-row !important;
   }
 
-  /* line 6610, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6607, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   th.visible-sm,
   td.visible-sm {
     display: table-cell !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 6616, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6613, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-sm-block {
     display: block !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 6621, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6618, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-sm-inline {
     display: inline !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 6626, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6623, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-sm-inline-block {
     display: inline-block !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 6631, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6628, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-md {
     display: block !important;
   }
 
-  /* line 6634, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6631, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   table.visible-md {
     display: table !important;
   }
 
-  /* line 6637, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6634, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   tr.visible-md {
     display: table-row !important;
   }
 
-  /* line 6640, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6637, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   th.visible-md,
   td.visible-md {
     display: table-cell !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 6646, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6643, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-md-block {
     display: block !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 6651, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6648, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-md-inline {
     display: inline !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 6656, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6653, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-md-inline-block {
     display: inline-block !important;
   }
 }
 @media (min-width: 1200px) {
-  /* line 6661, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6658, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-lg {
     display: block !important;
   }
 
-  /* line 6664, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6661, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   table.visible-lg {
     display: table !important;
   }
 
-  /* line 6667, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6664, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   tr.visible-lg {
     display: table-row !important;
   }
 
-  /* line 6670, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6667, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   th.visible-lg,
   td.visible-lg {
     display: table-cell !important;
   }
 }
 @media (min-width: 1200px) {
-  /* line 6676, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6673, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-lg-block {
     display: block !important;
   }
 }
 @media (min-width: 1200px) {
-  /* line 6681, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6678, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-lg-inline {
     display: inline !important;
   }
 }
 @media (min-width: 1200px) {
-  /* line 6686, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6683, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-lg-inline-block {
     display: inline-block !important;
   }
 }
 @media (max-width: 767px) {
-  /* line 6691, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6688, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .hidden-xs {
     display: none !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 6696, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6693, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .hidden-sm {
     display: none !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 6701, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6698, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .hidden-md {
     display: none !important;
   }
 }
 @media (min-width: 1200px) {
-  /* line 6706, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6703, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .hidden-lg {
     display: none !important;
   }
 }
-/* line 6710, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6707, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .visible-print {
   display: none !important;
 }
 
 @media print {
-  /* line 6714, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6711, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-print {
     display: block !important;
   }
 
-  /* line 6717, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6714, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   table.visible-print {
     display: table !important;
   }
 
-  /* line 6720, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6717, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   tr.visible-print {
     display: table-row !important;
   }
 
-  /* line 6723, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6720, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   th.visible-print,
   td.visible-print {
     display: table-cell !important;
   }
 }
-/* line 6728, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6725, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .visible-print-block {
   display: none !important;
 }
 
 @media print {
-  /* line 6732, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6729, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-print-block {
     display: block !important;
   }
 }
-/* line 6736, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6733, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .visible-print-inline {
   display: none !important;
 }
 
 @media print {
-  /* line 6740, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6737, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-print-inline {
     display: inline !important;
   }
 }
-/* line 6744, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6741, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .visible-print-inline-block {
   display: none !important;
 }
 
 @media print {
-  /* line 6748, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6745, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .visible-print-inline-block {
     display: inline-block !important;
   }
 }
 @media print {
-  /* line 6753, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+  /* line 6750, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
   .hidden-print {
     display: none !important;
   }
 }
-/* line 6757, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6754, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar {
   border: none;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* line 6762, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
-.navbar-brand {
-  font-size: 24px;
-}
-
-/* line 6765, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6760, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-form input[type=text],
 .navbar-inverse .navbar-form input[type=password] {
   color: #fff;
@@ -17563,55 +17541,55 @@ button.close {
   box-shadow: inset 0 -1px 0 #b2dbfb;
 }
 
-/* line 6771, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6766, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-form input[type=text]::-moz-placeholder,
 .navbar-inverse .navbar-form input[type=password]::-moz-placeholder {
   color: #b2dbfb;
   opacity: 1;
 }
 
-/* line 6776, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6771, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-form input[type=text]:-ms-input-placeholder,
 .navbar-inverse .navbar-form input[type=password]:-ms-input-placeholder {
   color: #b2dbfb;
 }
 
-/* line 6780, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6775, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-form input[type=text]::-webkit-input-placeholder,
 .navbar-inverse .navbar-form input[type=password]::-webkit-input-placeholder {
   color: #b2dbfb;
 }
 
-/* line 6784, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6779, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .navbar-inverse .navbar-form input[type=text]:focus,
 .navbar-inverse .navbar-form input[type=password]:focus {
   -webkit-box-shadow: inset 0 -2px 0 #ffffff;
   box-shadow: inset 0 -2px 0 #ffffff;
 }
 
-/* line 6789, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6784, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-default {
   position: relative;
 }
 
-/* line 6792, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6787, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-default:focus {
   background-color: #ffffff;
 }
 
-/* line 6795, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6790, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-default:hover,
 .btn-default:active:hover {
   background-color: #f0f0f0;
 }
 
-/* line 6799, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6794, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-default:active {
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* line 6803, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6798, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-default:after {
   content: "";
   display: block;
@@ -17634,7 +17612,7 @@ button.close {
   transition: background .5s, opacity 1s;
 }
 
-/* line 6824, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6819, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-default:active:after {
   -webkit-background-size: 0% 0%;
   background-size: 0% 0%;
@@ -17644,29 +17622,29 @@ button.close {
   transition: 0s;
 }
 
-/* line 6832, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6827, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-primary {
   position: relative;
 }
 
-/* line 6835, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6830, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-primary:focus {
   background-color: #2196f3;
 }
 
-/* line 6838, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6833, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-primary:hover,
 .btn-primary:active:hover {
   background-color: #0d87e9;
 }
 
-/* line 6842, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6837, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-primary:active {
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* line 6846, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6841, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-primary:after {
   content: "";
   display: block;
@@ -17689,7 +17667,7 @@ button.close {
   transition: background .5s, opacity 1s;
 }
 
-/* line 6867, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6862, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-primary:active:after {
   -webkit-background-size: 0% 0%;
   background-size: 0% 0%;
@@ -17699,29 +17677,29 @@ button.close {
   transition: 0s;
 }
 
-/* line 6875, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6870, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-success {
   position: relative;
 }
 
-/* line 6878, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6873, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-success:focus {
   background-color: #4caf50;
 }
 
-/* line 6881, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6876, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-success:hover,
 .btn-success:active:hover {
   background-color: #439a46;
 }
 
-/* line 6885, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6880, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-success:active {
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* line 6889, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6884, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-success:after {
   content: "";
   display: block;
@@ -17744,7 +17722,7 @@ button.close {
   transition: background .5s, opacity 1s;
 }
 
-/* line 6910, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6905, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-success:active:after {
   -webkit-background-size: 0% 0%;
   background-size: 0% 0%;
@@ -17754,29 +17732,29 @@ button.close {
   transition: 0s;
 }
 
-/* line 6918, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6913, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-info {
   position: relative;
 }
 
-/* line 6921, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6916, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-info:focus {
   background-color: #9c27b0;
 }
 
-/* line 6924, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6919, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-info:hover,
 .btn-info:active:hover {
   background-color: #862197;
 }
 
-/* line 6928, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6923, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-info:active {
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* line 6932, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6927, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-info:after {
   content: "";
   display: block;
@@ -17799,7 +17777,7 @@ button.close {
   transition: background .5s, opacity 1s;
 }
 
-/* line 6953, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6948, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-info:active:after {
   -webkit-background-size: 0% 0%;
   background-size: 0% 0%;
@@ -17809,29 +17787,29 @@ button.close {
   transition: 0s;
 }
 
-/* line 6961, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6956, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-warning {
   position: relative;
 }
 
-/* line 6964, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6959, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-warning:focus {
   background-color: #ff9800;
 }
 
-/* line 6967, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6962, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-warning:hover,
 .btn-warning:active:hover {
   background-color: #e08600;
 }
 
-/* line 6971, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6966, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-warning:active {
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* line 6975, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6970, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-warning:after {
   content: "";
   display: block;
@@ -17854,7 +17832,7 @@ button.close {
   transition: background .5s, opacity 1s;
 }
 
-/* line 6996, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6991, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-warning:active:after {
   -webkit-background-size: 0% 0%;
   background-size: 0% 0%;
@@ -17864,29 +17842,29 @@ button.close {
   transition: 0s;
 }
 
-/* line 7004, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 6999, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-danger {
   position: relative;
 }
 
-/* line 7007, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7002, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-danger:focus {
   background-color: #e51c23;
 }
 
-/* line 7010, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7005, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-danger:hover,
 .btn-danger:active:hover {
   background-color: #cb171e;
 }
 
-/* line 7014, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7009, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-danger:active {
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* line 7018, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7013, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-danger:after {
   content: "";
   display: block;
@@ -17909,7 +17887,7 @@ button.close {
   transition: background .5s, opacity 1s;
 }
 
-/* line 7039, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7034, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-danger:active:after {
   -webkit-background-size: 0% 0%;
   background-size: 0% 0%;
@@ -17919,29 +17897,29 @@ button.close {
   transition: 0s;
 }
 
-/* line 7047, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7042, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-link {
   position: relative;
 }
 
-/* line 7050, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7045, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-link:focus {
   background-color: #ffffff;
 }
 
-/* line 7053, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7048, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-link:hover,
 .btn-link:active:hover {
   background-color: #f0f0f0;
 }
 
-/* line 7057, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7052, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-link:active {
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* line 7061, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7056, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-link:after {
   content: "";
   display: block;
@@ -17964,7 +17942,7 @@ button.close {
   transition: background .5s, opacity 1s;
 }
 
-/* line 7082, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7077, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-link:active:after {
   -webkit-background-size: 0% 0%;
   background-size: 0% 0%;
@@ -17974,7 +17952,7 @@ button.close {
   transition: 0s;
 }
 
-/* line 7090, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7085, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn {
   text-transform: uppercase;
   border: none;
@@ -17985,7 +17963,7 @@ button.close {
   transition: all 0.4s;
 }
 
-/* line 7099, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7094, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-link {
   border-radius: 3px;
   -webkit-box-shadow: none;
@@ -17993,7 +17971,7 @@ button.close {
   color: #444444;
 }
 
-/* line 7105, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7100, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-link:hover,
 .btn-link:focus {
   -webkit-box-shadow: none;
@@ -18002,7 +17980,7 @@ button.close {
   text-decoration: none;
 }
 
-/* line 7112, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7107, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-link .disabled:hover,
 .btn-link[disabled]:hover,
 fieldset[disabled] .btn-link:hover,
@@ -18013,7 +17991,7 @@ fieldset[disabled] .btn-link:active:hover {
   color: #444444;
 }
 
-/* line 7121, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7116, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-default.disabled,
 .btn-default[disabled],
 fieldset[disabled] .btn-default {
@@ -18022,7 +18000,7 @@ fieldset[disabled] .btn-default {
   opacity: 1;
 }
 
-/* line 7128, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7123, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-default.disabled:hover,
 .btn-default[disabled]:hover,
 fieldset[disabled] .btn-default:hover,
@@ -18032,7 +18010,7 @@ fieldset[disabled] .btn-default:focus {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* line 7136, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7131, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-group .btn + .btn,
 .btn-group .btn + .btn-group,
 .btn-group .btn-group + .btn,
@@ -18040,7 +18018,7 @@ fieldset[disabled] .btn-default:focus {
   margin-left: 0;
 }
 
-/* line 7142, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7137, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .btn-group-vertical > .btn + .btn,
 .btn-group-vertical > .btn + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
@@ -18048,32 +18026,32 @@ fieldset[disabled] .btn-default:focus {
   margin-top: 0;
 }
 
-/* line 7148, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7143, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 body {
   -webkit-font-smoothing: antialiased;
   letter-spacing: .1px;
 }
 
-/* line 7152, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7147, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 p {
   margin: 0 0 1em;
 }
 
-/* line 7155, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7150, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input,
 button {
   -webkit-font-smoothing: antialiased;
   letter-spacing: .1px;
 }
 
-/* line 7160, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7155, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 a {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-/* line 7165, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7160, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .table-hover > tbody > tr,
 .table-hover > tbody > tr > th,
 .table-hover > tbody > tr > td {
@@ -18082,12 +18060,12 @@ a {
   transition: all 0.2s;
 }
 
-/* line 7172, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7167, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 label {
   font-weight: normal;
 }
 
-/* line 7175, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7170, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 textarea,
 textarea.form-control,
 input.form-control,
@@ -18109,7 +18087,7 @@ input[type=number],
   font-size: 16px;
 }
 
-/* line 7195, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7190, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 textarea:focus,
 textarea.form-control:focus,
 input.form-control:focus,
@@ -18126,7 +18104,7 @@ input[type=number]:focus,
   box-shadow: inset 0 -2px 0 #2196f3;
 }
 
-/* line 7210, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7205, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 textarea[disabled],
 textarea.form-control[disabled],
 input.form-control[disabled],
@@ -18156,7 +18134,7 @@ input[type=number][readonly],
   border-bottom: 1px dotted #ddd;
 }
 
-/* line 7238, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7233, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 textarea.input-sm,
 textarea.form-control.input-sm,
 input.form-control.input-sm,
@@ -18172,7 +18150,7 @@ input[type=number].input-sm,
   font-size: 12px;
 }
 
-/* line 7252, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7247, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 textarea.input-lg,
 textarea.form-control.input-lg,
 input.form-control.input-lg,
@@ -18188,7 +18166,7 @@ input[type=number].input-lg,
   font-size: 17px;
 }
 
-/* line 7266, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7261, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 select,
 select.form-control {
   border: 0;
@@ -18209,25 +18187,25 @@ select.form-control {
   line-height: 1.5;
 }
 
-/* line 7285, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7280, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 select::-ms-expand,
 select.form-control::-ms-expand {
   display: none;
 }
 
-/* line 7289, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7284, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 select.input-sm,
 select.form-control.input-sm {
   font-size: 12px;
 }
 
-/* line 7293, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7288, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 select.input-lg,
 select.form-control.input-lg {
   font-size: 17px;
 }
 
-/* line 7297, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7292, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 select:focus,
 select.form-control:focus {
   -webkit-box-shadow: inset 0 -2px 0 #2196f3;
@@ -18235,7 +18213,7 @@ select.form-control:focus {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAJ1BMVEUhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISF8S9ewAAAADHRSTlMAAgMJC0uWpKa6wMxMdjkoAAAANUlEQVR4AeXJyQEAERAAsNl7Hf3X6xt0QL6JpZWq30pdvdadme+0PMdzvHm8YThHcT1H7K0BtOMDniZhWOgAAAAASUVORK5CYII=);
 }
 
-/* line 7303, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7298, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 select[disabled],
 select.form-control[disabled],
 select[readonly],
@@ -18245,7 +18223,7 @@ select.form-control[readonly] {
   border-bottom: 1px dotted #ddd;
 }
 
-/* line 7311, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7306, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 select[disabled],
 select.form-control[disabled],
 select[readonly],
@@ -18257,13 +18235,13 @@ select.form-control[readonly] option {
   color: #bbbbbb;
 }
 
-/* line 7321, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7316, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 select[multiple],
 select.form-control[multiple] {
   background: none;
 }
 
-/* line 7325, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7320, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .radio label,
 .radio-inline label,
 .checkbox label,
@@ -18271,7 +18249,7 @@ select.form-control[multiple] {
   padding-left: 25px;
 }
 
-/* line 7331, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7326, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="radio"],
@@ -18283,7 +18261,7 @@ select.form-control[multiple] {
   margin-left: -25px;
 }
 
-/* line 7341, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7336, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input[type="radio"],
 .radio input[type="radio"],
 .radio-inline input[type="radio"] {
@@ -18298,14 +18276,14 @@ input[type="radio"],
   cursor: pointer;
 }
 
-/* line 7354, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7349, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input[type="radio"]:focus,
 .radio input[type="radio"]:focus,
 .radio-inline input[type="radio"]:focus {
   outline: none;
 }
 
-/* line 7359, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7354, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input[type="radio"]:before,
 .radio input[type="radio"]:before,
 .radio-inline input[type="radio"]:before,
@@ -18322,7 +18300,7 @@ input[type="radio"]:after,
   transition: 240ms;
 }
 
-/* line 7374, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7369, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input[type="radio"]:before,
 .radio input[type="radio"]:before,
 .radio-inline input[type="radio"]:before {
@@ -18336,7 +18314,7 @@ input[type="radio"]:before,
   transform: scale(0);
 }
 
-/* line 7386, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7381, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input[type="radio"]:after,
 .radio input[type="radio"]:after,
 .radio-inline input[type="radio"]:after {
@@ -18345,7 +18323,7 @@ input[type="radio"]:after,
   border: 2px solid #666666;
 }
 
-/* line 7393, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7388, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input[type="radio"]:checked:before,
 .radio input[type="radio"]:checked:before,
 .radio-inline input[type="radio"]:checked:before {
@@ -18355,21 +18333,21 @@ input[type="radio"]:checked:before,
   transform: scale(0.5);
 }
 
-/* line 7401, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7396, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input[type="radio"]:disabled:checked:before,
 .radio input[type="radio"]:disabled:checked:before,
 .radio-inline input[type="radio"]:disabled:checked:before {
   background-color: #bbbbbb;
 }
 
-/* line 7406, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7401, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input[type="radio"]:checked:after,
 .radio input[type="radio"]:checked:after,
 .radio-inline input[type="radio"]:checked:after {
   border-color: #2196f3;
 }
 
-/* line 7411, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7406, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input[type="radio"]:disabled:after,
 .radio input[type="radio"]:disabled:after,
 .radio-inline input[type="radio"]:disabled:after,
@@ -18379,7 +18357,7 @@ input[type="radio"]:disabled:checked:after,
   border-color: #bbbbbb;
 }
 
-/* line 7419, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7414, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input[type="checkbox"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
@@ -18391,21 +18369,21 @@ input[type="checkbox"],
   cursor: pointer;
 }
 
-/* line 7429, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7424, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input[type="checkbox"]:focus,
 .checkbox input[type="checkbox"]:focus,
 .checkbox-inline input[type="checkbox"]:focus {
   outline: none;
 }
 
-/* line 7434, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7429, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input[type="checkbox"]:focus:after,
 .checkbox input[type="checkbox"]:focus:after,
 .checkbox-inline input[type="checkbox"]:focus:after {
   border-color: #2196f3;
 }
 
-/* line 7439, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7434, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input[type="checkbox"]:after,
 .checkbox input[type="checkbox"]:after,
 .checkbox-inline input[type="checkbox"]:after {
@@ -18422,7 +18400,7 @@ input[type="checkbox"]:after,
   transition: 240ms;
 }
 
-/* line 7454, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7449, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input[type="checkbox"]:checked:before,
 .checkbox input[type="checkbox"]:checked:before,
 .checkbox-inline input[type="checkbox"]:checked:before {
@@ -18442,7 +18420,7 @@ input[type="checkbox"]:checked:before,
   transform: rotate(45deg);
 }
 
-/* line 7472, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7467, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input[type="checkbox"]:checked:after,
 .checkbox input[type="checkbox"]:checked:after,
 .checkbox-inline input[type="checkbox"]:checked:after {
@@ -18450,14 +18428,14 @@ input[type="checkbox"]:checked:after,
   border-color: #2196f3;
 }
 
-/* line 7478, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7473, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input[type="checkbox"]:disabled:after,
 .checkbox input[type="checkbox"]:disabled:after,
 .checkbox-inline input[type="checkbox"]:disabled:after {
   border-color: #bbbbbb;
 }
 
-/* line 7483, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7478, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 input[type="checkbox"]:disabled:checked:after,
 .checkbox input[type="checkbox"]:disabled:checked:after,
 .checkbox-inline input[type="checkbox"]:disabled:checked:after {
@@ -18465,7 +18443,7 @@ input[type="checkbox"]:disabled:checked:after,
   border-color: transparent;
 }
 
-/* line 7489, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7484, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .has-warning input:not([type=checkbox]),
 .has-warning .form-control,
 .has-warning input.form-control[readonly],
@@ -18478,7 +18456,7 @@ input[type="checkbox"]:disabled:checked:after,
   box-shadow: inset 0 -2px 0 #ff9800;
 }
 
-/* line 7500, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7495, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .has-error input:not([type=checkbox]),
 .has-error .form-control,
 .has-error input.form-control[readonly],
@@ -18491,7 +18469,7 @@ input[type="checkbox"]:disabled:checked:after,
   box-shadow: inset 0 -2px 0 #e51c23;
 }
 
-/* line 7511, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7506, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .has-success input:not([type=checkbox]),
 .has-success .form-control,
 .has-success input.form-control[readonly],
@@ -18504,7 +18482,7 @@ input[type="checkbox"]:disabled:checked:after,
   box-shadow: inset 0 -2px 0 #4caf50;
 }
 
-/* line 7522, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7517, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .has-warning .input-group-addon,
 .has-error .input-group-addon,
 .has-success .input-group-addon {
@@ -18513,13 +18491,13 @@ input[type="checkbox"]:disabled:checked:after,
   background-color: transparent;
 }
 
-/* line 7529, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7524, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .form-group-lg select,
 .form-group-lg select.form-control {
   line-height: 1.5;
 }
 
-/* line 7533, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7528, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .nav-tabs > li > a,
 .nav-tabs > li > a:focus {
   margin-right: 0;
@@ -18533,7 +18511,7 @@ input[type="checkbox"]:disabled:checked:after,
   transition: all 0.2s;
 }
 
-/* line 7545, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7540, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus:hover {
   background-color: transparent;
@@ -18542,7 +18520,7 @@ input[type="checkbox"]:disabled:checked:after,
   color: #2196f3;
 }
 
-/* line 7552, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7547, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus {
   border: none;
@@ -18551,20 +18529,20 @@ input[type="checkbox"]:disabled:checked:after,
   color: #2196f3;
 }
 
-/* line 7559, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7554, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus:hover {
   border: none;
   color: #2196f3;
 }
 
-/* line 7564, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7559, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .nav-tabs > li.disabled > a {
   -webkit-box-shadow: inset 0 -1px 0 #dddddd;
   box-shadow: inset 0 -1px 0 #dddddd;
 }
 
-/* line 7568, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7563, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .nav-tabs.nav-justified > li > a,
 .nav-tabs.nav-justified > li > a:hover,
 .nav-tabs.nav-justified > li > a:focus,
@@ -18574,12 +18552,12 @@ input[type="checkbox"]:disabled:checked:after,
   border: none;
 }
 
-/* line 7576, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7571, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .nav-tabs .dropdown-menu {
   margin-top: 0;
 }
 
-/* line 7579, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7574, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .dropdown-menu {
   margin-top: 0;
   border: none;
@@ -18587,17 +18565,17 @@ input[type="checkbox"]:disabled:checked:after,
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* line 7585, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7580, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .alert {
   border: none;
 }
 
-/* line 7588, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7583, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .badge {
   padding: 4px 6px 4px;
 }
 
-/* line 7591, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7586, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress {
   position: relative;
   z-index: 1;
@@ -18607,18 +18585,18 @@ input[type="checkbox"]:disabled:checked:after,
   box-shadow: none;
 }
 
-/* line 7599, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7594, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress-bar {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 7603, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7598, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress-bar:last-child {
   border-radius: 0 3px 3px 0;
 }
 
-/* line 7606, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7601, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress-bar:last-child:before {
   display: block;
   content: "";
@@ -18631,27 +18609,27 @@ input[type="checkbox"]:disabled:checked:after,
   background-color: #cae6fc;
 }
 
-/* line 7617, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7612, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress-bar-success:last-child.progress-bar:before {
   background-color: #c7e7c8;
 }
 
-/* line 7620, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7615, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress-bar-info:last-child.progress-bar:before {
   background-color: #edc9f3;
 }
 
-/* line 7623, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7618, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress-bar-warning:last-child.progress-bar:before {
   background-color: #ffe0b3;
 }
 
-/* line 7626, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7621, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .progress-bar-danger:last-child.progress-bar:before {
   background-color: #f28e92;
 }
 
-/* line 7629, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7624, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .close {
   font-size: 34px;
   font-weight: 300;
@@ -18662,29 +18640,29 @@ input[type="checkbox"]:disabled:checked:after,
   transition: all 0.2s;
 }
 
-/* line 7638, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7633, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .close:hover {
   opacity: 1;
 }
 
-/* line 7641, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7636, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item {
   padding: 15px;
 }
 
-/* line 7644, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7639, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .list-group-item-text {
   color: #bbbbbb;
 }
 
-/* line 7647, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7642, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .well {
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 7652, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7647, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel {
   border: none;
   border-radius: 2px;
@@ -18692,24 +18670,24 @@ input[type="checkbox"]:disabled:checked:after,
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* line 7658, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7653, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-heading {
   border-bottom: none;
 }
 
-/* line 7661, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7656, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .panel-footer {
   border-top: none;
 }
 
-/* line 7664, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7659, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .popover {
   border: none;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* line 7669, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
+/* line 7664, /Users/CY/toptorial/app/assets/stylesheets/bootstrap.css */
 .carousel-caption h1,
 .carousel-caption h2,
 .carousel-caption h3,
@@ -23484,40 +23462,37 @@ a:hover {
 
 /* line 145, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .index-part-1 {
-  display: block;
   background: #677987;
-  background-image: url("http://odv1eilcn.bkt.clouddn.com/images/2017-05-17-clean-setup-keyboard-and-glossy-desktop-display-picjumbo-com.jpg");
+  background-image: url("http://odv1eilcn.bkt.clouddn.com/images/2017-05-23-joao-silas-65013.jpg");
   background-attachment: fixed;
   background-position: center top;
   background-size: cover;
-  margin: 0px auto 0px auto;
+  margin: auto;
   width: 100%;
   min-width: 960px;
   height: 450px;
-  position: relative;
 }
-/* line 157, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 158, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .index-part-1 h1 {
-  font-size: 44px;
-  line-height: 56px;
+  font-size: 48px;
+  line-height: 55px;
   color: white;
+  font-weight: 400;
 }
-/* line 162, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 164, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .index-part-1 h2 {
   font-size: 18px;
   line-height: 44px;
   color: white;
-  font-weight: 200;
+  font-weight: 400;
 }
 
-/* line 169, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 171, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .lp-block-1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 600px;
-  height: 450px;
-  position: relative;
+  width: auto;
   text-align: center;
   padding-top: 100px;
 }
@@ -23539,13 +23514,13 @@ a:hover {
   margin-top: 20px;
 }
 
-/* line 194, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 195, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .lp-block-1-button:hover {
   background-color: white;
   text-decoration: none;
 }
 
-/* line 199, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 200, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .search {
   float: left;
   width: 400px;
@@ -23557,12 +23532,12 @@ a:hover {
   /*相对定位*/
 }
 
-/* line 207, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 208, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .subnavbar {
   margin: 10px 0 10px 0;
 }
 
-/* line 210, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 211, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .index-part-1 {
   display: block;
   margin: 0px auto 0px auto;
@@ -23572,7 +23547,7 @@ a:hover {
   position: relative;
 }
 
-/* line 218, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 219, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .tutorialcard {
   margin: 10px auto;
   position: relative;
@@ -23580,54 +23555,54 @@ a:hover {
   background-color: white;
   float: left;
 }
-/* line 224, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 225, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .tutorialcard h3 {
   font-size: 18px;
   font-weight: 500;
 }
-/* line 228, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 229, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .tutorialcard h3 a {
   color: black;
 }
-/* line 231, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 232, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .tutorialcard h3 a:hover {
   color: #A3DE83;
 }
 
-/* line 236, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 237, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .tutorial_title {
   height: 60px;
   overflow: hidden;
 }
 
-/* line 240, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 241, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .caption {
   margin: -20px auto 10px auto;
 }
 
-/* line 243, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 244, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .creator {
   float: left;
   margin: 15px auto -10px auto;
 }
-/* line 246, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 247, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .creator a {
   color: #677987;
 }
-/* line 249, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 250, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .creator img {
   width: 30px;
   height: 30px;
 }
 
-/* line 254, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 255, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .vote {
   float: right;
   margin: 15px -5px 0px auto;
 }
 
 /****** LOGIN MODAL ******/
-/* line 262, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 263, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal-container {
   padding: 30px;
   max-width: 350px;
@@ -23640,14 +23615,14 @@ a:hover {
   font-family: roboto;
 }
 
-/* line 274, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 275, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal-container h1 {
   text-align: center;
   font-size: 1.8em;
   font-family: roboto;
 }
 
-/* line 280, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 281, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal-container input[type=submit] {
   width: 100%;
   display: block;
@@ -23655,7 +23630,7 @@ a:hover {
   position: relative;
 }
 
-/* line 287, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 288, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal-container input[type=text], input[type=password] {
   height: 44px;
   font-size: 16px;
@@ -23671,7 +23646,7 @@ a:hover {
   -moz-box-sizing: border-box;
 }
 
-/* line 302, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 303, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal-container input[type=text]:hover, input[type=password]:hover {
   border: 1px solid #b9b9b9;
   border-top: 1px solid #a0a0a0;
@@ -23680,7 +23655,7 @@ a:hover {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* line 310, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 311, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal {
   text-align: center;
   font-size: 14px;
@@ -23693,7 +23668,7 @@ a:hover {
     user-select: none; */
 }
 
-/* line 322, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 323, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal-submit {
   /* border: 1px solid #3079ed; */
   border: 0px;
@@ -23706,7 +23681,7 @@ a:hover {
   /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
 }
 
-/* line 334, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 335, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal-submit:hover {
   /* border: 1px solid #2f5bb7; */
   border: 0px;
@@ -23715,7 +23690,7 @@ a:hover {
   /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
 }
 
-/* line 342, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 343, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal-container a {
   text-decoration: none;
   color: #677987;
@@ -23726,56 +23701,61 @@ a:hover {
   transition: opacity ease 0.5s;
 }
 
-/* line 352, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 353, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .login-help {
   font-size: 12px;
 }
 
-/* line 357, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 358, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .navbar-default {
   background-color: white;
   margin-bottom: 0;
   padding-left: 50px;
   padding-right: 50px;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
-  /* line 366, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+  /* line 368, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
   .navbar {
     border-radius: 0;
   }
 }
-/* line 371, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 373, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-brand {
+  font-size: 20px;
   color: #677987;
   padding: 10px 15px;
-  line-height: 30px;
+  line-height: 32px;
 }
-/* line 375, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 379, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-brand img {
-  margin: 0;
+  margin: 2px 2px 3px 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
 }
 
-/* line 380, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 387, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: black;
   background-color: transparent;
 }
 
-/* line 385, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 392, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-nav > li > a {
   color: #677987;
 }
 
-/* line 390, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 397, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: black;
   background-color: transparent;
 }
 
-/* line 395, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 402, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -23783,7 +23763,7 @@ a:hover {
   background-color: #F0F4F8;
 }
 
-/* line 403, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 410, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
@@ -23791,50 +23771,50 @@ a:hover {
   color: black;
 }
 
-/* line 411, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 418, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .def-footer {
   position: relative;
 }
-/* line 413, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 420, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .def-footer .help-link {
   float: left;
   margin: 0 40px;
 }
-/* line 416, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 423, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .def-footer .help-link li {
   padding: 0 10px;
 }
-/* line 421, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 428, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .def-footer .copyright-info {
   float: right;
   margin: 0 40px;
 }
 
-/* line 427, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 434, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .site-footer {
   position: absolute;
   background: white;
   color: #677987;
   padding-top: 20px;
 }
-/* line 433, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 440, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .site-footer a:link {
   color: #677987;
 }
-/* line 434, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 441, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .site-footer a:visited {
   color: #677987;
 }
-/* line 435, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 442, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .site-footer a:hover {
   color: black;
 }
-/* line 436, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 443, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .site-footer a:active {
   color: black;
 }
 
-/* line 438, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 445, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .dropzone {
   background: #f4f4f4 !important;
   border: none !important;
