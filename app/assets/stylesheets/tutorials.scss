@@ -6,6 +6,18 @@
   padding: 15px;
   overflow: hidden;
 }
+.PreviewDetailShow {
+  margin-top: 10px;
+  padding: 15px;
+  overflow: hidden;
+  min-width: 270px;
+  max-width: 500px;
+  .search {
+    float:left;
+    margin-left: -10px;
+    margin-top: 10px;
+  }
+}
 
 .PreviewPic {
   margin-top: 20px;
@@ -46,13 +58,32 @@
   }
 
 }
-
+.voteShow {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 500px;
+  .btn {
+    margin: 5px;
+  }
+}
+.searchShow {
+  float:left;
+  max-width: 500px;
+}
 .TutorialShow {
   margin-top:15px;
   margin-bottom: 15px;
   line-height: 18px;
+  float: right;
+  padding: 30px !important;
   img {
     width:80%;
+    height: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     display: table;
@@ -76,7 +107,7 @@
   border-left: 1px solid #F0F4F8;
 }
 .CommentContent {
-  margin-left: 100px;
+  margin-left: 120px;
   padding: 10px;
   font-size: 14px;
   font-weight: 380;

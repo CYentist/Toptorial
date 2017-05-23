@@ -7,13 +7,7 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li>
-              <div class="navbar-form navbar-left search" role="search">
-                <%= render :partial => "tutorials/search_bar" %>
-              </div>
-            </li>
-          </ul>
+
           <ul class="nav navbar-nav navbar-right">
             <li>
               <%= link_to new_tutorial_path do %><i class="fa fa-file-text-o" aria-hidden="true"></i> 写教程<% end %>
@@ -21,10 +15,10 @@
             <% if !current_user %>
               <%= link_to("注册", new_user_registration_path, class: "btn btn-sm btn-info navbar-btn") %>
             <% elsif current_user.is_admin%>
-              <%= link_to("管理员后台", admin_tutorials_path, class:"btn btn-sm btn-info navbar-btn") %>
-              <%= link_to("用户中心", edit_account_user_path(current_user), class:"btn btn-sm btn-info navbar-btn") %>
+              <%= link_to("管理员后台", admin_tutorials_path, class:"btn btn-sm btn-primary navbar-btn") %>
+              <%= link_to("用户中心", edit_account_user_path(current_user), class:"btn btn-sm btn-primary navbar-btn") %>
             <% else %>
-              <%= link_to("用户中心", edit_account_user_path(current_user), class:"btn btn-sm btn-info navbar-btn") %>
+              <%= link_to("用户中心", edit_account_user_path(current_user), class:"btn btn-sm btn-primary navbar-btn") %>
             <% end %>
           </ul>
         </div>

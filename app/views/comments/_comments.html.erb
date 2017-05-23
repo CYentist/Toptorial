@@ -2,9 +2,9 @@
   <li class="list-group-item">
     <div class="title">
       <span class="creator">
-        <a href="<%= user_path(@tutorial.user)%>">
-        <img src= "<%= render_user_avatar_thumb(@tutorial.user, 30) %>"></a>
-        <%= link_to(@tutorial.user.display_name, user_path(@tutorial.user), style:"margin-left:5px")  %>
+        <a href="<%= user_path(comment.user)%>">
+        <img src= "<%= render_user_avatar_thumb(comment.user, 30) %>"></a>
+        <%= link_to(comment.user.display_name, user_path(comment.user), style:"margin-left:5px")  %>
         </span>
         <div class="CommentContent verticalline">
           <p><%= simple_format(comment.post) %></p>

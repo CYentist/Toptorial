@@ -29,11 +29,11 @@
 
   <div class="vote">
     <%= link_to like_tutorial_path(@tutorial), class:"btn btn-danger", role:"button", method: :put do %>
-     <i class="fa fa-hand-o-up" aria-hidden="true"></i> 顶
+     <i class="fa fa-thumbs-o-up fa-rotate-270" aria-hidden="true"></i> 顶
         <%= @tutorial.get_upvotes.size %>
     <% end %>
     <%= link_to dislike_tutorial_path(@tutorial), class:"btn btn-default", role:"button", method: :put do %>
-        <i class="fa fa-hand-o-down" aria-hidden="true"></i> 踩
+        <i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 踩
         <%= @tutorial.get_downvotes.size %>
     <% end %>
   </div>
