@@ -6,7 +6,7 @@
 
 <div class="container-fluid" style="margin: 20px 20px 20px 20px">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6" style="margin-bottom:10px">
       <p><img id="coin" src="http://icons.iconarchive.com/icons/ph03nyx/super-mario/128/Retro-Coin-icon.png" alt="coin"   width="50px" height="50px"><span style="font-size:50px"> ×</span><span style="font-size:50px"> <%= @user.point %></span></p>
       <%= form_tag charge_account_user_path, :method => :get, :class => "point-charge-form" do %>
         <div class="input-group" id="charge-input">

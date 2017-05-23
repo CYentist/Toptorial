@@ -10,7 +10,14 @@
 	<%= link_to("查看完整教程", buy_tutorial_path(@tutorial), method: :post, class: "btn btn-primary",  :data => { :confirm => "确认购买?"} ) %>
 </div>
 
+<div style="text-align:center">
+	  <p><span style="font-size:20px;"><img id="coin" src="http://icons.iconarchive.com/icons/ph03nyx/super-mario/128/Retro-Coin-icon.png" alt="coin"  width="18px" height="18px" style="margin-top:26px;"> x <%= @tutorial.price %></span></p>
+</div>
 
+<div class="BlockTitle">
+	<h2 class="BlockTitle-title">收到的评论</h2>
+	<span class="BlockTitle-line"></span>
+</div>
 				<div class="comments">
 
 					<div class="comment">

@@ -7,6 +7,7 @@
           <th>Title</th>
           <th>Description</th>
           <th>Options</th>
+          <th>Check</th>
         </tr>
       </thead>
       <tbody>
@@ -20,12 +21,21 @@
             <%= link_to(tutorial.title, admin_tutorial_path(tutorial)) %>
           </td>
           <td>
-            <%= tutorial.description %>
+            <div style="width:200px;">
+              <%= tutorial.description %>
+            </div>
           </td>
           <td>
               <%= link_to("查看", admin_tutorial_path(tutorial), class:"btn btn-sm btn-success")%>
               <%= link_to("编辑", edit_admin_tutorial_path(tutorial), class:"btn btn-sm btn-primary")%>
               <%= link_to("删除", admin_tutorial_path(tutorial), class:"btn btn-sm btn-danger", :method => :delete, :data => { :confirm => "确认删除?" })%>
+          </td>
+          <td>
+              <% if tutorial.checked %>
+        				<%= link_to("重新审核", recheck_admin_tutorial_path(tutorial), :method => :post, :class => "btn btn-danger") %>
+        			<% else %>
+        				<%= link_to("通过审核", check_admin_tutorial_path(tutorial), :method => :post, :class => "btn btn-success") %>
+        			<% end %>
           </td>
         </tr>
         <% end %>

@@ -1,0 +1,34 @@
+
+
+<div class="paper PreviewDetailShow">
+
+<div class="">
+  <div class="avatar">
+    <a href="<%= user_path(@tutorial.user)%>"><img src= "<%= render_user_avatar_thumb(@tutorial.user, 200) %>"></a>
+    <a href="<%= user_path(@tutorial.user)%>">
+    <h1><%= @tutorial.user.display_name %></h1></a>
+    <p class="user_description"><%= @tutorial.user.description %></p>
+    <button type="button" class="btn btn-success">找我答疑</button>
+    <div class="user_total_votes">
+      共收到<%= @tutorial.user.total_votes %>个顶
+    </div>
+  </div>
+
+
+</div>
+
+</div>
+<div class="voteShow">
+  <%= link_to like_tutorial_path(@tutorial), class:"btn btn-danger", role:"button", method: :put do %>
+   <i class="fa fa-thumbs-o-up fa-rotate-270" aria-hidden="true"></i> 顶
+      <%= @tutorial.get_upvotes.size %>
+  <% end %>
+  <%= link_to dislike_tutorial_path(@tutorial), class:"btn btn-default", role:"button", method: :put do %>
+      <i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 踩
+      <%= @tutorial.get_downvotes.size %>
+  <% end %>
+</div>
+<!-- 投票 -->
+<div class="searchShow" role="search">
+  <%= render :partial => "tutorials/search_bar" %>
+</div>
