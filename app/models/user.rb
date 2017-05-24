@@ -30,6 +30,7 @@ class User < ApplicationRecord
   has_many :comments
   mount_uploader :avatar, ImageUploader
   has_many :photos
+  has_many :answers
 
   def admin?
     is_admin

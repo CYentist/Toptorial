@@ -1,0 +1,13 @@
+<div class="col-md-3 col-sm-6">
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h3 class="panel-title"><%= answer.title %><span class="pull-right" style="font-size:15px"><img id="coin-mini" src="http://icons.iconarchive.com/icons/ph03nyx/super-mario/128/Retro-Coin-icon.png" alt="coin"   width="15px" height="15px"> × <%= answer.price %></span></h3>
+    </div>
+    <div class="panel-body">
+      <p><%= answer.description %></p>
+    </div>
+    <div class="panel-footer">
+      <%= link_to("购买", checkout_answers_path, class:"btn btn-success") %>
+    </div>
+  </div>
+</div>

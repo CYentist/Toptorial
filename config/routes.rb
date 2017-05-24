@@ -24,6 +24,12 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  resources :answers do
+    collection do
+      post :checkout
+    end
+  end
+
   namespace :admin do
     resources :tutorials do
       member do
@@ -41,7 +47,10 @@ Rails.application.routes.draw do
     end
     resources :tutorials
     resources :photos
+    resources :answers
   end
+
+  resources :orders
 
   root 'tutorials#index'
 
