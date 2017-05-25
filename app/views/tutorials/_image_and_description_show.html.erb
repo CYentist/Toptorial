@@ -8,12 +8,23 @@
     <a href="<%= user_path(@tutorial.user)%>">
     <h1><%= @tutorial.user.display_name %></h1></a>
     <p class="user_description"><%= @tutorial.user.description %></p>
-    <button type="button" class="btn btn-success">找我答疑</button>
+    <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      找我答疑
+    </button>
     <div class="user_total_votes">
       共收到<%= @tutorial.user.total_votes %>个顶
     </div>
   </div>
 
+  <div class="container col-xs-12 col-sm-12 col-md-12">
+    <div class="collapse" id="collapseExample">
+      <div class="well">
+        <div class="row">
+          <%= render @tutorial.user.answers %>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
 
