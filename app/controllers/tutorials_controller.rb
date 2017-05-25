@@ -87,9 +87,9 @@ class TutorialsController < ApplicationController
 
     if !current_user.is_buyer?(@tutorial)
       if current_user.point >= @tutorial.price
-        current_user.point = current_user.point - @tutorial.price
+        current_user.point -=  @tutorial.price
         current_user.save
-        @tutorial.user.point = @tutorial.user.point + @tutorial.price
+        @tutorial.user.point +=  @tutorial.price
         @tutorial.user.save
         current_user.buy!(@tutorial)
         redirect_to tutorial_path(@tutorial)

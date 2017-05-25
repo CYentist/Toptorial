@@ -3,7 +3,7 @@ class CreateOrders < ActiveRecord::Migration[5.0]
     create_table :orders do |t|
       t.integer :total, default: 0
       t.integer :user_id
-      t.string :question
+      t.text :question
       t.string :contact
       t.timestamps
     end

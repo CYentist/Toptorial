@@ -1,6 +1,7 @@
 class Account::TutorialsController < ApplicationController
+  before_action :authenticate_user!
   layout "account"
-  
+
   def index
     @tutorials = current_user.tutorials
   end

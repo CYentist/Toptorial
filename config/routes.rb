@@ -2,8 +2,6 @@ Rails.application.routes.draw do
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   devise_for :users
-
-
   resources :users
 
   resources :photos
@@ -25,8 +23,8 @@ Rails.application.routes.draw do
   end
 
   resources :answers do
-    collection do
-      post :checkout
+    member do
+      get :ask
     end
   end
 
@@ -37,9 +35,28 @@ Rails.application.routes.draw do
         post :recheck
       end
     end
+    resources :orders do
+     member do
+       post :cancel
+       post :ship
+       post :shipped
+       post :return
+     end
+   end
   end
 
   namespace :account do
+    resources :orders do
+     member do
+       post :cancel
+       post :ship
+       post :shipped
+       post :return
+     end
+     collection do
+       get :paid
+     end
+   end
     resources :users do
       member do
         get :charge

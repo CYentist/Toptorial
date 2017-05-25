@@ -26,11 +26,14 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   has_many :tutorials
   has_many :tutorial_relationships
+  has_many :order_relationships
   has_many :paid_tutorials, :through => :tutorial_relationships, :source => :tutorial
+  has_many :paid_orders, :through => :order_relationships, :source => :order
   has_many :comments
   mount_uploader :avatar, ImageUploader
   has_many :photos
   has_many :answers
+  has_many :orders
 
   def admin?
     is_admin
@@ -42,6 +45,14 @@ class User < ApplicationRecord
 
   def buy!(tutorial)
     paid_tutorials << tutorial
+  end
+
+  def is_asker?(order)
+    paid_orders.include?(order)
+  end
+
+  def ask!(order)
+    paid_orders << (order)
   end
 
   def display_name

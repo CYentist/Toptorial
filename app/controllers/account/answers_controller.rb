@@ -1,12 +1,15 @@
 class Account::AnswersController < ApplicationController
+  before_action :authenticate_user!
   layout "account"
 
   def index
     @answers = current_user.answers
+    @orders = current_user.orders.order("id DESC")
   end
 
   def show
     @answer = Answer.find[params(:id)]
+
   end
 
   def new

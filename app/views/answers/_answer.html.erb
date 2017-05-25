@@ -7,7 +7,9 @@
       <p><%= answer.description %></p>
     </div>
     <div class="panel-footer">
-      <%= link_to("购买", checkout_answers_path, class:"btn btn-success") %>
+      <%= link_to "购买", ask_answer_path(answer), :class => "btn btn-success"%>
+
+
     </div>
   </div>
 </div>

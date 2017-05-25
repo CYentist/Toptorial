@@ -22,3 +22,25 @@
     <% end %>
   </div>
 </div>
+<div class="panel-heading">
+  <div class="panel-title">
+    <h3>收到的订单</h3>
+  </div>
+</div>
+<div class="panel-body">
+  <div class="container-fluid">
+    <% @orders.each do |order| %>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title"><span class="pull-right" style="font-size:10px"><img id="coin-mini" src="http://icons.iconarchive.com/icons/ph03nyx/super-mario/128/Retro-Coin-icon.png" alt="coin"   width="15px" height="15px"> ×<%= order.total %></span></h3>
+          </div>
+          <div class="panel-body">
+            <p><%= order.question  %></p>
+            他的联系方式：</br>
+            <p><%= order.contact  %></p>
+          </div>
+        </div>
+      <% end %>
+
+  </div>
+</div>

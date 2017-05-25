@@ -1,0 +1,8 @@
+
+    <%= simple_form_for @order do |f| %>
+
+    <%= f.input :question, :label =>"你的问题" %>
+    <%= f.input :contact, :label =>"联系方式" %>
+
+    <%= f.submit "确认并支付", class: 'btn btn-default pull-right'  %>
+    <% end %>

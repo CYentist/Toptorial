@@ -3,5 +3,6 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @answers = @user.answers
     @tutorials = @user.tutorials.where(:checked => true).all.sort_by {|tutorial| tutorial.get_upvotes.size}.reverse
+    @order = Order.new
   end
 end
