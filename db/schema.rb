@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170525055538) do
+ActiveRecord::Schema.define(version: 20170525142252) do
 
   create_table "answers", force: :cascade do |t|
     t.integer  "user_id"
@@ -49,9 +49,11 @@ ActiveRecord::Schema.define(version: 20170525055538) do
     t.integer  "user_id"
     t.text     "question"
     t.string   "contact"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
     t.string   "token"
+    t.string   "aasm_state", default: "order_placed"
+    t.index ["aasm_state"], name: "index_orders_on_aasm_state"
   end
 
   create_table "photos", force: :cascade do |t|

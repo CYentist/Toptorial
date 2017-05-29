@@ -49,9 +49,8 @@ Rails.application.routes.draw do
     resources :orders do
      member do
        post :cancel
-       post :ship
-       post :shipped
-       post :return
+       post :accept
+       post :deliver
      end
      collection do
        get :paid
