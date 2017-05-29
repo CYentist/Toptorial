@@ -7,7 +7,7 @@ class Account::OrdersController < ApplicationController
   end
 
   def show
-    @order = Order.find(params[:id])
+    @order = Order.find_by_token(params[:id])
 
     # if current_user.is_asker?(@order)
     # else

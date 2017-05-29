@@ -36,12 +36,11 @@ Rails.application.routes.draw do
       end
     end
     resources :orders do
-     member do
-       post :cancel
-       post :ship
-       post :shipped
-       post :return
-     end
+      member do
+        post :cancel
+        post :accept
+        post :deliver
+      end
    end
   end
 
@@ -66,7 +65,11 @@ Rails.application.routes.draw do
     resources :answers
   end
 
-  resources :orders
+  resources :orders do
+    member do
+       post :cancel
+    end
+  end
 
   root 'tutorials#index'
 

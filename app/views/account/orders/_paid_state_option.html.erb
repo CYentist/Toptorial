@@ -1,0 +1,18 @@
+<div style="padding:10px; float:right;">
+
+  <% case order.aasm_state %>
+  <% when "order_placed" %>
+    <%= link_to("取消订单", cancel_order_path(order.token), method: :post, class: "btn  btn-info", :data => { :confirm => "确认取消?" }) %>
+
+  <% when "order_accepted" %>
+  <span class="label label-info">正在答疑</span>
+
+  <% when "order_cancelled" %>
+    <span class="label label-default">订单已取消</span>
+
+  <% when "finished" %>
+    <span class="label label-success">已完成</span>
+
+  <% end %>
+
+</div>
