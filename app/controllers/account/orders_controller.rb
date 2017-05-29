@@ -19,6 +19,9 @@ class Account::OrdersController < ApplicationController
   def accept
     @order = Order.find(params[:id])
     @order.accept!
+    @order.user.point +=  @order.total
+    @order.user.save
+    flash[:notice] = "已接受答疑，获得金币"
     redirect_to :back
   end
 
@@ -31,6 +34,9 @@ class Account::OrdersController < ApplicationController
   def cancel
     @order = Order.find(params[:id])
     @order.cancel_order!
+    @order.asker.point +=  @order.total
+    @order.asker.save
+    flash[:notice] = "订单已取消，金币已退还"
     redirect_to :back
   end
 

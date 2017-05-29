@@ -15,7 +15,6 @@ class OrdersController < ApplicationController
         if current_user.point >= @order.total
           current_user.point -=  @order.total
           current_user.save
-          @order.user.point +=  @order.total
           @order.user.save
           current_user.ask!(@order)
           redirect_to account_order_path(@order.token)
@@ -33,6 +32,8 @@ class OrdersController < ApplicationController
     def cancel
       @order = Order.find_by_token(params[:id])
       @order.cancel_order!
+      @order.asker.point +=  @order.total
+      @order.asker.save
       flash[:notice] = "订单已取消，金币已退还"
       redirect_to :back
     end

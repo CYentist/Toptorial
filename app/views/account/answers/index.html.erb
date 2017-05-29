@@ -9,16 +9,19 @@
 <div class="panel-body">
   <div class="container-fluid">
     <% @answers.each do |answer| %>
-      <%= link_to(account_answer_path(answer)) do %>
         <div class="panel panel-success">
           <div class="panel-heading">
-            <h3 class="panel-title"><%= answer.title %><span class="pull-right" style="font-size:10px">已上架</span></h3>
+            <h3 class="panel-title"><%= answer.title %>
+                <span class="pull-left" style="font-size:10px; margin-right:10px;">(已上架)</span>
+              <span class="pull-right" style="font-size:15px">
+              <img id="coin-mini" src="http://icons.iconarchive.com/icons/ph03nyx/super-mario/128/Retro-Coin-icon.png" alt="coin"   width="15px" height="15px"> × <%= answer.price %></span>
+
+            </h3>
           </div>
           <div class="panel-body">
             <p><%= answer.description %></p>
           </div>
         </div>
-      <% end %>
     <% end %>
   </div>
 </div>

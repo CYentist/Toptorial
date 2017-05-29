@@ -1,7 +1,7 @@
 <div class="panel-heading">
   <div class="panel-title">
     <h3><%= link_to(@order.asker.display_name, user_path(@order.asker))  %>对<%= link_to(@order.user.display_name, user_path(@order.user))  %> 的提问</h3>
-</div>
+  </div>
 </div>
 
 
@@ -9,13 +9,11 @@
 <div class="panel-body">
   <div class="container-fluid">
     <h4>问题</h4>
-<p><%= @order.question  %></p>
-</br>
-<h4><%= link_to(@order.asker.display_name, user_path(@order.asker))  %>的联系方式</h4>
-<p><%= @order.contact  %></p>
+    <p><%= @order.question  %></p>
+    </br>
+    <h4><%= link_to(@order.asker.display_name, user_path(@order.asker))  %>的联系方式 ：<%= @order.contact  %></h4>
 
-<%= link_to(@order.user.display_name, user_path(@order.user))  %>的联系方式：</br>
 
-<p<%= @order.user.contact %></p>
+    <h4><%= link_to(@order.user.display_name, user_path(@order.user))  %>的联系方式：<%= @order.user.contact %></h4>
   </div>
 </div>
