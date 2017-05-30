@@ -15,8 +15,12 @@
       <div class="collapse" id="collapseExample">
         <div class="well">
           <div class="row">
-            <%= render @user.answers %>
-          </div>    
+            <% if @user.answers.present? %>
+              <%= render @user.answers %>
+            <% else %>
+              他/她还没开通答疑服务
+            <% end %>
+          </div>
         </div>
       </div>
     </div>

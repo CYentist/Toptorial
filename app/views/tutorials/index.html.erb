@@ -2,11 +2,8 @@
   <div class="row">
     <div class="index-part-1">
       <div class="lp-block-1">
-
-
-          <h1>你让知识有价值</h1>
+        <h1>你让知识有价值</h1>
         <h2>与全世界分享的你的拿手冷技能，总有人会用得上！</h2>
-
         <div>
           <%= link_to("开始写教程", new_tutorial_path, class:"lp-block-1-button btn") %>
         </div>
@@ -17,21 +14,15 @@
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-
-
-              <li ><%= link_to("最新", tutorials_path(:order => "by_time"))%></li>
+              <li><%= link_to("最新", tutorials_path(:order => "by_time"))%></li>
               <li><%= link_to("最热", tutorials_path(:order =>"by_votes"))%></li>
-
-
           </ul>
           <ul class="nav navbar-nav navbar-right">
-
               <li>
                 <div class="navbar-form navbar-left search" role="search">
                   <%= render :partial => "tutorials/search_bar" %>
                 </div>
               </li>
-
           </ul>
         </div>
       </div>

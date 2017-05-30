@@ -8,8 +8,7 @@ class Account::AnswersController < ApplicationController
   end
 
   def show
-    @answer = Answer.find[params(:id)]
-
+    @answer = Answer.find(params[:id])
   end
 
   def new
@@ -27,20 +26,20 @@ class Account::AnswersController < ApplicationController
   end
 
   def edit
-    @answer = Answer.find[params(:id)]
+    @answer = Answer.find(params[:id])
   end
 
   def update
-    @answer = Answer.find[params(:id)]
+    @answer = Answer.find(params[:id])
     if @answer.update(answer_params)
-      redirect_to account_answer_path(@answer)
+      redirect_to account_answers_path
     else
       render :edit
     end
   end
 
   def destroy
-    @answer = Answer.find[params(:id)]
+    @answer = Answer.find(params[:id])
     @answer.destroy
     redirect_to account_answers_path, alert: "删除了答疑服务"
   end

@@ -4,11 +4,8 @@
 		<div class="col-md-4">
 				<%= render "image_and_description_show" %>
 		</div>
-
-			<div class="TutorialShow col-md-8">
-				<div class="row">
-
-
+		<div class="TutorialShow col-md-8">
+			<div class="row">
 				<div class="PreviewPic">
 				  <% if @tutorial.image.present? %>
 				    <img src="<%= @tutorial.image.medium.url%>" >
@@ -19,13 +16,8 @@
 				<!-- 显示图片 -->
 				<h2> <%= @tutorial.title %> </h2>
 				<div class="line"></div>
-
 				<div class="contentShow"><%= markdown(@tutorial.content) %></div>
-
-
-				<!-- 全文 -->
-
-
+					<!-- 全文 -->
 				<div class="newcomment">
 					<%= simple_form_for [@tutorial, @comment] do |f| %>
 					<fieldset class="form-group">
@@ -40,7 +32,6 @@
 					<span class="BlockTitle-line"></span>
 				</div>
 				<div class="comments">
-
 					<div class="comment">
 					 <%= render :partial => "comments/comments", :collection => @comments, :as => :comment %>
 					 <!-- 显示评论 -->
@@ -49,8 +40,8 @@
 			</div>
 
 
-	    </div>
-	  </div>
+	   </div>
+	 </div>
 		<!-- row -->
-	</div>
+</div>
 	<!-- container -->
