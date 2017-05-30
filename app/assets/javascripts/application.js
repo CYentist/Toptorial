@@ -38,7 +38,7 @@
 $(document).ready(function() {
     // alert auto close
     window.setTimeout(function() {
-        $('.alert').alert('close');
+      $('.alert').alert('close');
     }, 3000);
     // 特效2
     // window.setTimeout(function() {

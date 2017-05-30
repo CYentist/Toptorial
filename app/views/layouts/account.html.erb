@@ -32,8 +32,8 @@
                 <%= link_to("我的钱包", account_user_path(current_user), class:"list-group-item") %>
                 <%= link_to("发布的教程", account_tutorials_path, class:"list-group-item") %>
                 <%= link_to("购买的教程", paid_tutorials_path, method: :get, class:"list-group-item") %>
-                <%= link_to("售出的教程", "#", class:"list-group-item") %>
-                <%= link_to("答疑订单", "#", class:"list-group-item") %>
+                <%= link_to("购买的答疑", paid_account_orders_path, class:"list-group-item") %>
+                <%= link_to("我的答疑服务", account_answers_path, class:"list-group-item") %>
                 <%= link_to("修改密码",  edit_user_registration_path, class:"list-group-item") %>
                 <%= link_to(content_tag(:i, "退出登录", class: 'fa fa-sign-out'), destroy_user_session_path, method: :delete, class:"list-group-item") %>
               </div>

@@ -1,0 +1,15 @@
+
+<div class="panel panel-default">
+  <div class="panel-heading" >
+    <h1>编辑答疑服务</h1>
+  </div>
+  <div class="panel-body">
+    <%= simple_form_for [:account, @answer] do |f| %>
+      <%= f.input :title, label: "服务名称" %>
+      <%= f.input :description, label: "答疑说明" %>
+      <%= f.input :contact, label: "联系方式" %>
+      <%= f.input :price, label: "价格" %>
+      <%= f.submit "上架服务", class: "btn btn-success" %>
+    <% end %>
+  </div>
+</div>

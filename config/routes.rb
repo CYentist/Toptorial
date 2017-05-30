@@ -2,8 +2,6 @@ Rails.application.routes.draw do
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   devise_for :users
-
-
   resources :users
 
   resources :photos
@@ -24,6 +22,12 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  resources :answers do
+    member do
+      get :ask
+    end
+  end
+
   namespace :admin do
     resources :tutorials do
       member do
@@ -31,9 +35,26 @@ Rails.application.routes.draw do
         post :recheck
       end
     end
+    resources :orders do
+      member do
+        post :cancel
+        post :accept
+        post :deliver
+      end
+   end
   end
 
   namespace :account do
+    resources :orders do
+     member do
+       post :cancel
+       post :accept
+       post :deliver
+     end
+     collection do
+       get :paid
+     end
+   end
     resources :users do
       member do
         get :charge
@@ -41,6 +62,13 @@ Rails.application.routes.draw do
     end
     resources :tutorials
     resources :photos
+    resources :answers
+  end
+
+  resources :orders do
+    member do
+       post :cancel
+    end
   end
 
   root 'tutorials#index'

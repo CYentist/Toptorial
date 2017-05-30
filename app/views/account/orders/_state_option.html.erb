@@ -1,0 +1,26 @@
+<div style="padding:10px; float:right;">
+
+  <% case order.aasm_state %>
+  <% when "order_placed" %>
+    <%= link_to("取消订单",
+                cancel_account_order_path(order),
+                class: "btn btn-default btn-sm", method: :post) %>
+    <%= link_to("接受答疑",
+                accept_account_order_path(order),
+                class: "btn btn-primary btn-sm", method: :post) %>
+
+  <% when "order_accepted" %>
+  <span class="label label-info">正在答疑</span>
+    <%= link_to("设为已完成",
+                deliver_account_order_path(order),
+                class: "btn btn-success btn-sm", method: :post) %>
+
+  <% when "order_cancelled" %>
+    <span class="label label-default">订单已取消</span>
+
+  <% when "finished" %>
+    <span class="label label-success">已完成</span>
+
+  <% end %>
+
+</div>
