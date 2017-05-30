@@ -43,6 +43,7 @@ class TutorialsController < ApplicationController
 
   def create
     @tutorial = Tutorial.new(tutorial_params)
+    @photos = current_user.photos
     @tutorial.user = current_user
     if @tutorial.save
       flash[:notice] = "新建成功，请等待审核。"
