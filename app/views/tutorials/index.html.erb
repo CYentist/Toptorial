@@ -30,9 +30,12 @@
 
     <div class="index-part-3">
       <div class="container">
-        <div class="row" id="tutorials">
-          <%= render @tutorials %>
+        <div class="col-md-8 col-lg-8">
+          <div class="row" id="tutorials">
+              <%= render @tutorials %>
+          </div>
         </div>
+
         <!-- <div class="load_more">
           <p>加载更多</p>
           <%= will_paginate @tutorials %>

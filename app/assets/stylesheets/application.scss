@@ -226,8 +226,8 @@ a:hover{text-decoration:none}
   overflow: hidden;
   background-color: white;
   float:left;
-   h3{
 
+   h3{
     font-size: 18px;
     font-weight: 500;
     a {
@@ -238,22 +238,57 @@ a:hover{text-decoration:none}
     }
   }
 }
+.thumbnail {
+  border: none !important;
+  padding: 0 !important;
+}
+.thumbnailimg img {
+  transition: all 0.2s; /*这句代码的意思是，当这个元素的某个属性发现变化时，不是立刻完成，而是慢慢地在400ms内完成，这样就实现了动画的效果*/
+  -webkit-transition: all 0.2s;
+  -webkit-transition:all 0.2s ease-in-out; /*让「谷歌浏览器」支持这个属性*/
+  -moz-transition:all 0.2s ease-in-out; /*让「火狐浏览器」支持这个属性*/
+  -o-transition:all 0.2s ease-in-out; /*让「safari」支持属性*/
+  -ms-transition:all 0.2s ease-in-out; /*让「IE浏览器」支持这个属性*/
+}
+.thumbnailimg:hover img {
+  transform: scale(1.05); /*在400ms内，图片的尺寸从 1倍 放大到 1.2倍*/
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+}
+.TutorialDescription {
+  height: 40px;
+  overflow: hidden;
+  font-size: 12px;
+  margin-bottom: 5px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  padding-right: 20px;
+}
 .tutorial_title {
   height: 60px;
   overflow: hidden;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 .caption {
   margin: -20px auto 10px auto;
+  padding: 20px !important;
 }
 .creator {
   float: left;
-  margin: 15px auto -10px auto;
+  margin: 15px auto -10px 0;
   a {
     color: #677987;
   }
   img {
     width: 30px;
     height: 30px;
+    margin: 0 !important;
   }
 }
 .vote {
