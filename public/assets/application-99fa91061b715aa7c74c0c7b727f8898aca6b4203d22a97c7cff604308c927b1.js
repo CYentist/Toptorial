@@ -15797,6 +15797,22 @@ return t.dispatch("turbolinks:before-render",{data:{newBody:e}})},r.prototype.no
 
 }).call(this);
 (function() {
+
+
+}).call(this);
+(function() {
+
+
+}).call(this);
+(function() {
+
+
+}).call(this);
+(function() {
+
+
+}).call(this);
+(function() {
   (function() {
     (function() {
       var slice = [].slice;
@@ -16426,6 +16442,10 @@ return t.dispatch("turbolinks:before-render",{data:{newBody:e}})},r.prototype.no
 
 
 }).call(this);
+(function() {
+
+
+}).call(this);
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -16463,10 +16483,10 @@ return t.dispatch("turbolinks:before-render",{data:{newBody:e}})},r.prototype.no
 // 滚动翻页
 
 
-$(document).ready(function() {
+$(document).on("turbolinks:load", function(){
     // alert auto close
     window.setTimeout(function() {
-        $('.alert').alert('close');
+      $('.alert').alert('close');
     }, 3000);
     // 特效2
     // window.setTimeout(function() {
@@ -16476,7 +16496,7 @@ $(document).ready(function() {
     // }, 2000);
 });
 
-$(function() {
+$(document).on("turbolinks:load", function(){
   var mediaDropzone;
   mediaDropzone = new Dropzone("#media-dropzone");
   return mediaDropzone.on("success", function(file, responseText) {
