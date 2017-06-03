@@ -5,11 +5,11 @@ class TutorialsController < ApplicationController
   def index
     @tutorials = case params[:order]
     when 'by_votes'
-      Tutorial.checked.order(:cached_votes_up => :desc).paginate(page: params[:page], per_page: 9)
+      Tutorial.checked.order(:cached_votes_up => :desc).paginate(page: params[:page], per_page: 8)
     when 'by_time'
-      Tutorial.checked.recent.paginate(page: params[:page], per_page: 9)
+      Tutorial.checked.recent.paginate(page: params[:page], per_page: 8)
     else
-      Tutorial.checked.order(:cached_votes_up => :desc).paginate(page: params[:page], per_page: 9)
+      Tutorial.checked.order(:cached_votes_up => :desc).paginate(page: params[:page], per_page: 8)
     end
     render layout: "welcome"
   end
