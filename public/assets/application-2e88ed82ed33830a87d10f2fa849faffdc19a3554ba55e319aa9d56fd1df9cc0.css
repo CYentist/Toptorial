@@ -7734,7 +7734,7 @@ input[type="checkbox"]:disabled:checked:after,
   width: 30px;
 }
 /* line 55, /Users/CY/toptorial/app/assets/stylesheets/tutorials.scss */
-.TutorialDetail button {
+.TutorialDetail .btn {
   float: left;
   margin: 15px -5px 0px 20px;
 }
@@ -23387,6 +23387,12 @@ html, body {
 }
 
 /* line 80, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+#coin-mini {
+  position: relative;
+  top: -2px;
+}
+
+/* line 85, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .alert {
   position: absolute;
   width: 100%;
@@ -23394,55 +23400,55 @@ html, body {
   text-align: center;
 }
 
-/* line 87, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 92, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .search-bar {
   padding-top: 8px;
   margin-bottom: 0;
 }
 
-/* line 92, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 97, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 94, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 99, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .card {
   background-color: #fff;
   overflow: hidden;
   margin: 10px auto 5px auto;
 }
 
-/* line 101, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 106, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .paper {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-/* line 108, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 113, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .btn-danger {
   border-color: #FA4659 solid 2px;
   background-color: transparent;
   color: #FA4659;
 }
 
-/* line 114, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 119, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .btn-danger:hover {
   background-color: #FA4659;
 }
 
-/* line 118, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 123, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .btn-success {
   border-color: #2EB872 solid 2px;
   background-color: transparent;
   color: #2EB872;
 }
 
-/* line 124, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 129, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .btn-success:hover {
   background-color: #2EB872;
 }
 
-/* line 128, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 133, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .load_more {
   background-color: transparent;
   border-radius: 5px;
@@ -23460,7 +23466,7 @@ a:hover {
   margin-top: 20px;
 }
 
-/* line 145, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 150, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .index-part-1 {
   background: #677987;
   background-image: url("http://odv1eilcn.bkt.clouddn.com/images/2017-05-23-joao-silas-65013.jpg");
@@ -23470,16 +23476,16 @@ a:hover {
   margin: auto;
   width: 100%;
   min-width: 960px;
-  height: 450px;
+  height: 550px;
 }
-/* line 158, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 163, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .index-part-1 h1 {
   font-size: 48px;
   line-height: 55px;
   color: white;
   font-weight: 400;
 }
-/* line 164, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 169, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .index-part-1 h2 {
   font-size: 18px;
   line-height: 44px;
@@ -23487,7 +23493,7 @@ a:hover {
   font-weight: 400;
 }
 
-/* line 171, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 176, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .lp-block-1 {
   display: block;
   margin-left: auto;
@@ -23497,7 +23503,7 @@ a:hover {
   padding-top: 100px;
 }
 
-/* line 179, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 184, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .lp-block-1-button {
   border-radius: 10px;
   background: transparent;
@@ -23514,17 +23520,17 @@ a:hover {
   margin-top: 20px;
 }
 
-/* line 195, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 200, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .lp-block-1-button:hover {
   background-color: white;
   text-decoration: none;
 }
 
-/* line 200, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 205, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .search {
   float: left;
-  width: 400px;
-  margin-left: 40px;
+  width: 300px;
+  margin-right: -40px;
   /*右边距*/
   margin-top: 10px;
   /*上边距*/
@@ -23532,22 +23538,23 @@ a:hover {
   /*相对定位*/
 }
 
-/* line 208, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 213, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .subnavbar {
-  margin: 10px 0 10px 0;
+  margin: -60px 0 10px 0;
+  background-color: #F0F4F8;
 }
 
-/* line 211, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 217, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .index-part-1 {
   display: block;
   margin: 0px auto 0px auto;
   width: 100%;
   min-width: 960px;
-  height: 450px;
+  height: 550px;
   position: relative;
 }
 
-/* line 219, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 225, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .tutorialcard {
   margin: 10px auto;
   position: relative;
@@ -23555,54 +23562,103 @@ a:hover {
   background-color: white;
   float: left;
 }
-/* line 225, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 232, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .tutorialcard h3 {
   font-size: 18px;
   font-weight: 500;
 }
-/* line 229, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 235, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .tutorialcard h3 a {
   color: black;
 }
-/* line 232, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 238, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .tutorialcard h3 a:hover {
   color: #A3DE83;
 }
 
-/* line 237, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
-.tutorial_title {
-  height: 60px;
-  overflow: hidden;
+/* line 243, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+.thumbnail {
+  border: none !important;
+  padding: 0 !important;
 }
 
-/* line 241, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
-.caption {
-  margin: -20px auto 10px auto;
-}
-
-/* line 244, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
-.creator {
-  float: left;
-  margin: 15px auto -10px auto;
-}
 /* line 247, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
-.creator a {
-  color: #677987;
-}
-/* line 250, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
-.creator img {
-  width: 30px;
-  height: 30px;
+.thumbnailimg img {
+  transition: all 0.2s;
+  /*这句代码的意思是，当这个元素的某个属性发现变化时，不是立刻完成，而是慢慢地在400ms内完成，这样就实现了动画的效果*/
+  -webkit-transition: all 0.2s;
+  -webkit-transition: all 0.2s ease-in-out;
+  /*让「谷歌浏览器」支持这个属性*/
+  -moz-transition: all 0.2s ease-in-out;
+  /*让「火狐浏览器」支持这个属性*/
+  -o-transition: all 0.2s ease-in-out;
+  /*让「safari」支持属性*/
+  -ms-transition: all 0.2s ease-in-out;
+  /*让「IE浏览器」支持这个属性*/
 }
 
 /* line 255, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+.thumbnailimg:hover img {
+  transform: scale(1.05);
+  /*在400ms内，图片的尺寸从 1倍 放大到 1.2倍*/
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+}
+
+/* line 262, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+.TutorialDescription {
+  height: 40px;
+  overflow: hidden;
+  font-size: 12px;
+  margin-bottom: 5px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  padding-right: 20px;
+}
+
+/* line 273, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+.tutorial_title {
+  height: 60px;
+  overflow: hidden;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* line 280, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+.caption {
+  margin: -20px auto 10px auto;
+  padding: 20px !important;
+}
+
+/* line 284, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+.creator {
+  float: left;
+  margin: 15px auto -10px 0;
+}
+/* line 287, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+.creator a {
+  color: #677987;
+}
+/* line 290, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+.creator img {
+  width: 30px;
+  height: 30px;
+  margin: 0 !important;
+}
+
+/* line 296, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .vote {
   float: right;
   margin: 15px -5px 0px auto;
 }
 
 /****** LOGIN MODAL ******/
-/* line 263, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 304, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal-container {
   padding: 30px;
   max-width: 350px;
@@ -23615,14 +23671,14 @@ a:hover {
   font-family: roboto;
 }
 
-/* line 275, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 316, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal-container h1 {
   text-align: center;
   font-size: 1.8em;
   font-family: roboto;
 }
 
-/* line 281, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 322, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal-container input[type=submit] {
   width: 100%;
   display: block;
@@ -23630,7 +23686,7 @@ a:hover {
   position: relative;
 }
 
-/* line 288, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 329, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal-container input[type=text], input[type=password] {
   height: 44px;
   font-size: 16px;
@@ -23646,7 +23702,7 @@ a:hover {
   -moz-box-sizing: border-box;
 }
 
-/* line 303, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 344, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal-container input[type=text]:hover, input[type=password]:hover {
   border: 1px solid #b9b9b9;
   border-top: 1px solid #a0a0a0;
@@ -23655,7 +23711,7 @@ a:hover {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* line 311, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 352, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal {
   text-align: center;
   font-size: 14px;
@@ -23668,7 +23724,7 @@ a:hover {
     user-select: none; */
 }
 
-/* line 323, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 364, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal-submit {
   /* border: 1px solid #3079ed; */
   border: 0px;
@@ -23681,7 +23737,7 @@ a:hover {
   /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
 }
 
-/* line 335, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 376, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal-submit:hover {
   /* border: 1px solid #2f5bb7; */
   border: 0px;
@@ -23690,7 +23746,7 @@ a:hover {
   /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
 }
 
-/* line 343, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 384, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .loginmodal-container a {
   text-decoration: none;
   color: #677987;
@@ -23701,12 +23757,12 @@ a:hover {
   transition: opacity ease 0.5s;
 }
 
-/* line 353, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 394, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .login-help {
   font-size: 12px;
 }
 
-/* line 358, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 399, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .navbar-default {
   background-color: white;
   margin-bottom: 0;
@@ -23716,19 +23772,19 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  /* line 368, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+  /* line 409, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
   .navbar {
     border-radius: 0;
   }
 }
-/* line 373, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 414, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-brand {
   font-size: 20px;
   color: #677987;
   padding: 10px 15px;
   line-height: 32px;
 }
-/* line 379, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 420, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-brand img {
   margin: 2px 2px 3px 0;
   display: inline-block;
@@ -23736,26 +23792,25 @@ a:hover {
   height: 30px;
 }
 
-/* line 387, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 428, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: black;
   background-color: transparent;
 }
 
-/* line 392, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 433, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-nav > li > a {
   color: #677987;
 }
 
-/* line 397, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 437, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: black;
-  background-color: transparent;
 }
 
-/* line 402, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 441, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -23763,7 +23818,7 @@ a:hover {
   background-color: #F0F4F8;
 }
 
-/* line 410, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 449, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
@@ -23771,50 +23826,67 @@ a:hover {
   color: black;
 }
 
-/* line 418, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 457, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+.subnavbar li > a:hover, .subnavbar li > a:focus {
+  border-bottom: solid 2px #FA4659;
+  margin-bottom: -2px;
+}
+
+/* line 464, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+.index-part-3 .navbar-default {
+  background-color: #F0F4F8;
+  border-radius: 5px;
+  box-shadow: none;
+  padding: 0 10px;
+  line-height: 20px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+/* line 475, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .def-footer {
   position: relative;
 }
-/* line 420, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 477, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .def-footer .help-link {
   float: left;
   margin: 0 40px;
 }
-/* line 423, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 480, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .def-footer .help-link li {
   padding: 0 10px;
 }
-/* line 428, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 485, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .def-footer .copyright-info {
   float: right;
   margin: 0 40px;
 }
 
-/* line 434, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 491, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .site-footer {
   position: absolute;
   background: white;
   color: #677987;
   padding-top: 20px;
 }
-/* line 440, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 497, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .site-footer a:link {
   color: #677987;
 }
-/* line 441, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 498, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .site-footer a:visited {
   color: #677987;
 }
-/* line 442, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 499, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .site-footer a:hover {
   color: black;
 }
-/* line 443, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 500, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .site-footer a:active {
   color: black;
 }
 
-/* line 445, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
+/* line 502, /Users/CY/toptorial/app/assets/stylesheets/application.scss */
 .dropzone {
   background: #f4f4f4 !important;
   border: none !important;

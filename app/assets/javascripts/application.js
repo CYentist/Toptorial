@@ -35,7 +35,7 @@
 // 滚动翻页
 
 
-$(document).ready(function() {
+$(document).on("turbolinks:load", function(){
     // alert auto close
     window.setTimeout(function() {
       $('.alert').alert('close');
@@ -48,7 +48,7 @@ $(document).ready(function() {
     // }, 2000);
 });
 
-$(function() {
+$(document).on("turbolinks:load", function(){
   var mediaDropzone;
   mediaDropzone = new Dropzone("#media-dropzone");
   return mediaDropzone.on("success", function(file, responseText) {

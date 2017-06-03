@@ -10,29 +10,31 @@
       </div>
     </div>
 
-    <nav class="subnavbar navbar navbar-default">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-              <li><%= link_to("最新", tutorials_path(:order => "by_time"))%></li>
-              <li><%= link_to("最热", tutorials_path(:order =>"by_votes"))%></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-              <li>
-                <div class="navbar-form navbar-left search" role="search">
-                  <%= render :partial => "tutorials/search_bar" %>
-                </div>
-              </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+
 
     <div class="index-part-3">
       <div class="container">
         <div class="row" id="tutorials">
-          <%= render @tutorials %>
+          <div class="col-md-offset-2 col-md-8">
+            <div class="row">
+              <nav class="subnavbar navbar navbar-default">
+                    <ul class="nav navbar-nav">
+                        <li><%= link_to("最新", tutorials_path(:order => "by_time"))%></li>
+                        <li><%= link_to("最热", tutorials_path(:order =>"by_votes"))%></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                          <div class="navbar-form navbar-left search" role="search">
+                            <%= render :partial => "tutorials/search_bar" %>
+                          </div>
+                        </li>
+                    </ul>
+              </nav>
+              <%= render @tutorials %>
+            </div>
+          </div>
         </div>
+
         <!-- <div class="load_more">
           <p>加载更多</p>
           <%= will_paginate @tutorials %>
