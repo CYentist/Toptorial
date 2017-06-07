@@ -5,14 +5,28 @@
     <div class="col-md-12 col-lg-10">
 
 
-				<%= render "image_and_description" %>
-			<div class="BuyBtn">
-				<%= link_to("查看完整教程", buy_tutorial_path(@tutorial), method: :post, class: "btn btn-primary",  :data => { :confirm => "确认购买?"} ) %>
-			</div>
+			<%= render "image_and_description" %>
 
-			<div style="text-align:center">
-				  <p><span style="font-size:20px;"><img id="coin" src="http://icons.iconarchive.com/icons/ph03nyx/super-mario/128/Retro-Coin-icon.png" alt="coin"  width="18px" height="18px" style="margin-top:26px;"> x <%= @tutorial.price %></span></p>
-			</div>
+			<% if @tutorial.price == 0 %>
+				<div class="label-success" style="text-align:center">
+						<p><span style="font-size:20px; color:#ffffff">免费教程</span></p>
+				</div>
+
+				<div class="BuyBtn">
+					<%= link_to("免费查看完整教程", buy_tutorial_path(@tutorial), method: :post, class: "btn btn-primary" ) %>
+				</div>
+
+			<% else %>
+
+				<div class="label-warning" style="text-align:center">
+					  <p><span style="font-size:20px; color:#ffffff">教程价格：<%= @tutorial.price %>个<img id="coin" src="http://icons.iconarchive.com/icons/ph03nyx/super-mario/128/Retro-Coin-icon.png" alt="coin"  width="18px" height="18px" style="margin-top:26px;"></span></p>
+				</div>
+
+				<div class="BuyBtn">
+					<%= link_to("花#{@tutorial.price}个金币查看完整教程", buy_tutorial_path(@tutorial), method: :post, class: "btn btn-primary",  :data => { :confirm => "确认购买?"} ) %>
+				</div>
+
+			<% end %>
 
 			<div class="BlockTitle">
 				<h2 class="BlockTitle-title">收到的评论</h2>
